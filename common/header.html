@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/head.css" />
+  </head>
+  <body style="height: 1200px">
+    <!-- ------------------------------------------------------------ -->
+    <!-- ##  ** main <= 메인 페이지 일 때 입니다 -->
+    <!-- ##  ** anotherPage <= 메인 페이지를 제외하고 다른 페이지들 일 때 입니다 -->
+    <!-- ------------------------------------------------------------ -->
+    <!-- ##  ** login <= 로그인 상태 일 때입니다 -->
+    <!-- ##  ** logout <= 로그인 안된 상태 일 때입니다 -->
+    <!-- ------------------------------------------------------------ -->
+
+    <!-- ##### PC 헤더 ##### -->
+
+    <!-- ** main -->
+    <!-- <header id="headerPC"> -->
+    <!-- ** anotherPage -->
+    <header
+      id="headerPC"
+      style="padding-bottom: 2px; border-bottom: 1px solid #ececec"
+    >
+      <!-- ** main -->
+      <!-- <div class="header_wrap none_header"> -->
+      <!-- ** anotherPage -->
+      <div class="header_wrap">
+        <div class="header_top">
+          <a class="logo" href="../index.html">
+            <!-- ** main -->
+            <!-- <img src="../img/icon/w_logo.svg" alt="로고" /> -->
+            <!-- ** anotherPage -->
+            <img src="../img/icon/logo.svg" alt="로고" />
+          </a>
+          <ul class="unit_box">
+            <li class="unit_list">
+              <label>
+                <input type="text" class="search_input" placeholder="검색" />
+              </label>
+              <a href="../search/search.html" class="pc_search"></a>
+            </li>
+
+            <!-- ** login -->
+            <li class="unit_list user_list">
+              <span class="profile"></span>
+              <a href="#" onclick="location.href='../mypage/mypage.html'"
+                >{ 포차코 }님</a
+              >
+            </li>
+
+            <!-- ** logout -->
+            <li class="unit_list">
+              <a href="#" onclick="location.href='../login/login.html'"
+                >로그인</a
+              >
+            </li>
+            <li class="unit_list">
+              <a href="#" onclick="location.href='../login/signup.html'"
+                >회원가입</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header_bottom">
+          <ul class="gnb_box">
+            <!-- ## 1depth - list 활성화 : active 클라스입니다! -->
+            <!-- ## 2depth - list 활성화 : active 클라스입니다! ( * 2depth가 없는 경우는 1depth(li).active / 2depth가 있는 경우 1depth(li).active -> 2depth(li).active ) -->
+            <li class="gnb_list">
+              <a href="#" onclick="return false">여행 상품</a>
+              <ul class="inner_gnb_box">
+                <li class="inner_gnb_list">
+                  <a href="../product/product_list.html">우리 끼리 단독</a>
+                </li>
+                <li class="inner_gnb_list">
+                  <a href="#" onclick="return false">패키지 여행</a>
+                </li>
+                <li class="inner_gnb_list">
+                  <a href="#" onclick="return false">데이 투어</a>
+                </li>
+                <li class="inner_gnb_list">
+                  <a href="#" onclick="return false">테마 여행</a>
+                </li>
+                <li class="inner_gnb_list">
+                  <a
+                    href="#"
+                    onclick="location.href='../travelReview/travel_review.html'"
+                    >여행 후기</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="gnb_list">
+              <a href="#">내가 만드는 여행</a>
+            </li>
+            <li class="gnb_list">
+              <a href="../europeNews/europe_news.html">유럽 소식</a>
+            </li>
+            <li class="gnb_list">
+              <a href="../travelVideo/travel_video.html">여행 동영상</a>
+            </li>
+            <li class="gnb_list">
+              <a href="../etc/company.html">회사 소개</a>
+            </li>
+            <li class="gnb_list">
+              <a href="#" onclick="return false">고객센터</a>
+              <ul class="inner_gnb_box last">
+                <li class="inner_gnb_list">
+                  <a href="../serviceCenter/qa_list.html">1:1 문의</a>
+                </li>
+                <li class="inner_gnb_list">
+                  <a href="../serviceCenter/faq.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- ------------------------------------------------------------ -->
+    <!-- ##### mobile 헤더 ##### -->
+    <div id="m_header_wrap">
+      <!-- ** main -->
+      <!-- <header class="m_header main_p_header"> -->
+      <!-- ** anotherPage -->
+      <header class="m_header">
+        <ul class="m_unit_box">
+          <li class="m_menu"></li>
+          <li class="m_logo" onclick="location.href='../index.html'"></li>
+          <li class="m_unit_list">
+            <span class="m_search"></span>
+            <span
+              class="m_user"
+              onclick="location.href='../mypage/mypage.html'"
+            ></span>
+          </li>
+        </ul>
+        <div class="blackbg"></div>
+        <div class="m_gnb_wrap">
+          <ul class="m_gnb">
+            <!-- ## 1depth - list 활성화 : on 클라스입니다! -->
+            <!-- ## 2depth - list 활성화 : on 클라스입니다! ( * 2depth가 없는 경우는 1depth(li).on / 2depth가 있는 경우 1depth(li).on -> 2depth(li).on ) -->
+            <li class="m_gnb_li">
+              <div class="menu_link">
+                <a href="#" onclick="return false">여행 상품</a>
+                <span class="m_arrow"></span>
+              </div>
+              <ul class="inner_gnb">
+                <li class="m_inner_list">
+                  <a href="../product/product_list.html">우리 끼리 단독</a>
+                </li>
+                <li class="m_inner_list">
+                  <a href="#" onclick="return false">패키지 여행</a>
+                </li>
+                <li class="m_inner_list">
+                  <a href="#" onclick="return false">데이투어</a>
+                </li>
+                <li class="m_inner_list">
+                  <a href="#" onclick="return false">테마 여행</a>
+                </li>
+                <li class="m_inner_list">
+                  <a
+                    href="#"
+                    onclick="location.href='../travelReview/travel_review.html'"
+                    >여행 후기</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="m_gnb_li">
+              <div class="menu_link">
+                <a href="#" onclick="return false">내가 만드는 여행</a>
+              </div>
+            </li>
+            <li class="m_gnb_li">
+              <div class="menu_link">
+                <a href="../europeNews/europe_news.html">유럽 소식</a>
+              </div>
+            </li>
+            <li class="m_gnb_li">
+              <div class="menu_link">
+                <a href="../travelVideo/travel_video.html">여행 동영상</a>
+              </div>
+            </li>
+            <li class="m_gnb_li">
+              <div class="menu_link">
+                <a href="../etc/company.html">회사 소개</a>
+              </div>
+            </li>
+            <li class="m_gnb_li">
+              <div class="menu_link">
+                <a href="#" onclick="return false">고객센터</a>
+                <span class="m_arrow"></span>
+              </div>
+              <ul class="inner_gnb">
+                <li class="m_inner_list">
+                  <a href="../serviceCenter/qa_list.html">1:1 문의</a>
+                </li>
+                <li class="m_inner_list">
+                  <a href="../serviceCenter/faq.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- 검색 모달 -->
+      <div id="mSearchModal">
+        <div class="search_cont_box">
+          <div class="sear_cont_wrap">
+            <button type="button" class="search_close"></button>
+            <div class="search_cont">
+              <div class="search_box">
+                <label>
+                  <input type="text" class="search_input" placeholder="검색" />
+                </label>
+                <a href="../search/search.html" class="pc_search"></a>
+              </div>
+              <h3>최근 검색어</h3>
+              <div class="contents_box">
+                <ul class="recent_contents_wrap">
+                  <li class="recent_list">
+                    <span class="recent_val">이탈리아</span>
+                    <span class="recent_del"></span>
+                  </li>
+                  <li class="recent_list">
+                    <span class="recent_val">유럽</span>
+                    <span class="recent_del"></span>
+                  </li>
+                  <li class="recent_list">
+                    <span class="recent_val">영국</span>
+                    <span class="recent_del"></span>
+                  </li>
+                  <li class="recent_list">
+                    <span class="recent_val">프랑스</span>
+                    <span class="recent_del"></span>
+                  </li>
+                </ul>
+
+                <!-- ## 최근 검색어가 없을때 나오는 텍스트 -->
+                <!-- <div class="none_text">최근 검색 내역이 존재하지 않습니다.</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+    <script>
+      const VW = window.innerWidth;
+      let r = VW <= 900 ? true : false;
+      let fileName = document.URL.split("/");
+
+      r
+        ? (headerPC.style.display = "none")
+        : (m_header_wrap.style.display = "none");
+
+      /** 헤더 반응형 변환 */
+      window.addEventListener("resize", () => {
+        const _VW = window.innerWidth;
+
+        if (_VW <= 900) {
+          if (r) return;
+          else {
+            r = true;
+            headerPC.style.display = "none";
+            m_header_wrap.style.display = "block";
+            domGnbFuc();
+          }
+        } else {
+          if (!r) return;
+          else {
+            r = false;
+            headerPC.style.display = "flex";
+            m_header_wrap.style.display = "none";
+            domGnbFuc();
+          }
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", domGnbFuc);
+
+      function domGnbFuc() {
+        let _fileName = document.URL.split("/");
+        let val = _fileName.includes("index.html") ? false : true;
+
+        let fileName = document.URL.substring(
+          document.URL.lastIndexOf("/") + 1,
+          document.URL.length
+        );
+        const gnbList = document.querySelectorAll(".gnb_list");
+        const mainSlider = document.querySelector(".main_slider");
+        const headerP = document.querySelector("#headerPC");
+        const headerM = document.querySelector(".m_header");
+        let scroll = false;
+
+        // pc
+        if (gnbList) {
+          gnbList.forEach((item, idx) => {
+            item.removeEventListener("mouseover", mouseoverFuc);
+            item.addEventListener("mouseover", mouseoverFuc);
+
+            item.removeEventListener("mouseleave", mouseleaveFuc);
+            item.addEventListener("mouseleave", mouseleaveFuc);
+          });
+        }
+        // mobile
+        const mMenuBtn = document.querySelector(".m_menu");
+
+        if (mMenuBtn) {
+          const list = document.querySelectorAll(".menu_link");
+          const backBg = document.querySelector(".blackbg");
+          mMenuBtn.removeEventListener("click", mClickFuc);
+          mMenuBtn.addEventListener("click", mClickFuc);
+          list.forEach((item, idx) => {
+            item.removeEventListener("click", mlistFuc);
+            item.addEventListener("click", mlistFuc);
+          });
+
+          backBg.removeEventListener("click", bgFuc);
+          backBg.addEventListener("click", bgFuc);
+        }
+
+        function mouseoverFuc(e) {
+          let target = e.currentTarget;
+          const inner = target.querySelector(".inner_gnb_box");
+          const headerWrap = document.querySelector(".header_wrap");
+          const gnbBox = document.querySelector(".gnb_box");
+          let h = target.offsetHeight;
+
+          headerWrap.classList.add("on");
+          target.classList.add("on");
+          if (inner) gnbBox.classList.add("on");
+
+          if (fileName.indexOf("index") >= 0) {
+            const logo = document.querySelector(".logo img");
+            logo.setAttribute("src", `${val ? "../" : ""}img/icon/logo.svg`);
+          }
+        }
+        function mouseleaveFuc(e) {
+          let target = e.currentTarget;
+          const inner = target.querySelector(".inner_gnb_box");
+          const headerWrap = document.querySelector(".header_wrap");
+          const gnbBox = document.querySelector(".gnb_box");
+          scroll ? null : headerWrap.classList.remove("on");
+          target.classList.remove("on");
+
+          if (inner) gnbBox.classList.remove("on");
+
+          if (fileName.indexOf("index") >= 0) {
+            const logo = document.querySelector(".logo img");
+            scroll
+              ? null
+              : logo.setAttribute(
+                  "src",
+                  `${val ? "../" : ""}img/icon/w_logo.svg`
+                );
+          }
+        }
+        function mClickFuc() {
+          const body = document.querySelector("body");
+          const mHead = document.querySelector(".m_header");
+          let has = mHead.classList.contains("on");
+          if (has) {
+            mHead.classList.remove("on");
+            body.style.overflow = "inherit";
+            $(".blackbg").fadeOut(200);
+          } else {
+            mHead.classList.add("on");
+            body.style.overflow = "hidden";
+            $(".blackbg").fadeIn(200);
+          }
+        }
+        function mlistFuc(e) {
+          const allList = document.querySelectorAll(".m_gnb_li");
+          let target = e.currentTarget;
+          let parList = target.parentNode;
+          let has = parList.classList.contains("on");
+
+          if (has) parList.classList.remove("on");
+          else {
+            allList.forEach((item) => item.classList.remove("on"));
+            parList.classList.add("on");
+          }
+        }
+        function bgFuc(e) {
+          const body = document.querySelector("body");
+          let target = e.currentTarget;
+          let par = target.parentNode;
+          par.classList.remove("on");
+          body.style.overflow = "inherit";
+          $(target).fadeOut(200);
+        }
+        const searchBtn = document.querySelector(".m_search");
+        const searchClose = document.querySelector(".search_close");
+        if (searchBtn) {
+          searchBtn.removeEventListener("click", searchFuc);
+          searchClose.removeEventListener("click", searchFuc);
+
+          searchBtn.addEventListener("click", searchFuc);
+          searchClose.addEventListener("click", searchFuc);
+        }
+        function searchFuc() {
+          const target = document.querySelector(".m_search");
+          let has = target.classList.contains("on");
+          const modal = document.getElementById("mSearchModal");
+          const header = document.querySelector(".m_header");
+          const body = document.querySelector("body");
+          const box = document.querySelector(".search_cont_box");
+          if (has) {
+            target.classList.remove("on");
+
+            header.style.opacity = "1";
+            header.style.pointerEvents = "auto";
+            box.classList.remove("on");
+            setTimeout(() => {
+              $("#mSearchModal").fadeOut(100);
+              body.style.overflow = "inherit";
+            }, 500);
+          } else {
+            target.classList.add("on");
+            $("#mSearchModal").fadeIn(100);
+            body.style.overflow = "hidden";
+            setTimeout(() => {
+              header.style.opacity = "0";
+              header.style.pointerEvents = "none";
+              box.classList.add("on");
+            }, 100);
+          }
+        }
+        // 메인 페이지 스크롤 이벤트 함수
+        function scrollFuc(e) {
+          let mSH = mainSlider.clientHeight;
+          let thisH = headerP ? headerP.clientHeight : headerM.clientHeight;
+          let y = document.documentElement.scrollTop;
+          if (y >= mSH - thisH) {
+            if (scroll) {
+              return;
+            } else {
+              scroll = true;
+              const hWrap = document.querySelector(".header_wrap");
+              const MWrap = document.querySelector(".m_header");
+              const hImg = document.querySelector(".header_top a img");
+              hWrap ? hWrap.classList.add("on") : MWrap.classList.add("active");
+              hImg
+                ? hImg.setAttribute(
+                    "src",
+                    `${val ? "../" : ""}img/icon/logo.svg`
+                  )
+                : null;
+            }
+          } else {
+            if (!scroll) {
+              return;
+            } else {
+              scroll = false;
+              const hWrap = document.querySelector(".header_wrap");
+              const MWrap = document.querySelector(".m_header");
+              const hImg = document.querySelector(".header_top a img");
+              hWrap
+                ? hWrap.classList.remove("on")
+                : MWrap.classList.remove("active");
+              hImg
+                ? hImg.setAttribute(
+                    "src",
+                    `${val ? "../" : ""}img/icon/w_logo.svg`
+                  )
+                : null;
+            }
+          }
+        }
+
+        // 메인 페이지 일때의 조건문
+        if (mainSlider) {
+          let _mSH = mainSlider.clientHeight;
+          let _thisH = headerP ? headerP.clientHeight : headerM.clientHeight;
+          let _y = document.documentElement.scrollTop;
+          if (_y >= _mSH - _thisH) {
+            scroll = true;
+            const _hWrap = document.querySelector(".header_wrap");
+            const _MWrap = document.querySelector(".m_header");
+            const _hImg = document.querySelector(".header_top a img");
+            _hWrap
+              ? _hWrap.classList.add("on")
+              : _MWrap.classList.add("active");
+            _hImg
+              ? _hImg.setAttribute(
+                  "src",
+                  `${val ? "../" : ""}img/icon/logo.svg`
+                )
+              : null;
+          } else {
+            scroll = false;
+            const _hWrap = document.querySelector(".header_wrap");
+            const _MWrap = document.querySelector(".m_header");
+            const _hImg = document.querySelector(".header_top a img");
+            _hWrap
+              ? _hWrap.classList.remove("on")
+              : _MWrap.classList.remove("active");
+            _hImg
+              ? _hImg.setAttribute(
+                  "src",
+                  `${val ? "../" : ""}img/icon/w_logo.svg`
+                )
+              : null;
+          }
+          window.removeEventListener("scroll", scrollFuc);
+          window.addEventListener("scroll", scrollFuc);
+        } else {
+          scroll = true;
+          const _hWrap = document.querySelector(".header_wrap");
+          const _MWrap = document.querySelector(".m_header");
+          _hWrap ? _hWrap.classList.add("on") : _MWrap.classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>

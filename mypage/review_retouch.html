@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Trendy europe</title>
+
+    <link rel="icon" href="../img/common/favicon.ico">
+    <!--Import-->
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+    <script type='text/javascript' src='../js/header.js'></script>
+    <script type='text/javascript' src='../js/common.js'></script>
+    <script type='text/javascript' src='../js/mypage.js'></script>
+    <script type='text/javascript' src="../js/air-datepicker.js"></script>
+    <script type='text/javascript' src="../js/myTrip_modal.js"></script>
+    <!-- link -->
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel='stylesheet' href='../css/head.css'>
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../css/air-datepicker.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mypage.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- TOP 버튼 -->
+        <div class="btn_top">
+            <div class="btn_top_wrap">
+                <div class="img_wrap">
+                    <img src="../img/icon/icon_top_arrow.svg" alt="위로가기 버튼">
+                </div>
+                <button type="button">TOP</button>
+            </div>
+        </div>
+
+        <!-- 헤더 -->
+        <trendy-headpc></trendy-headpc>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content" class="mypage">
+            <section class="review_container">
+                <div class="review_content">
+                    <h2 class="title">상품 후기</h2>
+                    <div class="review_area">
+                        <ul>
+                            <li class="r_area_title">
+                                방문 국가
+                            </li>
+                            <li class="r_area_text">
+                                지역1 > 지역2
+                            </li>
+                            <li class="r_area_title">
+                                상품 종류
+                            </li>
+                            <li class="r_area_text">
+                                우리 끼리 단톡
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="r_area_title">
+                                여행 TYPE
+                            </li>
+                            <li class="r_area_text">
+                                가족 여행
+                            </li>
+                            <li class="r_area_title">
+                                상품명
+                            </li>
+                            <li class="r_area_text">
+                                [세미패키지] 이탈리아 핵심 8일
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="r_area_title">
+                                작성자
+                            </li>
+                            <li class="r_area_text">
+                                포차코
+                            </li>
+                            <li class="r_area_title">
+                                작성일
+                            </li>
+                            <li class="r_area_text">
+                                000.00.00
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="r_star_title">
+                                평점
+                            </li>
+                            <li class="r_star_text">
+                                <div class="rating">
+                                    <!-- 해당 별점을 클릭하면 해당 별과 그 왼쪽의 모든 별의 체크박스에 checked 적용 -->
+                                    <!-- <input type="checkbox" name="rating" id="rating1" value="1" class="rate_radio" title="1점">
+                                    <label for="rating1"></label>
+                                    <input type="checkbox" name="rating" id="rating2" value="2" class="rate_radio" title="2점">
+                                    <label for="rating2"></label>
+                                    <input type="checkbox" name="rating" id="rating3" value="3" class="rate_radio" title="3점" >
+                                    <label for="rating3"></label>
+                                    <input type="checkbox" name="rating" id="rating4" value="4" class="rate_radio" title="4점">
+                                    <label for="rating4"></label>
+                                    <input type="checkbox" name="rating" id="rating5" value="5" class="rate_radio" title="5점">
+                                    <label for="rating5"></label> -->
+                                    <span class="rate_radio"></span>
+                                    <span class="rate_radio"></span>
+                                    <span class="rate_radio"></span>
+                                    <span class="rate_radio"></span>
+                                    <span class="rate_radio"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="review_zone">
+                        <ul class="review_h_title">
+                            <li class="r_area_title">
+                                제목
+                            </li>
+                            <li class="r_area_input">
+                                <input type="text" value="제목제목제목.">
+                            </li>
+                        </ul>
+                        <div class="textarea">
+                            <div class="r_textarea_title">
+                                <span>내용</span>
+                            </div>
+                            <div class="r_textarea_zone">
+                                <textarea placeholder="">
+여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 
+
+여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 
+
+여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 
+여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 
+
+여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 
+
+여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 
+ㅋㅋ
+
+행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용
+
+ 여행 후기 내용 여행 후기 내용 행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 여행 후기 내용 
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button_group">
+                        <button class="btn outline">
+                            취소
+                        </button>
+                        <button class="btn" onclick="location.href='my_review.html'">
+                            확인
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="pop_section">
+                <div class="modal_bg review_modal">
+                    <div class="message_modal">
+                        <div class="text_area">
+                            <div class="align_text">
+                                <h3 class="big_text">
+                                    후기가 등록되었습니다.
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="apply_btn full close_btn" onclick="location.href='my_review.html'">
+                                확인
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <trendy-mytripmodal></trendy-mytripmodal>
+            </section>
+        </div>
+
+        <div id="footer">
+            <trendy-footerpc></trendy-footerpc>
+        </div>
+    </div>
+
+</body>
+
+</html>

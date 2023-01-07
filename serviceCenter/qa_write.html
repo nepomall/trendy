@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Trendy europe</title>
+
+    <link rel="icon" href="../img/common/favicon.ico">
+    <!--Import-->
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+    <script type='text/javascript' src='../js/header.js'></script>
+    <script type='text/javascript' src='../js/common.js'></script>
+    <script type='text/javascript' src="../js/air-datepicker.js"></script>
+    <script type='text/javascript' src="../js/myTrip_modal.js"></script>
+    <script type='text/javascript' src="../js/servicecenter.js"></script>
+    <!-- link -->
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel='stylesheet' href='../css/head.css'>
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../css/air-datepicker.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/service_center.css">
+</head>
+
+<body>
+    <div id="wrap" class="service qa_write">
+        <!-- 문의 등록 완료 모달 -->
+        <section class="pop_section">
+            <div class="modal_bg register_modal">
+                <div class="message_modal">
+                    <div class="text_area">
+                        <span>1 : 1 문의가 등록되었습니다.</span>
+                    </div>
+                    <div class="button_wrap">
+                        <button type="button" class="apply_btn close_btn" onclick="location.href='../serviceCenter/qa_list.html'">확인</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 헤더 -->
+        <trendy-headpc></trendy-headpc>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content">
+            <div class="inner">
+                <section class="qa_section">
+                    <h2 class="qa_tit">1 : 1 문의</h2>
+                    <div class="qa_write_area">
+                        <form>
+                            <fieldset>
+                                <legend>1:1문의</legend>
+                                <div class="write_box type">
+                                    <label for="">문의 유형</label>
+                                    <div class="type_box">
+                                        <div class="select_wrap">
+                                            <div class="select_title">
+                                                문의 유형을 선택해주세요.
+                                            </div>
+                                            <ul class="select_list">
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="select_wrap">
+                                            <div class="select_title">
+                                                상세 유형을 선택해주세요.
+                                            </div>
+                                            <ul class="select_list">
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                                <li class="list">
+                                                    option1
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="write_box tit">
+                                    <label for="write_tit">제목</label>
+                                    <div class="input_box">
+                                        <input type="text" placeholder="제목을 입력해주세요." id="write_tit">
+                                    </div>
+                                </div>
+                                <div class="write_box cont">
+                                    <label for="write_txt">내용</label>
+                                    <div class="input_box">
+                                        <textarea name="" id="write_txt" cols="30" rows="10"
+                                            placeholder="내용을 입력해주세요."></textarea>
+                                    </div>
+                                </div>
+                                <div class="write_box pw">
+                                    <label for="write_pw">비밀번호</label>
+                                    <div class="input_box">
+                                        <input type="password" placeholder="비밀번호를 입력해주세요." id="write_pw">
+                                        <div class="check_box">
+                                            <input type="checkbox" class="qa_checkbox" id="write_secret">
+                                            <label for="write_secret">비밀글로 문의하기</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="qa_btn_area">
+                        <button type="button" class="btn qa">확인</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <trendy-mytripmodal></trendy-mytripmodal>
+
+        <!-- footer -->
+        <div id="footer">
+            <trendy-footerpc></trendy-footerpc>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Trendy europe</title>
+
+    <link rel="icon" href="../img/common/favicon.ico">
+    <!--Import-->
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+    <script type='text/javascript' src='../js/header.js'></script>
+    <script type='text/javascript' src='../js/common.js'></script>
+    <script type='text/javascript' src="..js/air-datepicker.js"></script>
+    <script type='text/javascript' src="..js/myTrip_modal.js"></script>
+    <script src='../js/script.js'></script>
+    <script src='../js/servicecenter.js'></script>
+    <!-- link -->
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel='stylesheet' href='../css/head.css'>
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="..css/air-datepicker.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/service_center.css">
+</head>
+
+<body>
+    <div id="wrap" class="service qa_complete">
+        <!-- 문의 삭제 여부 모달 -->
+        <section class="pop_section check_delete_complete">
+            <div class="modal_bg">
+                <div class="message_modal">
+                    <div class="text_area">
+                        <span>1 : 1 문의를 삭제하시겠습니까?</span>
+                    </div>
+                    <div class="button_wrap">
+                        <button type="button" class="btn qa check_close blue">취소</button>
+                        <button type="button" class="btn qa check_delete">확인</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 문의 삭제 완료 모달 -->
+        <section class="pop_section delete_complete">
+            <div class="modal_bg">
+                <div class="message_modal">
+                    <div class="text_area">
+                        <span>1 : 1 문의가 삭제 되었습니다.</span>
+                    </div>
+                    <div class="button_wrap">
+                        <button type="button" class="btn check_close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 헤더 -->
+        <trendy-headpc></trendy-headpc>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content">
+            <div class="inner">
+                <section class="qa_section">
+                    <h2 class="qa_tit">1 : 1 문의</h2>
+                    <div class="qa_list_area">
+                        <div class="qa_list_tit">
+                            <div class="tit_left">
+                                <div class="tit_nav">
+                                    <p>문의 유형 1</p>
+                                    <p>상세 유형 2</p>
+                                </div>
+                                <p class="tit_small">제목 제목 제목 제목</p>
+                            </div>
+                            <div class="tit_right">
+                                <p class="tit_date"><span class="pc_only">작성일 : </span class="pc_only"><time datetime="2022-06-17">0000.00.00</time></p>
+                                <p class="answer complete">답변완료</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qa_cont_area">
+                        <div class="questions_box">
+                            <div class="img_wrap">
+                                <img src="../img/icon/icon_qa.svg" alt="qa 아이콘">
+                            </div>
+                            <p>문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용
+                                문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의
+                                내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용
+                                문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의
+                                내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용
+                                문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의
+                                내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용
+                                문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의 내용 문의
+                                내용 문의 내용 문의 내용 문의 내용
+                            </p>
+                        </div>
+                        <div class="answer_box">
+                            <div class="img_wrap">
+                                <img src="../img/icon/icon_answer.svg" alt="">
+                            </div>
+                            <p>문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변
+                                문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의
+                                답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변
+                                문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변 문의 답변</p>
+                        </div>
+                    </div>
+                    <!-- <div class="qa_btn_area">
+                        <button type="button" class="btn qa blue delete">삭제</button>
+                        <button type="button" class="btn qa" onclick="location.href='../qa_write_edit.html'">수정</button>
+                    </div> -->
+                </section>
+            </div>
+        </div>
+
+        <trendy-mytripmodal></trendy-mytripmodal>
+
+        <!-- footer -->
+        <div id="footer">
+            <trendy-footerpc></trendy-footerpc>
+        </div>
+
+        <!-- TOP 버튼 -->
+        <div class="btn_top">
+            <div class="btn_top_wrap">
+                <div class="img_wrap">
+                    <img src="../img/icon/icon_top_arrow.svg" alt="위로가기 버튼">
+                </div>
+                <button type="button">TOP</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

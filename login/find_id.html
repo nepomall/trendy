@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy europe</title>
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+    <script type='text/javascript' src="../js/header.js"></script>
+    <script type='text/javascript' src='../js/common.js '></script>
+    <script src="../js/find_id.js"></script>
+    <script type='text/javascript' src="../js/air-datepicker.js"></script>
+    <script type='text/javascript' src="../js/myTrip_modal.js"></script>
+
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel="stylesheet" href="../css/head.css"> 
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../css/air-datepicker.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <!-- 아이디 찾기 페이지 -->
+
+    <!-- 정보와 다를 시 active 추가해 주세요 -->
+    <div class="modal_bg id_error">
+        <div class="message_modal">
+            <div class="text_area">
+                <span>등록된 정보와 일치하지 않습니다.</span>
+            </div>
+            <div class="button_wrap">
+                <button class="apply_btn close_btn">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrap">
+        <!-- 헤더 -->
+        <trendy-headpc></trendy-headpc>
+
+        <div id="wrap_content">
+            <section class="login_inner find_id">
+
+                <form>
+                    <fieldset class="login_box">
+                        <legend>FIND ID</legend>
+
+                        <ul>
+                            <li>
+                                <label for="">이름</label>
+                                <input type="text" placeholder="이름을 입력해주세요." required>
+                            </li>
+                            <li>
+                                <label for="">이메일</label>
+                                <input type="email" id="" placeholder="이메일을 입력해주세요." required>
+                            </li>
+                        </ul>
+
+                        <button class="login_btn">확인</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    <trendy-mytripmodal></trendy-mytripmodal>
+    <script type='text/javascript' src="../js/header.js"></script>
+    <script type='text/javascript' src="../js/script.js"></script>
+</body>
+</html>

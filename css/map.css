@@ -1,0 +1,257 @@
+.map_section {
+  width: 1240px;
+  margin: 80px auto 150px;
+}
+.map_section .title {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.map_section .map_img {
+  width: 100%;
+  height: 550px;
+  margin-top: 60px;
+}
+.map_section .location {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid #efefef;
+}
+.map_section .map_icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.map_section .traffic_list_wrap {
+  margin-top: 50px;
+}
+.map_section .traffic_list {
+  display: flex;
+  align-items: flex-start;
+}
+.map_section .traffic_list:not(:last-child) {
+  margin-bottom: 70px;
+}
+.traffic_list .traffic_text {
+  display: flex;
+  align-items: center;
+  min-width: 130px;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.traffic_list .traffic_icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+}
+.traffic_list .right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.traffic_list .right:last-child{
+  margin-bottom: 0;
+}
+
+.right .bus_box {
+  padding: 4px 10px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  color: #fff;
+  background: #66bb26;
+}
+.right .bus_box.red {
+  background: #d0323c;
+}
+.right .bus_box.blue {
+  background: #2f64bf;
+}
+.right .bus_box.brown {
+  background: #946e38;
+}
+.right .bus_number {
+  font-size: 16px;
+  font-weight: 300;
+}
+.right .train_box.green {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 4px 0;
+  text-align: center;
+
+  background: #60b257;
+  border-radius: 30px;
+}
+.right .train_box.brown {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  padding: 4px 0;
+  text-align: center;
+
+  border-radius: 30px;
+  background: #caa846;
+}
+
+/* 태블릿 */
+@media screen and (max-width: 1400px) {
+  .map_section {
+    width: calc(100vw * (1240 / 1400));
+    margin: calc(100vw * (80 / 1400)) auto calc(100vw * (150 / 1400));
+  }
+  .map_section .title {
+    font-size: calc(100vw * (28 / 1400));
+  }
+  .map_section .map_img {
+    height: calc(100vw * (550 / 1400));
+    margin-top: calc(100vw * (60 / 1400));
+  }
+  .map_section .location {
+    margin-top: calc(100vw * (60 / 1400));
+    padding-bottom: calc(100vw * (20 / 1400));
+    font-size: calc(100vw * (18 / 1400));
+  }
+  .map_section .map_icon {
+    width: calc(100vw * (20 / 1400));
+    height: calc(100vw * (20 / 1400));
+    margin-right: calc(100vw * (5 / 1400));
+  }
+  .map_section .traffic_list_wrap {
+    margin-top: calc(100vw * (50 / 1400));
+  }
+  .map_section .traffic_list:not(:last-child) {
+    margin-bottom: calc(100vw * (70 / 1400));
+  }
+  .traffic_list .traffic_text {
+    min-width: calc(100vw * (130 / 1400));
+    margin-right: calc(100vw * (50 / 1400));
+    font-size: calc(100vw * (18 / 1400));
+  }
+  .traffic_list .traffic_icon {
+    width: calc(100vw * (26 / 1400));
+    height: calc(100vw * (26 / 1400));
+    margin-right: 5px;
+  }
+  .traffic_list .right {
+    font-size: calc(100vw * (14 / 1400));
+    margin-bottom: calc(100vw * (8 / 1400));
+  }
+  .right .bus_box {
+    padding: calc(100vw * (4 / 1400)) calc(100vw * (10 / 1400));
+    margin-right: calc(100vw * (12 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+  .right .bus_number {
+    font-size: calc(100vw * (16 / 1400));
+  }
+  .right .train_box.green {
+    width: calc(100vw * (24 / 1400));
+    height: calc(100vw * (24 / 1400));
+    margin-right: calc(100vw * (12 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+    padding: calc(100vw * (4 / 1400)) 0;
+  }
+  .right .train_box.brown {
+    width: calc(100vw * (24 / 1400));
+    height: calc(100vw * (24 / 1400));
+    margin-right: calc(100vw * (12 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+    padding: calc(100vw * (4 / 1400)) 0;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 900px) {
+  .map_section {
+    width: calc(100vw * (378 / 428));
+    margin: 0 auto calc(100vw * (150 / 428));
+  }
+  .map_section .title {
+    font-size: calc(100vw * (20 / 428));
+  }
+  .map_section .map_img {
+    height: calc(100vw * (235 / 428));
+    margin-top: calc(100vw * (55 / 428));
+  }
+  .map_section .map_img img {
+    object-fit: cover;
+  }
+  .map_section .location {
+    margin-top: calc(100vw * (40 / 428));
+    padding-bottom: calc(100vw * (16 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+  .map_section .map_icon {
+    width: calc(100vw * (20 / 428));
+    height: calc(100vw * (20 / 428));
+    margin-right: calc(100vw * (5 / 428));
+  }
+  .map_section .traffic_list_wrap {
+    margin-top: calc(100vw * (34 / 428));
+  }
+  .map_section .traffic_list {
+    flex-direction: column;
+  }
+  .map_section .traffic_list:not(:last-child) {
+    margin-bottom: calc(100vw * (50 / 428));
+  }
+  .traffic_list .traffic_text {
+    min-width: calc(100vw * (130 / 428));
+    margin-bottom: calc(100vw * (13 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+  .traffic_list .traffic_icon {
+    width: calc(100vw * (26 / 428));
+    height: calc(100vw * (26 / 428));
+    margin-right: 5px;
+  }
+  .traffic_list .right {
+    font-size: calc(100vw * (14 / 428));
+    margin-bottom: calc(100vw * (18 / 428));
+    line-height: 160%;
+  }
+
+  .traffic_list:nth-child(2) .right{
+    align-items: flex-start;
+  }
+  
+  .right .bus_box {
+    padding: calc(100vw * (4 / 428)) calc(100vw * (10 / 428));
+    margin-right: calc(100vw * (8 / 428));
+    font-size: calc(100vw * (12 / 428));
+  }
+  .right .bus_number {
+    width: calc(100vw * (325 / 428));
+    font-size: calc(100vw * (14 / 428));
+    line-height: 160%;
+  }
+  .right .train_box.green {
+    width: calc(100vw * (24 / 428));
+    height: calc(100vw * (24 / 428));
+    margin-right: calc(100vw * (12 / 428));
+    font-size: calc(100vw * (14 / 428));
+    padding: calc(100vw * (4 / 428)) 0;
+  }
+  .right .train_box.brown {
+    width: calc(100vw * (24 / 428));
+    height: calc(100vw * (24 / 428));
+    margin-right: 12px;
+    font-size: calc(100vw * (14 / 428));
+    padding: calc(100vw * (4 / 428)) 0;
+  }
+}

@@ -1,0 +1,397 @@
+/* -------------------- 이벤트 리스트 페이지---------------- */
+.event_section {
+  width: 1320px;
+  margin: 80px auto 150px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #222;
+  line-height: 35px;
+  text-align: center;
+}
+.sub_title {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 0.55em;
+  line-height: 17px;
+  text-align: center;
+}
+
+.event_section .tab_cont_sect .cont_box {
+  padding-top: 0;
+}
+.event_section .tab_cont_sect {
+  margin-top: 70px;
+}
+.event_section .tab_wrap {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #45aaf2;
+}
+
+.event_section .tab_wrap .tab_list {
+  /* flex: 1; */
+  width: 185px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-right: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+.event_section .tab_wrap .tab_list:last-child {
+  border-right: 1px solid #dddddd;
+}
+
+.event_section .tab_wrap .tab_list span {
+  display: block;
+  line-height: 50px;
+  color: #555555;
+}
+
+.event_section .tab_wrap .tab_list.active {
+  position: relative;
+  text-align: center;
+  border: 1px solid #45aaf2;
+  border-bottom: none;
+}
+.event_section .tab_wrap .tab_list.active::after {
+  content: "";
+  width: 183px;
+  height: 2px;
+  background: #fff;
+  left: 0;
+  bottom: -2px;
+  position: absolute;
+}
+
+.event_section .tab_wrap .tab_list.active span {
+  color: #45aaf2;
+}
+
+.event_section .tab_sect {
+  display: none;
+}
+
+.event_section .tab_sect .cont_box {
+  padding: 0px 0 70px;
+}
+
+.event_section .top_date_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.event_section .form_box {
+  flex: 1;
+}
+
+.event_section .form_box:not(:last-child) {
+  margin-right: 20px;
+}
+
+.event_section .none_text {
+  padding: 290px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+  text-align: center;
+}
+.event_section .event_box_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.event_section .event_box {
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+.event_section .banner_wrap {
+  position: relative;
+}
+.event_section .event_box:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.event_section .event_box .banner {
+  width: 426px;
+  height: 190px;
+}
+.event_section .event_box .text_wrap {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.event_section .event_box .coupon_name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.event_section .event_box .coupon_content {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.event_section .event_box .date {
+  margin: 10px 0 5px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #888;
+}
+.event_section .event_box .name_wrap {
+  display: flex;
+}
+.event_section .event_box .category {
+  padding: 3px 5px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.event_section .event_box .category.rental {
+  border: 1px solid #45aaf2;
+  color: #45aaf2;
+}
+.event_section .event_box .category.ticket {
+  border: 1px solid #17ce17;
+  color: #17ce17;
+}
+.event_section .event_box .category.hotel {
+  border: 1px solid #ff9d00;
+  color: #ff9d00;
+}
+.event_section .event_box .event_name {
+  width: 350px;
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 이벤트 상세 페이지 */
+.event_detail_section {
+  width: 1320px;
+  margin: 80px auto 150px;
+}
+.event_detail_section .print_icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.event_detail_section .event_img {
+  width: 100%;
+  height: 2000px;
+  margin-top: 15px;
+  margin-bottom: 150px;
+  background: #f7f7f7;
+}
+
+@media screen and (max-width: 1400px) {
+  /* -------------------- 이벤트 리스트 페이지---------------- */
+  .event_section {
+    width: calc(100vw * (1320 / 1400));
+    margin: calc(100vw * (80 / 1400)) auto calc(100vw* (150/1400));
+  }
+  .title {
+    font-size: calc(100vw * (28 / 1400));
+  }
+  .sub_title {
+    margin-top: calc(100vw * (7 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .event_section .tab_cont_sect {
+    margin-top: calc(100vw * (70 / 1400));
+  }
+  .event_section .tab_wrap .tab_list {
+    width: calc(100vw * (185 / 1400));
+    height: auto;
+  }
+
+  .event_section .tab_sect .cont_box {
+    padding: 0px 0 calc(100vw * (70 / 1400));
+  }
+
+  .event_section .form_box:not(:last-child) {
+    margin-right: calc(100vw * (20 / 1400));
+  }
+
+  .event_section .none_text {
+    padding: calc(100vw * (290 / 1400)) 0;
+    font-size: calc(100vw * (16 / 1400));
+  }
+  .event_section .event_box_wrap {
+    padding-top: calc(100vw * (30 / 1400));
+  }
+  .event_section .event_box {
+    margin-bottom: calc(100vw * (80 / 1400));
+  }
+  .event_section .event_box:not(:nth-child(3n)) {
+    margin-right: calc(100vw * (20 / 1400));
+  }
+  .event_section .event_box .banner {
+    width: calc(100vw * (426 / 1400));
+    height: calc(100vw * (190 / 1400));
+  }
+  .event_section .event_box .text_wrap {
+    top: 50%;
+    left: calc(100vw * (30 / 1400));
+  }
+  .event_section .event_box .coupon_name {
+    font-size: calc(100vw * (18 / 1400));
+  }
+  .event_section .event_box .coupon_content {
+    margin-top: calc(100vw * (12 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+  .event_section .event_box .date {
+    margin: calc(100vw * (10 / 1400)) 0 calc(100vw * (5 / 1400));
+    font-size: calc(100vw * (12 / 1400));
+  }
+  .event_section .event_box .category {
+    padding: calc(100vw * (3 / 1400)) calc(100vw * (5 / 1400));
+    font-size: calc(100vw * (12 / 1400));
+  }
+  .event_section .event_box .event_name {
+    width: calc(100vw * (350 / 1400));
+    margin-left: calc(100vw * (8 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  /* 이벤트 상세 페이지 */
+  .event_detail_section {
+    width: calc(100vw * (1320 / 1400));
+    margin: calc(100vw * (80 / 1400)) auto calc(100vw* (150/1400));
+  }
+  .event_detail_section .print_icon {
+    width: calc(100vw * (26 / 1400));
+    height: calc(100vw * (26 / 1400));
+  }
+  .event_detail_section .event_img {
+    width: 100%;
+    height: calc(100vw * (2000 / 1400));
+    margin-top: calc(100vw * (15 / 1400));
+    margin-bottom: calc(100vw * (150 / 1400));
+  }
+}
+@media screen and (max-width: 900px) {
+  /* -------------------- 이벤트 리스트 페이지---------------- */
+  .event_section {
+    width: 100%;
+    margin: 0 auto calc(100vw* (100/428));
+  }
+  .title {
+    font-size: calc(100vw * (20 / 428));
+  }
+  .sub_title {
+    margin-top: calc(100vw * (7 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .event_section .tab_cont_sect {
+    margin-top: calc(100vw * (55 / 428));
+  }
+  .event_section .tab_wrap {
+    border-bottom: 1px solid #ececec;
+    padding: 0 calc(100vw * (30 / 428));
+    height: calc(100vw* (28/428));
+    /* overflow-x: auto; */
+  }
+  .event_section .tab_wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .event_section .tab_wrap .tab_list {
+    flex-shrink: 0;
+    width: auto;
+    height: calc(100vw* (30/428));
+    border: none;
+    margin-right: calc(100vw * (23 / 428));
+  }
+  .event_section .tab_wrap .tab_list:last-child {
+    border-right: none;
+  }
+  .event_section .tab_wrap .tab_list.active {
+    border: none;
+    border-bottom: 2px solid #45aaf2;
+  }
+  .event_section .tab_wrap .tab_list span{
+    line-height: 1;
+    font-size: calc(100vw* (16/428));
+  }
+  .event_section .tab_wrap .tab_list.active::after{
+    display: none;
+  }
+  .event_section .tab_sect .cont_box {
+    padding: 0px 0 calc(100vw * (70 / 428));
+  }
+
+  .event_section .form_box:not(:last-child) {
+    margin-right: calc(100vw * (20 / 428));
+  }
+
+  .event_section .none_text {
+    padding: calc(100vw * (290 / 428)) 0;
+    font-size: calc(100vw * (16 / 428));
+  }
+  .event_section .event_box_wrap {
+    width: calc(100vw * (378 / 428));
+    margin: 0 auto;
+    padding-top: calc(100vw * (30 / 428));
+  }
+  .event_section .event_box {
+    margin-bottom: calc(100vw * (56 / 428));
+  }
+  .event_section .event_box:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .event_section .event_box .banner {
+    width: 100%;
+    height: calc(100vw * (190 / 428));
+  }
+  .event_section .event_box .text_wrap {
+    top: 50%;
+    left: calc(100vw * (30 / 428));
+  }
+  .event_section .event_box .coupon_name {
+    font-size: calc(100vw * (18 / 428));
+  }
+  .event_section .event_box .coupon_content {
+    margin-top: calc(100vw * (12 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+  .event_section .event_box .date {
+    margin: calc(100vw * (10 / 428)) 0 calc(100vw * (5 / 428));
+    font-size: calc(100vw * (12 / 428));
+  }
+  .event_section .event_box .category {
+    padding: calc(100vw * (3 / 428)) calc(100vw * (5 / 428));
+    font-size: calc(100vw * (12 / 428));
+  }
+  .event_section .event_box .event_name {
+    width: calc(100vw * (306 / 428));
+    margin-left: calc(100vw * (8 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  /* 이벤트 상세 페이지 */
+  .event_detail_section {
+    width: calc(100vw * (378 / 428));
+    margin: 0 auto;
+  }
+  .event_detail_section .print_icon {
+    width: calc(100vw * (26 / 428));
+    height: calc(100vw * (26 / 428));
+  }
+  .event_detail_section .event_img {
+    width: 100%;
+    height: calc(100vw * (2000 / 428));
+    margin-top: calc(100vw * (15 / 428));
+    margin-bottom: calc(100vw * (80 / 428));
+  }
+}

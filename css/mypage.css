@@ -1,0 +1,2987 @@
+@charset "utf-8";
+.inner {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.button_group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.button_group .btn{
+  background:#7dc3f6;
+  border-radius: 5px;
+  width: 135px;
+  height: 45px;
+}
+
+.button_group .btn.outline{
+  background:#fff;
+  border:1px solid #45aaf2;
+  margin-right: 10px;
+  color: #45aaf2;
+}
+
+/* 메인 - 프로필 */
+
+.mypage .mypage_profil {
+  padding: 90px 0 45px;
+}
+
+.mypage .profil_container {
+  width: 100%;
+  height: 180px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  padding-left: 69px;
+  display: flex;
+  align-items: center;
+}
+
+.mypage .my_profil {
+  display: flex;
+  align-items: center;
+  margin-right: 177px;
+}
+
+.mypage .profil_box {
+  width: 96px;
+  height: 96px;
+  background: #fff;
+  border-radius: 100%;
+  margin-right: 17px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my_profil p,
+.my_profil span {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.mypage .profil_img {
+  width: 61px;
+  height: 31px;
+}
+
+.mypage .camera_file label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../img/mypage/profile_camera.svg") center center / 30px no-repeat;
+  cursor: pointer;
+}
+
+s .mypage .camera_file input {
+  display: none;
+}
+
+.mypage .camera_file .camera_img {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.mypage .profil_list {
+  display: flex;
+  align-items: center;
+}
+
+.mypage .profil_list .list_cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mypage .profil_list .list_cont:nth-child(2) {
+  margin: 0 233px;
+}
+
+.mypage .profil_list .list_icon {
+  width: 30px;
+  height: 30px;
+}
+
+.mypage .list_cont p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 7px 0 13px;
+}
+
+.mypage .list_cont span {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+/* 메인 - 컨텐츠 */
+.mypage .my_main_content {
+  padding-bottom: 150px;
+}
+
+.mypage .inner_container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mypage .left_nav {
+  width: 210px;
+}
+
+.mypage .left_nav .list_title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.mypage .left_nav > ul:first-child {
+  margin-bottom: 50px;
+}
+
+.mypage .left_nav > ul li p,
+.mypage .left_nav > ul li a{
+  font-size: 15px;
+  font-weight: 300;
+  color: #555;
+}
+
+.mypage .left_nav .right_arrow {
+  display: none;
+}
+
+.mypage .left_nav > ul li a.active p,
+.mypage .left_nav > ul li a.active{
+  color: #222;
+}
+
+.mypage .left_nav > ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.mypage .right_content {
+  width: 1110px;
+}
+
+.mypage .recent_trip {
+  margin-bottom: 60px;
+}
+
+.mypage .list_title span {
+  color: #45aaf2;
+}
+
+.mypage .history_list {
+  border-top: 1px solid #222;
+}
+
+.mypage .head_list {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: 55px;
+  border-bottom: 1px solid #efefef;
+  text-align: center;
+}
+
+.mypage .head_list li {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222;
+}
+
+/* 메인 리스트 */
+.mypage .recent_trip .head_list li,
+.mypage .recent_trip .body_list li {
+  width: 511px;
+}
+
+.mypage .body_list li{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.mypage .recent_trip .body_list_wrap {
+  min-height: 265px;
+}
+
+.mypage .recent_trip .head_list li:not(:nth-child(3)),
+.mypage .recent_trip .body_list li:not(:nth-child(3)) {
+  width: 100px;
+}
+
+/* 예약 리스트 */
+.mypage .reservation_list {
+  display: block;
+}
+
+.mypage .reservation_list .head_list li,
+.mypage .reservation_list .body_list li {
+  width: 511px;
+}
+
+.mypage .reservation_list .head_list li:not(:nth-child(3)),
+.mypage .reservation_list .body_list li:not(:nth-child(3)) {
+  width: 100px;
+}
+
+/* 취소 리스트 */
+.mypage .cancel_list_wrap .head_list li,
+.mypage .cancel_list_wrap .body_list li {
+  width: 511px;
+}
+
+.mypage .cancel_list_wrap .head_list li:not(:nth-child(3)),
+.mypage .cancel_list_wrap .body_list li:not(:nth-child(3)) {
+  width: 100px;
+}
+
+/* 취소 리스트 */
+.mypage .modal_tabcon .head_list li:nth-child(1){
+  width: 130px;
+}
+
+.mypage .modal_tabcon .head_list li:nth-child(3),
+.mypage .modal_tabcon .body_list li:nth-child(3){
+  width: 550px;
+}
+
+.mypage .modal_tabcon .head_list li:nth-child(2),
+.mypage .modal_tabcon .body_list li:nth-child(2),
+.mypage .modal_tabcon .head_list li:nth-child(4),
+.mypage .modal_tabcon .body_list li:nth-child(4) {
+  width: 150px;
+}
+
+/* 후기 리스트 */
+.mypage .review_list .body_list .pc_layout {
+  display: block;
+}
+
+.mypage .review_list .body_list .moblie_layout {
+  display: none;
+}
+
+.mypage .review_list .head_list li,
+.mypage .review_list .body_list li {
+  width: 561px;
+}
+
+.mypage .review_list .head_list li:not(:nth-child(4)),
+.mypage .review_list .body_list li:not(:nth-child(5)) {
+  width: 110px;
+  text-align: center;
+}
+
+.mypage .body_list_wrap {
+  min-height: 405px;
+}
+
+/* list - border */
+.mypage .recent_trip .body_list:not(:nth-child(5)) {
+  border-bottom: 1px solid #efefef;
+}
+
+.mypage .review_list .body_list:not(:nth-child(10)),
+.mypage .reservation_list .body_list:not(:nth-child(10)),
+.mypage .cancel_list_wrap .body_list:not(:nth-child(10)) {
+  border-bottom: 1px solid #efefef;
+}
+
+/* 1:1 문의내역 리스트 */
+.mypage.qa_page .qa_list_tit .num,
+.mypage.qa_page .qa_list_area .num {
+  width: 130px;
+}
+.mypage.qa_page .qa_list_tit .tit,
+.mypage.qa_page .qa_list_area .list_tit_wrap {
+  width: 591px;
+}
+.mypage.qa_page .qa_list_area .writer,
+.mypage.qa_page .qa_list_area .date,
+.mypage.qa_page .qa_list_area .answer {
+  width: 130px;
+}
+.mypage.qa_page .qa_btn_area {
+  margin-top: 13px;
+}
+/* 결재내역 모달 리스트 */
+
+.mypage .modal_content .body_list li {
+  width: 550px;
+}
+
+.mypage .modal_content .body_list li:not(:nth-child(3)) {
+  width: 130px;
+}
+
+.mypage .modal_content .body_list li:nth-child(2),
+.mypage .modal_content .body_list li:nth-child(4) {
+  width: 150px;
+}
+
+.mypage .body_list_wrap {
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  text-align: center;
+  /* display:flex; */
+}
+
+.mypage .body_list {
+  display: flex;
+  align-items: center;
+}
+
+.mypage .review_btn_wrap {
+  width: 100%;
+}
+
+.mypage .review_btn_wrap span{
+  font-size: 14px;
+}
+
+.mypage .body_list a {
+  display: flex;
+  align-items: center;
+  z-index: 9;
+  height: 53px;
+  text-align: center;
+}
+
+.mypage .body_list .subject {
+  text-align: left;
+  padding: 0 20px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mypage .body_list li {
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+}
+
+.mypage .body_list .none_text {
+  padding-top: 120px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+}
+
+.mypage .trip_img_box {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+.mypage .trip_img_list {
+  width: 356px;
+  margin-bottom: 70px;
+}
+
+.mypage .trip_img_list:not(:nth-child(3n)) {
+  margin-right: 21px;
+}
+
+.mypage .trip_img_box .trip_img {
+  background: #ddd;
+  width: 100%;
+  height: 213px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.mypage .trip_img_box span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #888;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.mypage .trip_img_box p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.mypage .trip_text_box h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.mypage .trip_text_box p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #444;
+  margin-bottom: 5px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mypage .trip_text_box span {
+  font-size: 14px;
+  font-weight: 300;
+  /* color: #444; */
+}
+
+.mypage .trip_text_box .price span {
+  display: inline-block;
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+.mypage .trip_text_box .price {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #222;
+}
+
+.mypage .reservation_list .body_list_wrap {
+  min-height: 405px;
+}
+
+.mypage .reservation_list .body_list:last-child {
+  border-bottom: none;
+}
+
+.review_btn {
+  width: 75px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #45aaf2;
+  color: #45aaf2;
+  z-index: 10;
+}
+
+.review_btn:disabled {
+  border-color: #ddd;
+  background: #f8f9fa;
+  color: #888;
+}
+
+/* 결제자정보 */
+.mypage .payper_wrap {
+  margin-bottom: 60px;
+}
+
+.mypage .payper_wrap .c_booker_box > ul {
+  justify-content: unset;
+}
+
+.mypage .payper_wrap .c_booker_box input {
+  width: 240px;
+}
+
+.mypage .payper_input {
+  width: 290px;
+  height: 50px;
+  padding: 0 33px 0 0;
+  border: 1px solid #45aaf2;
+  border-radius: 5px;
+  text-align: right;
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.mypage .payper_input p {
+  position: absolute;
+  right: 15px;
+  top: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  content: "";
+}
+
+.mypage .payper_input input {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.mypage .payper_input input::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+  color: #222;
+}
+
+.mypage .method_wrap {
+  margin-bottom: 90px;
+}
+
+.mypage .payment_btn {
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 0;
+}
+
+.mypage .method_wrap .payment_btn .btn {
+  width: 293px;
+  height: 60px;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+  background: #fff;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mypage .method_wrap .payment_btn .pay_icon {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+}
+
+.mypage .method_wrap .payment_btn .btn p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mypage .method_wrap .payment_btn .pay_icon.active {
+  filter: invert(56%) sepia(75%) saturate(1536%) hue-rotate(180deg) brightness(102%) contrast(90%);
+}
+
+.mypage .method_wrap .payment_btn .btn.active {
+  background-color: #e5f3fd;
+  border-color: #45aaf2;
+  color: #45aaf2;
+}
+
+.mypage .method_wrap .payment_btn .btn.active img{
+  filter: invert(60%) sepia(27%) saturate(2542%) hue-rotate(179deg) brightness(100%) contrast(91%);
+}
+
+.mypage .bank_book_box {
+  display: none;
+}
+
+.mypage .bank_container {
+  height: 144px;
+  margin-top: 20px;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.mypage .bank_name p,
+.mypage .bank_select p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.mypage .bank_name input {
+  width: 420px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 0 15px;
+  border: 1px solid #acacac;
+  background: #fff;
+}
+
+.mypage .select_wrap {
+  width: 420px;
+}
+
+.mypage .modal_bg .pay_modal {
+  width: 1100px;
+  height: auto;
+  background: #fff;
+  padding: 40px 50px 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mypage .pop_section > .list_title {
+  margin-bottom: 50px;
+}
+
+.mypage .modal_backbtn {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.mypage .modal_tab {
+  border-bottom: 1px solid #45aaf2;
+  display: flex;
+  align-items: center;
+}
+
+.mypage .modal_tab .tab {
+  width: 183px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  color: #555;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.mypage .modal_tab .tab.active {
+  color: #45aaf2;
+  border-color: #45aaf2;
+  position: relative;
+}
+
+.mypage .modal_tab .tab.active::before {
+  position: absolute;
+  content: "";
+  width: 180px;
+  height: 10px;
+  left: 0;
+  bottom: -5px;
+  background: #fff;
+}
+
+.mypage .modal_tab .tab:nth-child(1).active::before{
+  width: 181px;
+}
+
+.mypage .modal_tabcon {
+  padding-top: 30px;
+  margin: auto;
+  width: 980px;
+  display: none;
+}
+
+.mypage .m_mobile_tabcon {
+  display: none;
+}
+
+.mypage .modal_content .list_title {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.mypage .modal_content .body_list {
+  border-bottom: 1px solid #efefef;
+}
+
+.mypage .modal_content .body_list_wrap {
+  min-height: auto;
+  overflow-y: scroll;
+  height: 320px;
+}
+
+/* .mypage .m_mobile_tabcon .m_tabcon_wrap::-webkit-scrollbar {
+  display: none;
+} */
+
+.mypage .modal_content .body_list_wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.mypage .review_content {
+  padding: 80px 0 150px;
+}
+
+.mypage .review_content .title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.mypage .review_container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.mypage .review_area {
+  border-top: 1px solid #ccc;
+  margin: 70px 0 60px;
+}
+
+.mypage .review_area > ul,
+.mypage .review_zone > ul {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  height: 65px;
+}
+
+.mypage .review_zone {
+  border-top: 1px solid #ccc;
+}
+
+.mypage .review_area .r_area_title,
+.mypage .review_zone .r_area_title,
+.mypage .review_area .r_star_title {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  background: #f7f7f7;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mypage .review_area .r_area_text {
+  display: flex;
+  align-items: center;
+  width: 420px;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.mypage .review_area .r_star_text {
+  display: flex;
+  align-items: center;
+  width: 1040px;
+  padding: 0 20px;
+}
+
+/* .mypage .rating .rate_radio {
+  position: relative;
+  display: inline-block;
+  z-index: 20;
+  opacity: 0.001;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  cursor: pointer;
+  vertical-align: top;
+  display: none;
+} */
+
+.mypage .rating{
+  display: flex;
+}
+
+.mypage .rating .rate_radio{
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/mypage/Star.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  cursor: pointer;
+}
+
+.mypage .rating .rate_radio.active {
+  background-image: url("../img/mypage/Star1.svg");
+  background-size: 22px 22px;
+}
+
+.mypage .r_area_input input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: #888;
+}
+
+.mypage .r_area_input input {
+  width: 1010px;
+  height: 45px;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+  padding: 0 15px;
+  color: #222;
+  margin-left: 15px;
+}
+
+.mypage .textarea span {
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+}
+
+.mypage .review_zone {
+  width: 1240px;
+}
+
+.mypage .review_zone .textarea {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.mypage .review_zone .r_textarea_title {
+  width: 200px;
+  min-height: 320px;
+  background: #f7f7f7;
+  padding: 28px 20px;
+}
+
+.mypage .review_zone .r_area_title {
+  font-size: 15px;
+}
+
+.mypage .review_zone .review_h_title {
+  height: 75px;
+}
+
+.mypage .review_zone .r_textarea_zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  padding-left: 15px;
+}
+
+.mypage .review_zone .r_textarea_zone textarea {
+  width: 1010px;
+  min-height: 300px;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.mypage .review_zone .r_textarea_zone textarea::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: #888;
+}
+
+.mypage .review_zone .r_textarea_zone textarea::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.mypage .review_zone .r_textarea_zone textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mypage .review_zone .r_textarea_zone textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 999px;
+  background-clip: padding-box;
+  border-top: 7px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.mypage .ok_btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.mypage .ok_btn .btn {
+  width: 135px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+/* term */
+.mypage .terms_wrap {
+  width: 940px;
+}
+
+.mypage .term_box legend {
+  display: none;
+}
+
+.mypage .term_box > ul li {
+  position: relative;
+}
+
+.mypage .term_box > ul li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.mypage .term_box .all_click {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 14px;
+  margin-bottom: 13px;
+}
+
+.mypage .term_box .all_click input[type="checkbox"] + label {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mypage .term_box input {
+  display: none;
+}
+
+.mypage .term_box input[type="checkbox"] + label {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 4px 38px;
+  background: url("../img/icon/term_off.svg") 10px center / 18px no-repeat;
+  cursor: pointer;
+}
+
+.mypage .term_box input[type="checkbox"]:checked + label {
+  background: url("../img/icon/term_on.svg") 10px center / 18px no-repeat;
+}
+
+.mypage .term_box .term_arrow {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/icon/term_arrow.svg") center center / 24px no-repeat;
+  transition: transform 0.3s;
+}
+
+.mypage .term_box .term_arrow.active {
+  transform: rotate(-180deg);
+}
+
+.mypage .term_box .term_depth {
+  display: none;
+  width: 100%;
+  height: 114px;
+  padding: 13px 5px 13px 15px;
+  margin-top: 12px;
+  background-color: #f7f7f7;
+}
+
+.mypage .term_box .term_depth.active {
+  display: block;
+}
+
+.mypage .term_box .term_depth pre {
+  width: 100%;
+  height: 88px;
+  font-size: 14px;
+  color: #555;
+  line-height: 160%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.mypage .term_box .term_depth pre::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+.mypage .term_box .term_depth pre::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.mypage .term_box .term_depth pre::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* // 탈퇴 페이지 */
+
+.mypage .leave {
+  width: 100%;
+}
+
+.mypage .leave .list_title {
+  margin-bottom: 60px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #222;
+}
+
+.mypage .leave .img_box {
+  width: 39px;
+  height: 39px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.mypage .leave strong {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  color: #45aaf2;
+  text-align: center;
+}
+
+.mypage .leave p {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  line-height: 140%;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.mypage .leave .select_wrap {
+  width: 505px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.mypage .leave .select_wrap .select_title {
+  font-weight: 300;
+}
+
+.mypage .leave .select_wrap .select_list {
+  width: 505px;
+  max-height: 220px;
+  left: -1px;
+  border: 1px solid #acacac;
+}
+
+.mypage .leave .select_wrap .select_list .list {
+  font-weight: 300;
+}
+
+.mypage .leave textarea {
+  display: none;
+  width: 505px;
+  height: 150px;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.3;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+  resize: none;
+}
+
+.mypage .leave textarea.active {
+  display: block;
+}
+
+.mypage .leave textarea::placeholder {
+  color: #888;
+}
+
+.mypage .leave textarea::-webkit-scrollbar {
+  width: 2px;
+  background-color: transparent;
+}
+
+.mypage .leave textarea::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+.mypage .leave textarea::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.mypage .leave .btn_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #efefef;
+}
+
+.mypage .leave .btn_box button {
+  width: 190px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.mypage .leave .btn_box .cancel {
+  font-weight: 400;
+  border: 1px solid #45aaf2;
+  color: #45aaf2;
+}
+
+.mypage .leave .btn_box .done {
+  margin-left: 10px;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #7dc3f6;
+  background-color: #7dc3f6;
+}
+
+/* 내가 만드는 여행 */
+.my_makeTrip_page .empty_box {
+  padding: 150px 0 200px;
+  font-size: 16px;
+  color: #555;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #efefef;
+  text-align: center;
+  display: none;
+}
+
+.c_payment_wrap .c_payment_box .m_reservation_btn.btn{
+  background: #7DC3F6;
+  color: #fff;
+}
+
+.m_pay_canlebtn {
+  display: none;
+}
+
+/* 리스트 없을때 텍스트 */
+.no_list {
+  padding-top: 185px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+}
+
+/* 테블릿------------------------------- */
+@media screen and (max-width: 1400px) {
+  .inner {
+    width: calc(100vw * (1320 / 1400));
+  }
+
+  .button_group{
+    margin-top: calc(100vw * (60 / 1400));
+  }
+  
+  .button_group .btn{
+    border-radius: calc(100vw * (5 / 1400));
+    width: calc(100vw * (135 / 1400));
+    height: calc(100vw * (45 / 1400));
+  }
+  
+  .button_group .btn.outline{
+    margin-right: calc(100vw * (10 / 1400));
+  }
+
+  /* 메인 - 프로필 */
+  .mypage .mypage_profil {
+    padding: calc(100vw * (90 / 1400)) 0 calc(100vw * (45 / 1400));
+  }
+
+  .mypage .profil_container {
+    height: calc(100vw * (180 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+    padding-left: calc(100vw * (69 / 1400));
+  }
+
+  .mypage .my_profil {
+    margin-right: calc(100vw * (177 / 1400));
+  }
+
+  .mypage .profil_box {
+    width: calc(100vw * (96 / 1400));
+    height: calc(100vw * (96 / 1400));
+    margin-right: calc(100vw * (17 / 1400));
+  }
+
+  .my_profil p,
+  .my_profil span {
+    font-size: calc(100vw * (24 / 1400));
+  }
+
+  .mypage .profil_img {
+    width: calc(100vw * (61 / 1400));
+    height: calc(100vw * (31 / 1400));
+  }
+
+  .mypage .camera_file label {
+    width: calc(100vw * (30 / 1400));
+    height: calc(100vw * (30 / 1400));
+    background: url("../img/mypage/profile_camera.svg") center center / calc(100vw * (30 / 1400)) no-repeat;
+  }
+
+  .mypage .camera_file .camera_img {
+    width: calc(100vw * (14 / 1400));
+    height: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .profil_list .list_cont:nth-child(2) {
+    margin: 0 calc(100vw * (233 / 1400));
+  }
+
+  .mypage .profil_list .list_icon {
+    width: calc(100vw * (30 / 1400));
+    height: calc(100vw * (30 / 1400));
+  }
+
+  .mypage .list_cont p {
+    font-size: calc(100vw * (16 / 1400));
+    margin: calc(100vw * (7 / 1400)) 0 calc(100vw * (13 / 1400));
+  }
+
+  .mypage .list_cont span {
+    font-size: calc(100vw * (26 / 1400));
+  }
+
+  /* 메인 - 컨텐츠 */
+  .mypage .my_main_content {
+    padding-bottom: calc(100vw * (150 / 1400));
+  }
+
+  .mypage .left_nav {
+    width: calc(100vw * (210 / 1400));
+  }
+
+  .mypage .left_nav .list_title {
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .mypage .left_nav > ul:first-child {
+    margin-bottom: calc(100vw * (50 / 1400));
+  }
+
+  .mypage .left_nav > ul li:not(:last-child) {
+    margin-bottom: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .left_nav > ul li p,
+  .mypage .left_nav > ul li a{
+    font-size: calc(100vw* (15/1400));
+  }
+
+  .mypage .right_content {
+    width: calc(100vw * (1110 / 1400));
+  }
+
+  .mypage .recent_trip {
+    margin-bottom: calc(100vw * (60 / 1400));
+  }
+
+  .mypage .head_list {
+    height: calc(100vw * (55 / 1400));
+  }
+
+  .mypage .head_list li {
+    font-size: calc(100vw * (15 / 1400));
+  }
+
+  /* 메인 리스트 */
+  .mypage .recent_trip .head_list li,
+  .mypage .recent_trip .body_list li {
+    width: calc(100vw * (511 / 1400));
+  }
+
+  .mypage .recent_trip .body_list_wrap {
+    min-height: calc(100vw * (265 / 1400));
+  }
+
+  .mypage .recent_trip .head_list li:not(:nth-child(3)),
+  .mypage .recent_trip .body_list li:not(:nth-child(3)) {
+    width: calc(100vw * (100 / 1400));
+  }
+
+  /* 예약 리스트 */
+  .mypage .reservation_list .head_list li,
+  .mypage .reservation_list .body_list li {
+    width: calc(100vw * (511 / 1400));
+  }
+
+  .mypage .reservation_list .head_list li:not(:nth-child(3)),
+  .mypage .reservation_list .body_list li:not(:nth-child(3)) {
+    width: calc(100vw * (100 / 1400));
+  }
+
+  /* 취소 리스트 */
+  .mypage .cancel_list_wrap .head_list li,
+  .mypage .cancel_list_wrap .body_list li {
+    width: calc(100vw * (511 / 1400));
+  }
+
+  .mypage .cancel_list_wrap .head_list li:not(:nth-child(3)),
+  .mypage .cancel_list_wrap .body_list li:not(:nth-child(3)) {
+    width: calc(100vw * (100 / 1400));
+  }
+
+  /* 취소 리스트 */
+  .mypage .modal_tabcon .head_list li:nth-child(1){
+    width: calc(100vw * (130 / 1400));
+  }
+
+  .mypage .modal_tabcon .head_list li:nth-child(3),
+  .mypage .modal_tabcon .body_list li:nth-child(3){
+    width: calc(100vw * (550 / 1400));
+  }
+
+  .mypage .modal_tabcon .head_list li:nth-child(2),
+  .mypage .modal_tabcon .body_list li:nth-child(2),
+  .mypage .modal_tabcon .head_list li:nth-child(4),
+  .mypage .modal_tabcon .body_list li:nth-child(4) {
+    width: calc(100vw * (150 / 1400));
+  }
+
+  /* 후기 리스트 */
+  .mypage .review_list .head_list li,
+  .mypage .review_list .body_list li {
+    width: calc(100vw * (561 / 1400));
+  }
+
+  .mypage .review_list .head_list li:not(:nth-child(4)),
+  .mypage .review_list .body_list li:not(:nth-child(5)) {
+    width: calc(100vw * (110 / 1400));
+  }
+
+  .mypage .body_list_wrap {
+    min-height: calc(100vw * (405 / 1400));
+  }
+
+  /* 1:1 문의내역 리스트 */
+  .mypage.qa_page .qa_list_tit .num,
+  .mypage.qa_page .qa_list_area .num {
+    width: calc(100vw * (130 / 1400));
+  }
+  .mypage.qa_page .qa_list_tit .tit,
+  .mypage.qa_page .qa_list_area .list_tit_wrap {
+    width: calc(100vw * (591 / 1400));
+  }
+  .mypage.qa_page .qa_list_area .writer,
+  .mypage.qa_page .qa_list_area .date,
+  .mypage.qa_page .qa_list_area .answer {
+    width: calc(100vw * (130 / 1400));
+  }
+  .mypage.qa_page .qa_btn_area {
+    margin-top: calc(100vw * (13 / 1400));
+  }
+
+  /* 결재내역 모달 리스트 */
+  .mypage .modal_content .body_list li {
+    width: calc(100vw * (480 / 1400));
+  }
+
+  .mypage .modal_content .body_list li:not(:nth-child(3)) {
+    width: calc(100vw * (130 / 1400));
+  }
+
+  .mypage .review_btn_wrap span{
+    font-size: calc(100vw* (14/1400));
+  }
+
+  .mypage .body_list a {
+    height: calc(100vw * (53 / 1400));
+  }
+
+  .mypage .body_list .subject {
+    padding: 0 calc(100vw * (20 / 1400));
+  }
+
+  .mypage .body_list li {
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .body_list .none_text {
+    padding-top: calc(100vw * (120 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .mypage .trip_img_box {
+    padding-top: calc(100vw * (25 / 1400));
+  }
+
+  .mypage .trip_img_list {
+    width: calc(100vw * (356 / 1400));
+    margin-bottom: calc(100vw * (70 / 1400));
+  }
+
+  .mypage .trip_img_list:not(:nth-child(3n)) {
+    margin-right: calc(100vw * (21 / 1400));
+  }
+
+  .mypage .trip_img_box .trip_img {
+    height: calc(100vw * (213 / 1400));
+    margin-bottom: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .trip_img_box p {
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .mypage .trip_text_box h3 {
+    font-size: calc(100vw * (16 / 1400));
+    margin-bottom: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .trip_text_box p {
+    font-size: calc(100vw * (14 / 1400));
+    margin-bottom: calc(100vw * (5 / 1400));
+  }
+
+  .mypage .trip_text_box span {
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .trip_text_box .price span {
+    font-size: calc(100vw * (20 / 1400));
+    margin-right: calc(100vw * (3 / 1400));
+  }
+
+  .mypage .trip_text_box .price {
+    margin-top: calc(100vw * (25 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .reservation_list .body_list_wrap {
+    min-height: calc(100vw * (405 / 1400));
+  }
+
+  .review_btn {
+    width: calc(100vw * (75 / 1400));
+    height: calc(100vw * (35 / 1400));
+    font-size: calc(100vw * (13 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+  }
+
+  /* 결제자정보 */
+  .mypage .payper_wrap {
+    margin-bottom: calc(100vw * (60 / 1400));
+  }
+
+  .mypage .payper_wrap .c_booker_box input {
+    width: calc(100vw * (240 / 1400));
+  }
+
+  .mypage .payper_input {
+    width: calc(100vw * (290 / 1400));
+    height: calc(100vw * (50 / 1400));
+    padding: 0 calc(100vw * (33 / 1400)) 0 0;
+    border-radius: calc(100vw * (5 / 1400));
+    margin-bottom: calc(100vw * (7 / 1400));
+  }
+
+  .mypage .payper_input p {
+    right: calc(100vw * (15 / 1400));
+    top: calc(100vw * (16 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .payper_input input::placeholder {
+    font-size: calc(100vw * (20 / 1400));
+  }
+
+  .mypage .method_wrap {
+    margin-bottom: calc(100vw * (90 / 1400));
+  }
+
+  .mypage .payment_btn {
+    padding: calc(100vw * (20 / 1400)) calc(100vw * (20 / 1400)) 0;
+  }
+
+  .mypage .method_wrap .payment_btn .btn {
+    width: calc(100vw * (293 / 1400));
+    height: calc(100vw * (60 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+  }
+
+  .mypage .method_wrap .payment_btn .pay_icon {
+    width: calc(100vw * (34 / 1400));
+    height: calc(100vw * (34 / 1400));
+    margin-right: calc(100vw * (10 / 1400));
+  }
+
+  .mypage .method_wrap .payment_btn .btn p {
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .mypage .bank_container {
+    height: calc(100vw * (144 / 1400));
+    margin-top: calc(100vw * (20 / 1400));
+    padding: 0 calc(100vw * (40 / 1400));
+  }
+
+  .mypage .bank_name p,
+  .mypage .bank_select p {
+    font-size: calc(100vw * (15 / 1400));
+    margin-bottom: calc(100vw * (7 / 1400));
+  }
+
+  .mypage .bank_name input {
+    width: calc(100vw * (420 / 1400));
+    height: calc(100vw * (50 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+    padding: 0 calc(100vw * (15 / 1400));
+  }
+
+  .mypage .select_wrap {
+    width: calc(100vw * (420 / 1400));
+  }
+
+  .mypage .modal_bg .pay_modal {
+    width: calc(100vw * (1100 / 1400));
+    padding: calc(100vw * (40 / 1400)) calc(100vw * (40 / 1400)) calc(100vw * (70 / 1400));
+  }
+
+  .mypage .pop_section > .list_title {
+    margin-bottom: calc(100vw * (50 / 1400));
+  }
+
+  .mypage .modal_backbtn {
+    width: calc(100vw * (32 / 1400));
+    height: calc(100vw * (32 / 1400));
+    top: calc(100vw * (30 / 1400));
+    right: calc(100vw * (30 / 1400));
+  }
+
+  .mypage .modal_tab .tab {
+    width: calc(100vw * (183 / 1400));
+    height: calc(100vw * (50 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .mypage .modal_tab .tab.active::before {
+    color: #45aaf2;
+    width: calc(100vw * (180 / 1400));
+    height: calc(100vw * (10 / 1400));
+    bottom: calc(100vw * (-5 / 1400));
+  }
+
+  .mypage .modal_tab .tab:nth-child(1).active::before{
+    width: calc(100vw* (181/1400));
+  }
+
+  .mypage .modal_tabcon {
+    padding-top: calc(100vw * (30 / 1400));
+    width: calc(100vw * (980 / 1400));
+  }
+
+  .mypage .modal_content .list_title {
+    margin-bottom: calc(100vw * (15 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .mypage .modal_content .body_list_wrap {
+    height: calc(100vw * (320 / 1400));
+  }
+
+  .mypage .review_content {
+    padding: calc(100vw * (80 / 1400)) 0 calc(100vw * (150 / 1400));
+  }
+
+  .mypage .review_content .title {
+    font-size: calc(100vw * (28 / 1400));
+  }
+
+  .mypage .review_container {
+    width: calc(100vw * (1240 / 1400));
+  }
+
+  .mypage .review_area {
+    margin: calc(100vw * (70 / 1400)) 0 calc(100vw * (60 / 1400));
+  }
+
+  .mypage .review_area > ul,
+  .mypage .review_zone > ul {
+    height: calc(100vw * (65 / 1400));
+  }
+
+  .mypage .review_area .r_area_title,
+  .mypage .review_zone .r_area_title,
+  .mypage .review_area .r_star_title {
+    width: calc(100vw * (200 / 1400));
+    padding: 0 calc(100vw * (20 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .review_area .r_area_text {
+    width: calc(100vw * (420 / 1400));
+    padding: 0 calc(100vw * (20 / 1400));
+    font-size: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .review_area .r_star_text {
+    width: calc(100vw * (1040 / 1400));
+    padding: 0 calc(100vw * (20 / 1400));
+  }
+
+  .mypage .rating .rate_radio {
+    width: calc(100vw * (22 / 1400));
+    height: calc(100vw * (22 / 1400));
+  }
+
+  .mypage .rating .rate_radio + label {
+    width: calc(100vw * (22 / 1400));
+    height: calc(100vw * (22 / 1400));
+    background-size: calc(100vw * (22 / 1400)) calc(100vw * (22 / 1400));
+  }
+
+  .mypage .rating .rate_radio:checked + label {
+    background-size: calc(100vw * (22 / 1400)) calc(100vw * (22 / 1400));
+  }
+
+  .mypage .r_area_input input::placeholder {
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .r_area_input input {
+    width: calc(100vw * (1010 / 1400));
+    height: calc(100vw * (45 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+    padding: 0 calc(100vw * (15 / 1400));
+    margin-left: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .textarea span {
+    font-size: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .review_zone {
+    width: calc(100vw * (1240 / 1400));
+  }
+
+  .mypage .review_zone .textarea {
+    min-height: calc(100vw * (320 / 1400));
+  }
+
+  .mypage .review_zone .r_textarea_title {
+    width: calc(100vw * (200 / 1400));
+    min-height: calc(100vw * (320 / 1400));
+    padding: calc(100vw * (28 / 1400)) calc(100vw * (20 / 1400));
+  }
+
+  .mypage .review_zone .r_area_title {
+    font-size: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .review_zone .review_h_title {
+    height: calc(100vw * (75 / 1400));
+  }
+
+  .mypage .review_zone .r_textarea_zone {
+    height: calc(100vw * (320 / 1400));
+    padding-left: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .review_zone .r_textarea_zone textarea {
+    width: calc(100vw * (1010 / 1400));
+    min-height: calc(100vw * (300 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+    padding: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .review_zone .r_textarea_zone textarea::placeholder {
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .mypage .ok_btn {
+    margin-top: calc(100vw * (60 / 1400));
+  }
+
+  .mypage .ok_btn .btn {
+    width: calc(100vw * (135 / 1400));
+    height: calc(100vw * (45 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+  }
+
+  /* term */
+  .mypage .terms_wrap {
+    width: calc(100vw * (940 / 1400));
+  }
+
+  .mypage .term_box > ul li:not(:last-of-type) {
+    margin-bottom: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .term_box .all_click {
+    padding-bottom: calc(100vw * (14 / 1400));
+    margin-bottom: calc(100vw * (13 / 1400));
+  }
+
+  .mypage .term_box .all_click input[type="checkbox"] + label {
+    font-size: calc(100vw * (18 / 1400));
+  }
+
+  .mypage .term_box input[type="checkbox"] + label {
+    font-size: calc(100vw * (16 / 1400));
+    padding: calc(100vw * (4 / 1400)) calc(100vw * (38 / 1400));
+    background: url("../img/icon/term_off.svg") calc(100vw * (10 / 1400)) center / calc(100vw * (18 / 1400)) no-repeat;
+  }
+
+  .mypage .term_box input[type="checkbox"]:checked + label {
+    background: url("../img/icon/term_on.svg") calc(100vw * (10 / 1400)) center / calc(100vw * (18 / 1400)) no-repeat;
+  }
+
+  .mypage .term_box .term_arrow {
+    right: calc(100vw * (10 / 1400));
+    width: calc(100vw * (24 / 1400));
+    height: calc(100vw * (24 / 1400));
+    background: url("../img/icon/term_arrow.svg") center center / calc(100vw * (24 / 1400)) no-repeat;
+  }
+
+  .mypage .term_box .term_depth {
+    height: calc(100vw * (114 / 1400));
+    padding: calc(100vw * (13 / 1400)) calc(100vw * (5 / 1400)) calc(100vw * (13 / 1400)) calc(100vw * (15 / 1400));
+    margin-top: calc(100vw * (12 / 1400));
+  }
+
+  .mypage .term_box .term_depth pre {
+    height: calc(100vw * (88 / 1400));
+    font-size: calc(100vw* (14/1400));
+  }
+
+  .mypage .term_box .term_depth pre::-webkit-scrollbar {
+    width: calc(100vw * (2 / 1400));
+  }
+
+  /* // 탈퇴 페이지 */
+  .mypage .leave .list_title {
+    margin-bottom: calc(100vw * (60 / 1400));
+    padding-bottom: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .leave .img_box {
+    width: calc(100vw * (39 / 1400));
+    height: calc(100vw * (39 / 1400));
+    margin-bottom: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .leave strong {
+    font-size: calc(100vw * (22 / 1400));
+  }
+
+  .mypage .leave p {
+    margin-top: calc(100vw * (25 / 1400));
+    margin-bottom: calc(100vw * (60 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .mypage .leave .select_wrap {
+    width: calc(100vw * (505 / 1400));
+    margin-bottom: calc(100vw * (15 / 1400));
+  }
+
+  .mypage .leave .select_wrap .select_list {
+    width: calc(100vw * (505 / 1400));
+    max-height: calc(100vw * (220 / 1400));
+  }
+
+  .mypage .leave textarea {
+    width: calc(100vw * (505 / 1400));
+    height: calc(100vw * (150 / 1400));
+    padding: calc(100vw * (15 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+  }
+
+  .mypage .leave textarea::-webkit-scrollbar {
+    width: calc(100vw * (2 / 1400));
+  }
+
+  .mypage .leave .btn_box {
+    margin-top: calc(100vw * (100 / 1400));
+    padding-bottom: calc(100vw * (90 / 1400));
+  }
+
+  .mypage .leave .btn_box button {
+    width: calc(100vw * (190 / 1400));
+    height: calc(100vw * (50 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+    border-radius: calc(100vw * (5 / 1400));
+  }
+
+  .mypage .leave .btn_box .done {
+    margin-left: calc(100vw * (10 / 1400));
+  }
+
+  /* 내가 만드는 여행 */
+  .my_makeTrip_page .empty_box {
+    padding: calc(100vw * (150 / 1400)) 0 calc(100vw * (200 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .no_list {
+    padding-top: calc(100vw * (185 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+    color: #555;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 900px) {
+  .mypage .inner_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button_group{
+    margin-top: calc(100vw * (60 / 428));
+  }
+  
+  .button_group .btn{
+    border-radius: calc(100vw * (5 / 428));
+    width: calc(100vw * (135 / 428));
+    height: calc(100vw * (45 / 428));
+  }
+  
+  .button_group .btn.outline{
+    margin-right: calc(100vw * (10 / 428));
+  }
+
+  .right_content {
+    display: none;
+  }
+
+  .mypage.wishlist_page .right_content,
+  .mypage.my_makeTrip_page .right_content {
+    display: block;
+    width: 100%;
+  }
+
+  .inner {
+    width: calc(100vw * (378 / 428));
+    margin: auto;
+  }
+
+  /* 메인 - 프로필 */
+
+  .mypage .mypage_profil {
+    padding: 0 0 calc(100vw * (40 / 428));
+  }
+
+  .mypage .profil_container {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    background: #fff;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mypage .my_profil {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: calc(100vw * (10 / 428));
+    width: 100%;
+    height: calc(100vw * (115 / 428));
+    background: #f7f7f7;
+    border-radius: calc(100vw * (5 / 428));
+    padding: 0 calc(100vw * (25 / 428));
+  }
+
+  .mypage .profil_box {
+    width: calc(100vw * (72 / 428));
+    height: calc(100vw * (72 / 428));
+    background: #fff;
+    border-radius: 100%;
+    margin-right: calc(100vw * (20 / 428));
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .my_profil p,
+  .my_profil span {
+    font-size: calc(100vw * (20 / 428));
+  }
+
+  .mypage .camera_file label {
+    position: absolute;
+    right: calc(100vw * (-10 / 428));
+    bottom: calc(100vw * (-3 / 428));
+    width: calc(100vw * (30 / 428));
+    height: calc(100vw * (30 / 428));
+    background: url("../img/mypage/profile_camera.svg") center center / 30px no-repeat;
+    cursor: pointer;
+  }
+
+  .mypage .camera_file input {
+    display: none;
+  }
+
+  .mypage .camera_file .camera_img {
+    width: calc(100vw * (14 / 428));
+    height: calc(100vw * (14 / 428));
+    display: block;
+  }
+
+  .mypage .profil_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: calc(100vw * (118 / 428));
+    background: #f7f7f7;
+    border-radius: calc(100vw * (5 / 428));
+    padding: 0 calc(100vw * (51 / 428)) 0 calc(100vw * (36 / 428));
+  }
+
+  .mypage .profil_list .list_cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mypage .profil_list .list_cont:nth-child(2) {
+    margin: 0 0;
+  }
+
+  .mypage .profil_list .list_icon {
+    width: calc(100vw * (24 / 428));
+    height: calc(100vw * (24 / 428));
+  }
+
+  .mypage .list_cont p {
+    font-size: calc(100vw * (14 / 428));
+    margin: calc(100vw * (10 / 428)) 0 calc(100vw * (10 / 428));
+  }
+
+  .mypage .list_cont span {
+    font-size: calc(100vw * (20 / 428));
+  }
+
+  /* 메인 - 컨텐츠 */
+  .mypage .my_main_content {
+    padding-bottom: 0;
+  }
+
+  .mypage .left_nav {
+    width: 100%;
+  }
+
+  .mypage .left_nav.no_menu {
+    display: none;
+  }
+
+  .mypage .left_nav .list_title {
+    font-size: calc(100vw * (16 / 428));
+    border-bottom: 1px solid #222;
+    padding: 0 0 calc(100vw * (15 / 428)) calc(100vw * (5 / 428));
+    color: #222;
+    height: auto;
+  }
+
+  .mypage .left_nav > ul:first-child {
+    margin-bottom: calc(100vw * (55 / 428));
+  }
+
+  .mypage .left_nav > ul li a {
+    font-size: calc(100vw * (14 / 428));
+    color: #555;
+    height: calc(100vw * (53 / 428));
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 calc(100vw * (10 / 428));
+  }
+
+  .mypage .left_nav > ul li a p {
+    font-size: calc(100vw * (15 / 428));
+    color: #555;
+  }
+
+  .mypage .left_nav > ul li a .right_arrow {
+    display: block;
+    width: calc(100vw * (24 / 428));
+    height: calc(100vw * (24 / 428));
+  }
+
+  .mypage .left_nav > ul li a.active {
+    color: #222;
+  }
+
+  .mypage .left_nav > ul li:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  /* 예약 리스트 */
+  /* .mypage .reservation_list {
+    display: none;
+  } */
+
+  .mypage .cancel_list_wrap {
+    display: none;
+  }
+
+  /* 후기 리스트 */
+  .mypage.review_page .review_list {
+    margin-top: 0;
+  }
+
+  .mypage .head_list {
+    display: none;
+  }
+
+  .mypage .review_list .body_list .pc_layout {
+    display: none;
+  }
+
+  .mypage .review_list .body_list .moblie_layout {
+    display: block;
+  }
+
+  .mypage .review_list .head_list li:not(:nth-child(4)),
+  .mypage .review_list .body_list li:not(:nth-child(4)) {
+    width: 100%;
+    text-align: left;
+  }
+
+  .mypage .review_list .body_list {
+    padding: calc(100vw * (20 / 428)) 0;
+  }
+
+  .mypage .review_list .body_list li:nth-child(1) {
+    order: 1;
+    font-size: calc(100vw * (14 / 428));
+    color: #444;
+    margin-bottom: calc(100vw * (15 / 428));
+  }
+
+  .mypage .review_list .body_list li:nth-child(2) {
+    order: 5;
+  }
+
+  .mypage .review_list .body_list li:nth-child(3) {
+    order: 6;
+  }
+
+  .mypage .review_list .body_list li:nth-child(4) {
+    order: 7;
+  }
+
+  .mypage .review_list .body_list li:nth-child(5) {
+    order: 4;
+    width: 100%;
+  }
+
+  .mypage .review_list .body_list li:nth-child(6) {
+    order: 2;
+    width: 15%;
+    font-size: calc(100vw * (14 / 428));
+    margin-bottom: calc(100vw * (5 / 428));
+    color: #555;
+  }
+
+  .mypage .review_list .body_list li:nth-child(7) {
+    order: 3;
+    width: 85%;
+    font-size: calc(100vw * (14 / 428));
+    margin-bottom: calc(100vw * (5 / 428));
+    color: #555;
+  }
+
+  .mypage .body_list_wrap {
+    min-height: calc(100vw * (430 / 428));
+  }
+
+  /* 1:1 문의내역 리스트 */
+  .mypage.qa_page .qa_list_tit .tit,
+  .mypage.qa_page .qa_list_area .list_tit_wrap {
+    width: calc(100vw * (240 / 428));
+  }
+
+  .mypage.qa_page .qa_btn_area {
+    margin-top: calc(100vw * (13 / 428));
+  }
+
+  /* list - border */
+  .mypage .recent_trip .body_list:not(:nth-child(5)) {
+    border-bottom: 1px solid #efefef;
+  }
+
+  .mypage .review_list .body_list:not(:nth-child(10)),
+  .mypage .reservation_list .body_list:not(:nth-child(10)),
+  .mypage .cancel_list_wrap .body_list:not(:nth-child(10)) {
+    border-bottom: 1px solid #efefef;
+  }
+
+  .mypage .review_btn_wrap span{
+    font-size: calc(100vw* (14/428));
+    width: calc(100vw * (75/ 428));
+    text-align: center;
+    display: block;
+  }
+
+  .mypage .body_list a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    z-index: 9;
+    height: auto;
+    text-align: left;
+  }
+
+  .mypage .body_list .subject {
+    text-align: left;
+    font-size: calc(100vw * (15 / 428));
+    padding: 0;
+  }
+
+  .mypage .body_list li {
+    font-size: 14px;
+    color: #222;
+  }
+
+  .mypage .body_list .none_text {
+    padding-top: 120px;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .mypage.rez .body_list{
+    justify-content: space-between;
+  }
+
+  .mypage.rez .reservation_list .body_list{
+    padding: calc(100vw * (20 / 428)) 0;
+  }
+
+  .mypage.rez .body_list a{
+    width: 70%;
+  }
+
+  .mypage.rez .reservation_list .body_list li{
+    width: 100%;
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .mypage.rez .reservation_list .body_list li:nth-child(1),
+  .mypage.rez .reservation_list .body_list li:nth-child(4),
+  .mypage.rez .reservation_list .body_list li:nth-child(6){
+    display: none;
+  }
+
+  .mypage.rez .reservation_list .body_list li:nth-child(3){
+    margin: calc(100vw * (5 / 428)) 0 calc(100vw * (20 / 428));
+    font-size: calc(100vw * (15 / 428));
+  }
+
+  .mypage.rez .reservation_list .body_list li:nth-child(5){
+    padding-left: calc(100vw * (25 / 428));
+    overflow: unset;
+    position: relative;
+  }
+
+  .mypage.rez .reservation_list .body_list li:nth-child(5)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -58%);
+    left: 0;
+    width: calc(100vw * (18 / 428));
+    height: calc(100vw * (18 / 428));
+    background: url(../img/icon/fcalendar.svg) no-repeat center center / contain;
+  }
+
+  .mypage.rez .review_btn_wrap{
+    width: auto;
+  }
+
+  .mypage .making_trip {
+    margin-top: 0;
+  }
+
+  .mypage .trip_img_box {
+    padding-top: calc(100vw * (25 / 428));
+  }
+
+  .mypage .trip_img_list {
+    width: 100%;
+    margin-bottom: calc(100vw * (55 / 428));
+  }
+
+  .mypage .trip_img_list:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+
+  .mypage .trip_img_box .trip_img {
+    width: 100%;
+    height: calc(100vw * (227 / 428));
+    margin-bottom: calc(100vw * (15 / 428));
+  }
+
+  .mypage .trip_img_box p {
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .mypage .trip_text_box h3 {
+    font-size: calc(100vw * (18 / 428));
+    margin-bottom: calc(100vw * (15 / 428));
+  }
+
+  .mypage .trip_text_box p {
+    font-size: calc(100vw * (14 / 428));
+    margin-bottom: calc(100vw * (5 / 428));
+  }
+
+  .mypage .trip_text_box span {
+    font-size: calc(100vw * (14 / 428));
+    color: #888;
+  }
+
+  .mypage .trip_text_box .price span {
+    font-size: calc(100vw * (20 / 428));
+    margin-right: calc(100vw * (3 / 428));
+    margin-bottom: 0;
+  }
+
+  .mypage .trip_text_box .price {
+    display: none;
+  }
+
+  .mypage .reservation_list .body_list_wrap {
+    min-height: 405px;
+  }
+
+  .mypage .reservation_list .body_list:last-child {
+    border-bottom: none;
+  }
+
+  .review_btn {
+    width: calc(100vw * (75/ 428));
+    height: calc(100vw * (35/ 428));
+    font-size: calc(100vw * (13/ 428));
+    border-radius: calc(100vw * (5/ 428));
+  }
+
+  .review_btn:disabled {
+    border-color: #ddd;
+    background: #f8f9fa;
+    color: #888;
+  }
+
+  /* 결제자정보 */
+  .mypage .payper_wrap {
+    margin-bottom: calc(100vw * (60 / 428));
+    width: 100%;
+  }
+
+  .mypage .payper_wrap .c_booker_box > ul {
+    justify-content: unset;
+  }
+
+  .mypage .payper_wrap .c_booker_box input {
+    width: calc(100vw * (228 / 428));
+  }
+
+  .mypage .method_wrap {
+    margin-bottom: calc(100vw * (60 / 428));
+  }
+
+  .mypage .payment_btn {
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: calc(100vw * (20 / 428)) calc(100vw * (10 / 428)) 0;
+  }
+
+  .mypage .m_payment_wrap.margin_column {
+    margin-top: calc(100vw * (0 / 428));
+  }
+
+  .mypage .method_wrap .payment_btn .btn {
+    width: 100%;
+    height: calc(100vw * (60 / 428));
+    font-size: calc(100vw * (16 / 428));
+    border-radius: calc(100vw * (5 / 428));
+    border: 1px solid #acacac;
+    background: #fff;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mypage .method_wrap .payment_btn .btn:not(last-child) {
+    margin-bottom: calc(100vw * (10 / 428));
+  }
+
+  .mypage .method_wrap .payment_btn .pay_icon {
+    width: calc(100vw * (34 / 428));
+    height: calc(100vw * (34 / 428));
+    margin-right: calc(100vw * (10 / 428));
+  }
+
+  .mypage .method_wrap .payment_btn .btn p {
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  .mypage .bank_book_box {
+    display: none;
+  }
+
+  .mypage .bank_container {
+    margin: 0 auto;
+    width: calc(100vw * (378 / 428));
+    height: calc(100vw * (222 / 428));
+    margin-top: calc(100vw * (10 / 428));
+    background: #f7f7f7;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: calc(100vw * (30 / 428));
+  }
+
+  .mypage .bank_name p,
+  .mypage .bank_select p {
+    font-size: calc(100vw * (15 / 428));
+    margin-bottom: calc(100vw * (7 / 428));
+  }
+
+  .mypage .bank_name input {
+    width: calc(100vw * (318 / 428));
+    height: calc(100vw * (45 / 428));
+    margin-bottom: calc(100vw * (15 / 428));
+    border-radius: 5px;
+    padding: 0 15px;
+    border: 1px solid #acacac;
+    background: #fff;
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .mypage .select_wrap {
+    width: calc(100vw * (318 / 428));
+    height: calc(100vw * (45 / 428));
+  }
+
+  .mypage .select_title {
+    font-size: calc(100vw * (14 / 428));
+    line-height: calc(100vw * (45 / 428));
+  }
+
+  .mypage .pay_modal_wrap {
+    z-index: 10000;
+  }
+
+  .mypage .modal_bg .pay_modal {
+    width: calc(100vw * (378 / 428));
+    height: calc(100vw * (652 / 428));
+    background: #fff;
+    padding: calc(100vw * (35 / 428)) calc(100vw * (35 / 428)) calc(100vw * (40 / 428));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mypage .pop_section .list_title {
+    margin-bottom: calc(100vw * (40 / 428));
+    padding-bottom: 0;
+  }
+
+  .mypage .modal_bg .pay_modal .list_title{
+    padding-left: 0;
+  }
+
+  .mypage .modal_bg .pay_modal>.list_title{
+    font-size: calc(100vw* (18/428));
+  }
+
+  .mypage .modal_backbtn {
+    width: calc(100vw * (32 / 428));
+    height: calc(100vw * (32 / 428));
+    position: absolute;
+    top: calc(100vw * (23 / 428));
+    right: calc(100vw * (23 / 428));
+  }
+
+  .mypage .modal_tab {
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+  }
+
+  .mypage .modal_tab .tab {
+    width: calc(100vw * (65 / 428));
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: #555;
+    background: #fff;
+    font-size: calc(100vw * (16 / 428));
+    padding-bottom: calc(100vw * (10 / 428));
+    margin-right: calc(100vw * (20 / 428));
+  }
+
+  .mypage .modal_tab .tab.active {
+    border-bottom: 0;
+    border-color: #45aaf2;
+    color: #45aaf2;
+    position: relative;
+  }
+
+  .mypage .modal_tab .tab:nth-child(1).active::before{
+    width: calc(100vw* (65/428));
+  }
+
+  .mypage .modal_tab .tab.active::before {
+    position: absolute;
+    content: "";
+    width: calc(100vw * (65 / 428));
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background: #45aaf2;
+  }
+
+  .mypage .modal_tabcon {
+    display: none;
+  }
+
+  .mypage .m_mobile_tabcon {
+    padding-top: calc(100vw * (30 / 428));
+    display: none;
+  }
+
+  .mypage .m_mobile_tabcon .list_title {
+    margin-bottom: 0;
+    padding-bottom: calc(100vw * (10 / 428));
+    border-bottom: 1px solid #222;
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  .mypage .m_tabcon_wrap {
+    overflow-y: scroll;
+    height: calc(100vw * (420 / 428));
+    border-bottom: 1px solid #efefef;
+  }
+
+  .mypage .m_tabcon_wrap::-webkit-scrollbar {
+    width: calc(100vw * (10 / 428));
+    background-color: transparent;
+  }
+
+  .mypage .m_tabcon_wrap::-webkit-scrollbar-thumb {
+    background-color: #888;
+    background-clip: padding-box;
+    border-top: calc(100vw * (10 / 428)) solid transparent;
+    border-bottom: calc(100vw * (10 / 428)) solid transparent;
+    border-right: calc(100vw * (1 / 428)) solid transparent;
+    border-left: calc(100vw * (6 / 428)) solid transparent;
+  }
+
+  .mypage .m_tabcon_wrap::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .mypage .m_tabcon_wrap li {
+    padding: calc(100vw * (17 / 428)) calc(100vw * (10 / 428));
+    border-bottom: 1px solid #efefef;
+  }
+
+  .mypage .m_tabcon_wrap li .m_tabcon_top {
+    display: flex;
+    font-size: calc(100vw * (14 / 428));
+    margin-bottom: calc(100vw * (5 / 428));
+  }
+
+  .mypage .m_tabcon_wrap li .m_tabcon_top p {
+    margin-right: calc(100vw * (10 / 428));
+  }
+
+  .mypage .m_tabcon_wrap li .m_tabcon_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  .mypage .m_tabcon_wrap li .m_tabcon_bottom1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  .mypage .m_tabcon_wrap li .m_tabcon_top .cancel_info_text {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .mypage .m_tabcon_wrap .btn {
+    font-size: calc(100vw * (14 / 428));
+    width: 100%;
+    height: calc(100vw * (40 / 428));
+    border-radius: calc(100vw * (5 / 428));
+    border: 1px solid #45aaf2;
+    color: #45aaf2;
+    background: #fff;
+  }
+
+  .mypage .review_content {
+    padding: 0;
+  }
+
+  .mypage .review_content .title {
+    font-size: calc(100vw * (20 / 428));
+  }
+
+  .mypage .review_container {
+    width: calc(100vw * (378 / 428));
+    margin: 0 auto;
+  }
+
+  .mypage .review_area {
+    border-top: 1px solid #ccc;
+    margin: calc(100vw * (55 / 428)) 0 calc(100vw * (30 / 428));
+  }
+
+  .mypage .review_area > ul,
+  .mypage .review_zone > ul {
+    flex-wrap: wrap;
+    height: auto;
+    border: none;
+  }
+
+  .mypage .review_area .r_area_title,
+  .mypage .review_zone .r_area_title,
+  .mypage .review_area .r_star_title {
+    width: 40%;
+    height: calc(100vw * (57 / 428));
+    padding: 0 calc(100vw * (20 / 428));
+    font-size: calc(100vw * (15 / 428));
+    border-bottom: 1px solid #ececec;
+  }
+
+  .mypage .review_area .r_area_text {
+    width: 60%;
+    height: calc(100vw * (57 / 428));
+    padding: 0 calc(100vw * (20 / 428));
+    font-size: calc(100vw * (14 / 428));
+    border-bottom: 1px solid #ececec;
+  }
+
+  .mypage .review_area .r_star_text {
+    width: 60%;
+    height: calc(100vw * (57 / 428));
+    padding: 0 calc(100vw * (20 / 428));
+    border-bottom: 1px solid #ececec;
+  }
+
+  .mypage .rating .rate_radio {
+    width: calc(100vw * (22 / 428));
+    height: calc(100vw * (22 / 428));
+  }
+
+  .mypage .rating .rate_radio + label {
+    width: calc(100vw * (22 / 428));
+    height: calc(100vw * (22 / 428));
+    background-size: cover;
+  }
+
+  .mypage .rating .rate_radio:checked + label {
+    background-size: cover;
+  }
+
+  .mypage .r_area_input input::placeholder {
+    font-size: calc(100vw * (14 / 428));
+    color: #888;
+  }
+
+  .mypage .r_area_input input {
+    width: 100%;
+    height: calc(100vw * (45 / 428));
+    border-radius: calc(100vw * (5 / 428));
+    padding: 0 calc(100vw * (15 / 428));
+    font-size: calc(100vw * (14 / 428));
+    margin-left: 0;
+  }
+
+  .mypage .r_area_input input::placeholder {
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .mypage .textarea span {
+    font-size: calc(100vw * (15 / 428));
+    display: block;
+  }
+
+  .mypage .review_zone {
+    width: calc(100vw * (378 / 428));
+  }
+
+  .mypage .review_zone .textarea {
+    width: 100%;
+    min-height: calc(100vw * (290 / 428));
+  }
+
+  .mypage .review_zone .r_textarea_title {
+    width: 40%;
+    min-height: calc(100vw * (290 / 428));
+    padding: calc(100vw * (24 / 428)) calc(100vw * (20 / 428));
+  }
+
+  .mypage .review_zone .r_area_title {
+    font-size: calc(100vw * (15 / 428));
+    width: calc(100vw * (150 / 428));
+    height: calc(100vw * (65 / 428));
+  }
+
+  .mypage .review_zone .review_h_title {
+    height: calc(100vw * (65 / 428));
+  }
+
+  .mypage .review_zone .review_h_title .r_area_input {
+    width: calc(100vw * (228 / 428));
+    height: calc(100vw * (65 / 428));
+    display: flex;
+    align-items: center;
+    padding: 0 calc(100vw * (10 / 428));
+    border-bottom: 1px solid #ececec;
+  }
+
+  .mypage .review_zone .r_textarea_zone {
+    width: 60%;
+    height: calc(100vw * (270 / 428));
+    padding: calc(100vw * (10 / 428));
+  }
+
+  .mypage .review_zone .r_textarea_zone textarea {
+    width: 100%;
+    min-height: calc(100vw * (270 / 428));
+    font-size: calc(100vw * (14 / 428));
+    border-radius: calc(100vw * (5 / 428));
+    padding: calc(100vw * (15 / 428));
+  }
+
+  .mypage .review_zone .r_textarea_zone textarea::placeholder {
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .mypage .ok_btn {
+    margin-top: calc(100vw * (35 / 428));
+  }
+
+  .mypage .ok_btn .btn {
+    width: calc(100vw * (140 / 428));
+    height: calc(100vw * (45 / 428));
+    border-radius: calc(100vw * (5 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  /* term */
+  .mypage .terms_wrap {
+    width: 100%;
+  }
+
+  .mypage .term_box legend {
+    display: none;
+  }
+
+  .mypage .term_box > ul li {
+    position: relative;
+  }
+
+  .mypage .term_box > ul li:not(:last-of-type) {
+    margin-bottom: calc(100vw * (15 / 428));
+  }
+
+  .mypage .term_box .all_click {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: calc(100vw * (14 / 428));
+    margin-bottom: calc(100vw * (13 / 428));
+  }
+
+  .mypage .term_box .all_click input[type="checkbox"] + label {
+    font-size: calc(100vw * (18 / 428));
+  }
+
+  .mypage .term_box input {
+    display: none;
+  }
+
+  .mypage .term_box input[type="checkbox"] + label {
+    font-size: calc(100vw * (16 / 428));
+    padding: calc(100vw * (4 / 428)) calc(100vw * (38 / 428));
+    background: url("../img/icon/term_off.svg") calc(100vw * (10 / 428)) center / calc(100vw * (18 / 428)) no-repeat;
+    cursor: pointer;
+  }
+
+  .mypage .term_box input[type="checkbox"]:checked + label {
+    background: url("../img/icon/term_on.svg") calc(100vw * (10 / 428)) center / calc(100vw * (18 / 428)) no-repeat;
+  }
+
+  .mypage .term_box .term_arrow {
+    position: absolute;
+    top: 0;
+    right: calc(100vw * (10 / 428));
+    display: block;
+    width: calc(100vw * (24 / 428));
+    height: calc(100vw * (24 / 428));
+    background: url("../img/icon/term_arrow.svg") center center / calc(100vw * (24 / 428)) no-repeat;
+    transition: transform 0.3s;
+  }
+
+  .mypage .term_box .term_arrow.active {
+    transform: rotate(-180deg);
+  }
+
+  .mypage .term_box .term_depth {
+    display: none;
+    width: 100%;
+    height: calc(100vw * (114 / 428));
+    padding: calc(100vw * (13 / 428)) calc(100vw * (5 / 428)) calc(100vw * (13 / 428)) calc(100vw * (15 / 428));
+    margin-top: calc(100vw * (12 / 428));
+    background-color: #f7f7f7;
+  }
+
+  .mypage .term_box .term_depth.active {
+    display: block;
+  }
+
+  .mypage .term_box .term_depth pre {
+    width: 100%;
+    height: calc(100vw * (88 / 428));
+    font-size: calc(100vw * (14 / 428));
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: scroll;
+  }
+
+  .mypage .term_box .term_depth pre::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+  }
+
+  .mypage .term_box .term_depth pre::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+
+  .mypage .term_box .term_depth pre::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  /* // 탈퇴 페이지 */
+
+  .mypage .leave {
+    width: 100%;
+  }
+
+  .mypage .leave .list_title {
+    margin-bottom: calc(100vw * (55 / 428));
+    padding-bottom: calc(100vw * (10 / 428));
+    border-bottom: 1px solid #222;
+  }
+
+  .mypage .leave .img_box {
+    width: calc(100vw * (36 / 428));
+    height: calc(100vw * (36 / 428));
+    margin: 0 auto;
+    margin-bottom: calc(100vw * (15 / 428));
+  }
+
+  .mypage .leave strong {
+    display: block;
+    font-size: calc(100vw * (20 / 428));
+    color: #45aaf2;
+    text-align: center;
+  }
+
+  .mypage .leave p {
+    margin-top: calc(100vw * (15 / 428));
+    margin-bottom: calc(100vw * (50 / 428));
+    font-size: calc(100vw * (16 / 428));
+    line-height: 160%;
+    text-align: center;
+  }
+
+  .mypage .leave .select_wrap {
+    width: calc(100vw * (358 / 428));
+    margin: 0 auto;
+    margin-bottom: calc(100vw * (10 / 428));
+  }
+
+  .mypage .leave .select_wrap .select_list {
+    width: calc(100vw * (358 / 428));
+    max-height: calc(100vw * (220 / 428));
+    top: calc(100vw * (50 / 428));
+    left: -1px;
+    border: 1px solid #acacac;
+  }
+
+  .mypage .leave textarea {
+    display: none;
+    width: calc(100vw * (358 / 428));
+    height: calc(100vw * (150 / 428));
+    padding: calc(100vw * (15 / 428));
+    margin: 0 auto;
+    font-size: calc(100vw * (14 / 428));
+    line-height: 1.3;
+    border: 1px solid #acacac;
+    border-radius: calc(100vw * (5 / 428));
+    resize: none;
+  }
+
+  .mypage .leave textarea.active {
+    display: block;
+  }
+
+  .mypage .leave textarea::placeholder {
+    color: #888;
+  }
+
+  .mypage .leave textarea::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+  }
+
+  .mypage .leave textarea::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
+
+  .mypage .leave textarea::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .mypage .leave .btn_box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(100vw * (45 / 428));
+    padding-bottom: calc(100vw * (60 / 428));
+    border-bottom: 1px solid #efefef;
+  }
+
+  .mypage .leave .btn_box button {
+    width: calc(100vw * (139 / 428));
+    height: calc(100vw * (45 / 428));
+    font-size: calc(100vw * (16 / 428));
+    border-radius: calc(100vw * (5 / 428));
+  }
+
+  .mypage .leave .btn_box .cancel {
+    border: 1px solid #45aaf2;
+    color: #45aaf2;
+  }
+
+  .mypage .leave .btn_box .done {
+    margin-left: calc(100vw * (10 / 428));
+    color: #fff;
+    border: 1px solid #7dc3f6;
+    background-color: #7dc3f6;
+  }
+
+  .c_payment_wrap .long_box .c_last_title.c_last_title {
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: calc(100vw * (30 / 428));
+  }
+
+  .c_payment_wrap .long_box .c_b_text.c_last {
+    flex-grow: 1;
+    width: calc(100vw * (228 / 428));
+    min-height: calc(100vw * (65 / 428));
+  }
+
+  .pay .c_payment_wrap .c_title_box {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: calc(100vw* (25/428));
+  }
+
+  .pay .c_payment_wrap .c_check_wrap.c_detail {
+    flex-direction: column;
+    margin-bottom: calc(100vw * (13 / 428));
+  }
+
+  .pay .c_payment_wrap .c_check_wrap .term_box input[type="checkbox"] + label {
+    padding: 0 0 0 calc(100vw * (35 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .pay .c_payment_wrap .c_check_wrap.c_detail .term_box {
+    align-self: flex-end;
+  }
+
+  .pay .c_payment_wrap .c_title_box.c_word_wrap .list_title {
+    padding-bottom: calc(100vw * (5 / 428));
+  }
+
+  .pay .c_payment_wrap .c_title_box.c_word_wrap p {
+    margin-left: 0;
+    padding-left: calc(100vw* (10/428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .pay .num_input_box {
+    padding: 0 calc(100vw * (15 / 428));
+  }
+
+  .pay .c_info .c_booker_box ul {
+    justify-content: space-between;
+  }
+
+  .pay .c_info .c_booker_box .c_b_title {
+    background-color: #fff;
+    border: none;
+  }
+
+  .pay .c_info .c_booker_box ul:last-child li:nth-child(3) {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .pay .c_info .c_booker_box .c_gender,
+  .pay .c_info .c_booker_box .num_input_box {
+    width: auto;
+  }
+
+  .pay .c_info .c_booker_box .c_gender .btn:first-child {
+    margin-right: calc(100vw * (10 / 428));
+  }
+
+  .pay .c_pro_info .m_none {
+    display: none;
+  }
+
+  .m_reservation_btn {
+    display: block;
+    margin-top: 0;
+    width: 100%;
+    height: calc(100vw * (50 / 428));
+    font-size: calc(100vw * (16 / 428));
+    border-radius: calc(100vw * (5 / 428));
+    background-color: #7DC3F6;
+    color: #fff;
+    border: none;
+  }
+
+  .m_bottom_btn .m_reservation_btn{
+    width: calc(100vw* (378/428));
+  }
+
+  .no_list {
+    text-align: center;
+    padding: calc(100vw * (200 / 428)) 0;
+    font-size: calc(100vw * (16 / 428));
+    color: #555;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .mypage.qa_page .qa_list_area .writer,
+  .mypage.qa_page .qa_list_area .date,
+  .mypage.qa_page .qa_list_area .answer {
+    width: calc(100vw * (130 / 428));
+  }
+  
+}

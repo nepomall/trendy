@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="format-detection" content="telephone=no" />
+  <title>Trendy europe</title>
+
+  <link rel="icon" href="../img/common/favicon.ico" />
+  <!--Import-->
+  <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+  <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+  <script type="text/javascript" src="../js/header.js"></script>
+  <script type="text/javascript" src="../js/common.js"></script>
+  <script type='text/javascript' src="../js/air-datepicker.js"></script>
+  <script type='text/javascript' src="../js/myTrip_modal.js"></script>
+  <script type='text/javascript' src="../js/term.js"></script>
+  <script type='text/javascript' src="../js/mypage.js"></script>
+  <!-- link -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/head.css" />
+  <link rel="stylesheet" href="../css/jquery.timepicker.css">
+  <link rel="stylesheet" href="../css/air-datepicker.css">
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/mypage.css" />
+</head>
+
+<body>
+  <div id="wrap">
+
+    <div class="m_bottom_btn">
+      <div class="m_btn_group">
+        <!-- <button class="btn blue">0,000,000 전액 결제</button>
+          <button class="btn">00,000 계약금 결제</button> -->
+        <button class="m_reservation_btn btn">예약하기</button>
+      </div>
+    </div>
+
+    <!-- 헤더 -->
+    <trendy-headpc></trendy-headpc>
+
+    <!-- 컨텐츠 -->
+    <div id="wrap_content" class="mypage pay">
+      <div class="inner">
+        <section class="c_payment_wrap">
+          <div class="c_container">
+            <!-- 여행 상품 정보 -->
+            <div class="c_information_wrap">
+              <h2 class="list_title">여행 정보</h2>
+              <div class="c_information_box">
+                <div class="c_information_img">
+                  <img src="../img/mypage/big_somenail.png" alt="" />
+                </div>
+                <div class="c_information_text">
+                  <h2>[세미패키지] 이탈리아 핵심 8일</h2>
+                  <span>이탈리아 인기 도시와 주변 근교를 전문 가이드와 함께 !</span>
+                  <div class="c_info_text">
+                    <div class="c_info_head">
+                      <p>출발일</p>
+                      <p>귀국일</p>
+                      <p>여행 지역</p>
+                    </div>
+                    <div class="c_info_body">
+                      <p>2022년 5월 16일 (월) 00:00</p>
+                      <p>2022년 5월 24일 (화) 00:00</p>
+                      <p>로마(3) · 피렌체(1) · 베네치아(2)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="c_price">
+                  <p>상품 금액: <strong>0,000,000</strong>원</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 모바일 여행 상품정보 -->
+            <div class="m_pay_container">
+              <h2 class="list_title">
+                여행 상품 정보
+              </h2>
+              <div class="m_pay_imgbox">
+                <div class="m_information_img">
+                  <img src="../img/mypage/big_somenail.png" alt="" />
+                </div>
+                <div class="m_information_text">
+                  <h2>[세미패키지] 이탈리아 핵심 8일</h2>
+                  <span>이탈리아 인기 도시와 주변 근교를 전문 가이드와 함께 !</span>
+                </div>
+              </div>
+              <div class="m_pay_textbox">
+                <div class="c_info_head">
+                  <p>출발일</p>
+                  <p>귀국일</p>
+                  <p>여행 지역</p>
+                </div>
+                <div class="c_info_body">
+                  <p>2022년 5월 16일 (월) 00:00</p>
+                  <p>2022년 5월 24일 (화) 00:00</p>
+                  <p>로마(3) · 피렌체(1) · 베네치아(2)</p>
+                </div>
+              </div>
+              <div class="m_pay_price">
+                <p>상품 금액</p>
+                <div class="m_price_box">
+                  <span>1,000,000</span>
+                  <p>원</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 여행 상품 정보 -->
+            <div class="c_basic_wrap c_product_wrap">
+              <div class="c_title_box c_word_wrap">
+                <h2 class="list_title">*예약자 정보</h2>
+                <p>예약을 위한 모든 사항은 예약자를 통해 진행됩니다.</p>
+              </div>
+              <div class="c_booker_box">
+                <ul>
+                  <li class="c_b_title">이름</li>
+                  <li class="c_b_text">
+                    <input type="text" placeholder="이름을 입력해주세요." />
+                  </li>
+                  <li class="c_b_title">성별</li>
+                  <li class="c_b_text">
+                    <div class="c_gender">
+                      <button class="btn">남성</button>
+                      <button class="btn">여성</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c_b_title">휴대폰 번호</li>
+                  <li class="c_b_text">
+                    <input type="text" placeholder="0000000000" />
+                  </li>
+                  <li class="c_b_title">생년월일</li>
+                  <li class="c_b_text">
+                    <div class="c_e_name">
+                      <input type="text" placeholder="생년" class="three_input" />
+                      <input type="text" placeholder="월" class="three_input" />
+                      <input type="text" placeholder="일" class="three_input" />
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c_b_title">이메일</li>
+                  <li class="c_b_text">
+                    <input type="text" placeholder="이메일을 입력해주세요." />
+                  </li>
+                  <li class="c_b_title">
+                    영문 명
+                  </li>
+                  <li class="c_b_text">
+                    <div class="c_e_name">
+                      <input type="text" placeholder="영문 성" class="w_left" />
+                      <input type="text" placeholder="영문 이름" class="w_right" />
+                    </div>
+                  </li>
+                </ul>
+                <ul class="long_box">
+                  <li class="c_b_title c_last_title">기타사항 및 여행관련 문의</li>
+                  <li class="c_b_text c_last">
+                    <input type="text" placeholder="내용을 입력해주세요." class="long_input" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 여행 상품 정보 -->
+            <div class="c_basic_wrap c_info">
+              <h2 class="list_title">*여행자 정보</h2>
+              <div class="c_booker_box">
+                <ul>
+                  <li class="c_b_title">성인</li>
+                  <li class="num_input_box">
+                    <div class="num_wrap">
+                      <button type="button" class="minus"></button>
+                      <button type="button" class="plus"></button>
+                      <input type="text" value="0" maxlength="2" numberOnly readonly />
+                    </div>
+                  </li>
+                  <li class="c_b_title">소아</li>
+                  <li class="num_input_box">
+                    <div class="num_wrap">
+                      <button type="button" class="minus"></button>
+                      <button type="button" class="plus"></button>
+                      <input type="text" value="0" maxlength="2" numberOnly readonly />
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c_b_title">유아</li>
+                  <li class="num_input_box">
+                    <div class="num_wrap">
+                      <button type="button" class="minus"></button>
+                      <button type="button" class="plus"></button>
+                      <input type="text" value="0" maxlength="2" numberOnly readonly />
+                    </div>
+                  </li>
+                  <li class="c_b_title">예약자 포함여부</li>
+                  <li class="c_b_text">
+                    <div class="c_gender">
+                      <button class="btn">포함</button>
+                      <button class="btn">미포함</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 여행 상품 정보 -->
+            <div class="c_product_wrap c_pro_info">
+              <div class="c_check_wrap c_detail has_chk">
+                <div class="c_title_box c_word_wrap has_chk">
+                  <h2 class="list_title">*여행자 상세 정보</h2>
+                  <p>여행자의 영문 이름은 여권상의 영문 이름과 반드시 동일해야 합니다.</p>
+                </div>
+                <div class="term_box">
+                  <input type="checkbox" name="term" id="c_check_01" />
+                  <label for="c_check_01">예약자와 동일</label>
+                </div>
+              </div>
+              <div class="c_booker_box">
+                <ul>
+                  <li class="c_b_title">이름</li>
+                  <li class="c_b_text">
+                    <input type="text" placeholder="이름을 입력해주세요." />
+                  </li>
+                  <li class="c_b_title">성별</li>
+                  <li class="c_b_text">
+                    <div class="c_gender">
+                      <button class="btn">남성</button>
+                      <button class="btn">여성</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c_b_title">휴대폰 번호</li>
+                  <li class="c_b_text">
+                    <input type="text" placeholder="휴대폰 번호를 입력해주세요." />
+                  </li>
+                  <li class="c_b_title">생년월일</li>
+                  <li class="c_b_text">
+                    <div class="c_e_name">
+                      <input type="text" placeholder="생년" class="three_input" />
+                      <input type="text" placeholder="월" class="three_input" />
+                      <input type="text" placeholder="일" class="three_input" />
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c_b_title">영문명</li>
+                  <li class="c_b_text">
+                    <div class="c_e_name">
+                      <input type="text" placeholder="영문 성" class="w_left" />
+                      <input type="text" placeholder="영문 이름" class="w_right" />
+                    </div>
+                  </li>
+                  <li class="c_b_title m_none"></li>
+                  <li class="c_b_text m_none"></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 여행 상품 정보 -->
+            <div class="c_product_wrap c_list_margin c_pro_info">
+              <div class="c_booker_box">
+                <ul>
+                  <li class="c_b_title">이름</li>
+                  <li class="c_b_text">
+                    <input type="text" placeholder="이름을 입력해주세요." />
+                  </li>
+                  <li class="c_b_title">성별</li>
+                  <li class="c_b_text">
+                    <div class="c_gender">
+                      <button class="btn">남성</button>
+                      <button class="btn">여성</button>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c_b_title">휴대폰 번호</li>
+                  <li class="c_b_text">
+                    <input type="text" placeholder="휴대폰 번호를 입력해주세요." />
+                  </li>
+                  <li class="c_b_title">생년월일</li>
+                  <li class="c_b_text">
+                    <div class="c_e_name">
+                      <input type="text" placeholder="생년" class="three_input" />
+                      <input type="text" placeholder="월" class="three_input" />
+                      <input type="text" placeholder="일" class="three_input" />
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li class="c_b_title">영문명</li>
+                  <li class="c_b_text">
+                    <div class="c_e_name">
+                      <input type="text" placeholder="영문 성" class="w_left" />
+                      <input type="text" placeholder="영문 이름" class="w_right" />
+                    </div>
+                  </li>
+                  <li class="c_b_title m_none"></li>
+                  <li class="c_b_text m_none"></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- <div class="method_wrap">
+                <div class="list_title">결제 수단</div>
+                <div class="payment_btn">
+                  <button class="btn">
+                    <div class="pay_icon">
+                      <img src="../img/mypage/pay1.svg" alt="" />
+                    </div>
+                    신용카드
+                  </button>
+                  <button class="btn">
+                    <div class="pay_icon">
+                      <img src="../img/mypage/pay2.svg" alt="" />
+                    </div>
+                    실시간 계좌이체
+                  </button>
+                  <button class="btn bank_book_btn">
+                    <div class="pay_icon">
+                      <img src="../img/mypage/pay3.svg" alt="" />
+                    </div>
+                    무통장 입금
+                  </button>
+                </div>
+                <div class="bank_book_box">
+                  <div class="bank_container">
+                    <div class="bank_name">
+                      <p>입금자명</p>
+                      <input type="text" placeholder="입금자 명을 입력해주세요." />
+                    </div>
+                    <div class="bank_select">
+                      <p>은행 선택</p>
+                      <div class="select_wrap">
+                        <div class="select_title">은행 선택</div>
+                        <ul class="select_list">
+                          <li class="list">option1</li>
+                          <li class="list">option1</li>
+                          <li class="list">option1</li>
+                          <li class="list">option1</li>
+                          <li class="list">option1</li>
+                          <li class="list">option1</li>
+                          <li class="list">option1</li>
+                          <li class="list">option1</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <!-- 견적 정보 모바일 -->
+            <div class="estimate_info info_box moblie_layout">
+              <p class="title">
+                결제 정보
+              </p>
+              <div class="one_line period">
+                <div class="left">
+                  여행 기간
+                </div>
+                <div class="right">
+                  <span>
+                    0000.00.00 ~ 0000.00.00
+                  </span>
+                </div>
+              </div>
+              <div class="one_line type">
+                <div class="left">
+                  항공
+                </div>
+                <div class="right">
+                  <span>
+                    케이엘엠네덜란드 항공
+                  </span>
+                </div>
+              </div>
+              <div class="one_line person_num">
+                <div class="left">
+                  인원
+                </div>
+                <div class="right">
+                  <span>
+                    성인 0 명
+                  </span>
+                  <span>
+                    소아 0 명
+                  </span>
+                  <span>
+                    유아 0 명
+                  </span>
+                </div>
+              </div>
+              <div class="price_box">
+                <div class="left">
+                  총 상품 금액
+                </div>
+                <div class="right">
+                  <span class="num">0,000,000</span>&nbsp;<span>원</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="terms_wrap">
+              <form>
+                <fieldset class="term_box">
+                  <legend>약관</legend>
+
+                  <div class="all_click">
+                    <input type="checkbox" name="term_all" id="all_check" />
+                    <label for="all_check">약관 동의</label>
+                  </div>
+                  <ul>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="term" id="check_01" class="chk" />
+                        <label for="check_01">[필수] 약관 1</label>
+                      </div>
+                      <button type="button" class="term_arrow"></button>
+                      <div class="term_depth">
+                        <pre>
+이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="term" id="check_02" class="chk" />
+                        <label for="check_02">[필수] 약관 2</label>
+                      </div>
+                      <button type="button" class="term_arrow"></button>
+                      <div class="term_depth">
+                        <pre>
+이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관  내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="term" id="check_03" class="chk" />
+                        <label for="check_03">[필수] 약관 3</label>
+                      </div>
+                      <button type="button" class="term_arrow"></button>
+                      <div class="term_depth">
+                        <pre>
+이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="term" id="check_04" class="chk" />
+                        <label for="check_04">[필수] 약관 4</label>
+                      </div>
+                      <button type="button" class="term_arrow"></button>
+                      <div class="term_depth">
+                        <pre>
+이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용</pre>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <input type="checkbox" name="term" id="check_05" class="chk" />
+                        <label for="check_05">[필수] 약관 5</label>
+                      </div>
+                      <button type="button" class="term_arrow"></button>
+                      <div class="term_depth">
+                        <pre>
+이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용 이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용이용약관 내용</pre>
+                      </div>
+                    </li>
+                  </ul>
+                </fieldset>
+              </form>
+              <!-- <button class="m_reservation_btn btn outline moblie">예약하기</button> -->
+            </div>
+          </div>
+          <!-- 오른쪽 박스 -->
+          <div class="c_payment_box">
+            <div class="c_payment_toptext">
+              <div class="c_info_text">
+                <div class="c_info_head">
+                  <p>출발일</p>
+                  <p>귀국일</p>
+                  <p>여행 지역</p>
+                </div>
+                <div class="c_info_body">
+                  <p>0000.00.00 ~ 0000.00.00</p>
+                  <p>케이엘엠네덜란드 항공</p>
+                  <div class="c_personnel">
+                    <span>성인 0 명</span>
+                    <span>소아 0 명</span>
+                    <span>유아 0 명</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c_pay_price">
+              <p>총 상품 금액</p>
+              <div class="c_price">
+                <p><strong>0,000,000</strong>원</p>
+              </div>
+            </div>
+            <div class="btn_group">
+              <!-- <button class="btn blue downPayment_btn">00,000 계약금 결제</button>
+                <button class="btn allPay_btn">0,000,000 전액 결제</button> -->
+              <button class="m_reservation_btn btn">예약하기</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- modal -->
+        <section class="pop_section">
+
+          <!-- 필수 항목 입력 모달 -->
+          <div class="modal_bg plzInput_modal">
+            <div class="message_modal">
+              <div class="text_area">
+                <div class="align_text">
+                  <h3 class="big_text">필수 항목을 입력해주세요.</h3>
+                </div>
+              </div>
+              <div class="button_wrap">
+                <button class="apply_btn full close_btn">확인</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 약관동의 모달 -->
+          <div class="modal_bg plzCheck_modal">
+            <div class="message_modal">
+              <div class="text_area">
+                <div class="align_text">
+                  <h3 class="big_text">필수 약관을 동의해주세요.</h3>
+                </div>
+              </div>
+              <div class="button_wrap">
+                <button class="apply_btn full close_btn">확인</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 계약금 결제 모달 -->
+          <!-- <div class="modal_bg downPayment_modal">
+              <div class="message_modal">
+                <div class="text_area">
+                  <div class="align_text">
+                    <h3 class="big_text">계약금 결제를 진행 하시겠습니까?</h3>
+                  </div>
+                </div>
+                <div class="button_wrap">
+                  <button class="cancel_btn close_btn">취소</button>
+                  <button class="apply_btn">확인</button>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- 전액 결제 모달 -->
+          <!-- <div class="modal_bg allPayment_modal">
+              <div class="message_modal">
+                <div class="text_area">
+                  <div class="align_text">
+                    <h3 class="big_text">전액 결제를 진행 하시겠습니까?.</h3>
+                  </div>
+                </div>
+                <div class="button_wrap">
+                  <button class="cancel_btn close_btn">취소</button>
+                  <button class="apply_btn">확인</button>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- 예약완료 모달 -->
+          <div class="modal_bg paymentC_modal">
+            <div class="message_modal">
+              <div class="text_area">
+                <div class="align_text">
+                  <h3 class="big_text">예약이 완료되었습니다.</h3>
+                </div>
+              </div>
+              <div class="button_wrap">
+                <button class="apply_btn full close_btn">확인</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 공통모달 -->
+          <trendy-mytripmodal></trendy-mytripmodal>
+        </section>
+      </div>
+    </div>
+
+    <div id="footer">
+      <trendy-footerpc></trendy-footerpc>
+    </div>
+
+    <div class="btn_top">
+      <div class="btn_top_wrap">
+        <div class="img_wrap">
+          <img src="../img/icon/icon_top_arrow.svg" alt="위로가기 버튼">
+        </div>
+        <button type="button">TOP</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

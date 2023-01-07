@@ -1,0 +1,816 @@
+/* --------------------여행 후기 페이지---------------- */
+section {
+  width: 1320px;
+  margin: 80px auto;
+}
+
+section.review_section{
+  margin: 80px auto 150px;
+}
+
+section.pop_section{
+  margin: 0;
+}
+
+.review_detail_section .title,
+.review_section .title {
+  font-size: 28px;
+  font-weight: 500;
+  color: #222;
+  line-height: 35px;
+  text-align: center;
+}
+
+.review_detail_section .sub_title,
+.review_section .sub_title {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 0.55em;
+  line-height: 17px;
+  text-align: center;
+}
+
+.review_section .select_wrap {
+  width: 230px;
+}
+
+.review_section .review_select_area {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.review_section .select_box_list {
+  margin-right: 10px;
+}
+
+.review_section .select_name {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.review_section .search_btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: #222222;
+  border-radius: 5px;
+}
+
+.review_content_wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  padding: 18px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #efefef;
+}
+
+.review_content_wrap .review_title {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.review_content_wrap .review_title:not(:nth-child(4)) {
+  width: 130px;
+}
+
+.review_title:nth-child(4) {
+  width: 670px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.review_list_wrap .inner_list {
+  display: flex;
+  align-items: center;
+}
+
+.review_list_wrap .review_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-bottom: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.review_list_wrap .review_title {
+  width: 130px;
+}
+
+.review_list_wrap .review_title.head {
+  width: 670px;
+  text-align: left;
+  padding-left: 10px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.review_list_wrap .review_title {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.review_list_wrap .review_title:nth-child(-n + 3) {
+  color: #444;
+}
+
+.review_list_wrap .review_title:nth-child(n + 5) {
+  color: #555;
+}
+/* search_section */
+.search_section {
+  margin-bottom: 0;
+}
+
+.product_list_wrap legend {
+  display: none;
+}
+
+.product_list_form fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_list_form .search_tit {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product_list_form .search_box {
+  width: 230px;
+}
+
+.product_list_form button {
+  flex-shrink: 0;
+  width: 116px;
+  height: 45px;
+  font-size: 16px;
+  margin-top: auto;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #222;
+}
+
+/* 셀렉트 */
+.search_select_wrap {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+}
+
+.product_list_form .select_title,
+.product_list_form .search_select_list {
+  height: 45px;
+  border-color: #ccc;
+}
+
+.product_list_form .search_chk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.product_list_form .select_title {
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  line-height: 2.8;
+}
+
+.product_list_form .search_select_list {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 240px;
+  overflow: auto;
+  top: 55px;
+  padding: 6px 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.product_list_form .select_title.active::after {
+  transform: translate(0, -50%) rotate(180deg);
+}
+
+.product_list_form .list {
+  height: auto;
+  padding: 6px 20px;
+  line-height: 2.4;
+}
+
+.product_list_form .list .chk {
+  margin-right: 8px;
+}
+
+.product_list_form .list label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search_select_list::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.search_select_list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.search_select_list::-webkit-scrollbar-thumb {
+  background: #acacac;
+  border-radius: 999px;
+  background-clip: padding-box;
+  border-top: 7px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+/* ------------------------------ 여행 후기 상세페이지-------------------------- */
+.review_detail_content {
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+
+.review_detail_content .review_title_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #ccc;
+}
+
+.review_detail_content .sub_text {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #888;
+}
+
+.review_detail_content .left {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review_detail_content .star {
+  display: inline-block;
+  width: 80px;
+  height: 16px;
+}
+
+.review_detail_content .head {
+  width: 900px;
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.review_detail_content .head_box {
+  display: flex;
+  align-items: center;
+}
+
+.review_detail_content .right .info,
+.review_detail_content .right .info span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+
+.review_detail_content .right .info:first-child {
+  margin-right: 20px;
+}
+
+.review_detail_content .content {
+  width: 100%;
+  padding: 25px 10px;
+  line-height: 160%;
+  font-size: 14px;
+  font-weight: 300;
+  white-space: pre-line;
+}
+
+.review_detail_content .button_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+.review_detail_content .del_btn {
+  width: 158px;
+  height: 45px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #45aaf2;
+  background: #ffffff;
+  border: 1px solid #45aaf2;
+  border-radius: 5px;
+}
+
+.review_detail_content .edit_btn {
+  width: 158px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background: #7dc3f6;
+  border-radius: 5px;
+}
+
+/* 태블릿 */
+@media screen and (max-width: 1400px) {
+  /* --------------------여행 후기 페이지---------------- */
+  section {
+    width: calc(100vw * (1320 / 1400));
+    margin: calc(100vw * (80 / 1400)) auto;
+  }
+
+  section.review_section{
+    margin: calc(100vw* (80/1400)) auto calc(100vw* (150/1400));
+  }
+  
+
+  .review_detail_section .title,
+  .review_section .title {
+    font-size: calc(100vw * (28 / 1400));
+  }
+
+  .review_detail_section .sub_title,
+  .review_section .sub_title {
+    margin-top: calc(100vw * (7 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .review_section .select_wrap {
+    width: calc(100vw * (230 / 1400));
+  }
+
+  .review_section .review_select_area {
+    margin-top: calc(100vw * (80 / 1400));
+  }
+
+  .review_section .select_box_list {
+    margin-right: calc(100vw * (10 / 1400));
+  }
+
+  .review_section .select_name {
+    margin-bottom: calc(100vw * (8 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .review_section .search_btn {
+    height: calc(100vw * (45 / 1400));
+    margin-top: calc(100vw * (25 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .review_content_wrap {
+    margin-top: calc(100vw * (25 / 1400));
+    padding: calc(100vw * (18 / 1400)) 0;
+  }
+
+  .review_content_wrap .review_title {
+    font-size: calc(100vw * (15 / 1400));
+  }
+
+  .review_content_wrap .review_title:not(:nth-child(4)) {
+    width: calc(100vw * (130 / 1400));
+  }
+
+  .review_title:nth-child(4) {
+    width: calc(100vw * (670 / 1400));
+  }
+
+  .review_list_wrap .review_list {
+    padding: calc(100vw * (18 / 1400)) 0;
+  }
+
+  .review_list_wrap .review_title {
+    width: calc(100vw * (130 / 1400));
+  }
+
+  .review_list_wrap .review_title.head {
+    width: calc(100vw * (670 / 1400));
+    padding-left: calc(100vw * (10 / 1400));
+  }
+
+  .review_list_wrap .review_title {
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  /* ------------------------------ 여행 후기 상세페이지-------------------------- */
+  .review_detail_content {
+    margin-top: calc(100vw * (70 / 1400));
+    margin-bottom: calc(100vw * (150 / 1400));
+  }
+
+  .review_detail_content .review_title_wrap {
+    padding: calc(100vw * (20 / 1400));
+  }
+
+  .review_detail_content .sub_text {
+    margin-bottom: calc(100vw * (5 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .review_detail_content .star {
+    width: calc(100vw * (80 / 1400));
+    height: calc(100vw * (16 / 1400));
+  }
+
+  .review_detail_content .head {
+    width: calc(100vw * (600 / 1400));
+    margin-left: calc(100vw * (7 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .review_detail_content .right .info,
+  .review_detail_content .right .info span {
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .review_detail_content .right .info:first-child {
+    margin-right: calc(100vw * (20 / 1400));
+  }
+
+  .review_detail_content .content {
+    width: 100%;
+    padding: calc(100vw * (25 / 1400)) calc(100vw * (10 / 1400));
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .review_detail_content .button_wrap {
+    margin-top: calc(100vw * (250 / 1400));
+  }
+
+  .review_detail_content .del_btn {
+    width: calc(100vw * (158 / 1400));
+    height: calc(100vw * (45 / 1400));
+    margin-right: calc(100vw * (10 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .review_detail_content .edit_btn {
+    width: calc(100vw * (158 / 1400));
+    height: calc(100vw * (45 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  /* search_section */
+
+  .product_list_form .search_tit {
+    margin-bottom: calc(100vw * (8 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .product_list_form .search_box {
+    width: calc(100vw * (230 / 1400));
+  }
+
+  .product_list_form button {
+    width: calc(100vw * (116 / 1400));
+    height: calc(100vw * (45 / 1400));
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  /* 셀렉트 */
+  .search_select_wrap {
+    height: calc(100vw * (45 / 1400));
+  }
+
+  .product_list_form .select_title,
+  .product_list_form .search_select_list {
+    height: calc(100vw * (45 / 1400));
+  }
+
+  .product_list_form .select_title {
+    font-size: calc(100vw * (16 / 1400));
+  }
+
+  .product_list_form .search_select_list {
+    height: calc(100vw * (240 / 1400));
+    top: calc(100vw * (55 / 1400));
+    padding: calc(100vw * (6 / 1400)) 0;
+  }
+
+  .product_list_form .list {
+    padding: calc(100vw * (6 / 1400)) calc(100vw * (20 / 1400));
+  }
+
+  .product_list_form .list .chk {
+    margin-right: calc(100vw * (8 / 1400));
+  }
+
+  .product_list_form .list label {
+    font-size: calc(100vw * (14 / 1400));
+  }
+
+  .search_select_list::-webkit-scrollbar {
+    width: calc(100vw * (6 / 1400));
+    height: calc(100vw * (6 / 1400));
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* --------------------여행 후기 페이지---------------- */
+  section {
+    width: calc(100vw * (378 / 428));
+    margin: 0 auto calc(100vw* (100/428));
+  }
+
+  section.review_section{
+    margin: 0 auto calc(100vw* (100/428));
+  }  
+
+  .review_detail_section .title,
+  .review_section .title {
+    font-size: calc(100vw * (20 / 428));
+  }
+
+  .review_detail_section .sub_title,
+  .review_section .sub_title {
+    margin-top: calc(100vw * (7 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .review_section .select_wrap {
+    width: calc(100vw * (184 / 428));
+  }
+
+  .review_section .review_select_area {
+    width: calc(100vw * (378 / 428));
+    flex-wrap: wrap;
+    margin: calc(100vw * (55 / 428)) auto 0;
+  }
+
+  .review_section .select_box_list {
+    margin-right: 0;
+    margin-bottom: calc(100vw * (12 / 428));
+  }
+
+  .review_section .select_box_list:nth-child(odd) {
+    margin-right: calc(100vw * (10 / 428));
+  }
+
+  .review_section .select_name {
+    margin-bottom: calc(100vw * (8 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .review_section .search_btn {
+    height: calc(100vw * (45 / 428));
+    margin-top: calc(100vw * (15 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  .review_content_wrap {
+    display: none;
+    margin-top: calc(100vw * (25 / 428));
+    padding: calc(100vw * (18 / 428)) 0;
+  }
+
+  .review_content_wrap .review_title {
+    font-size: calc(100vw * (15 / 428));
+  }
+
+  .review_content_wrap .review_title:not(:nth-child(4)) {
+    width: calc(100vw * (130 / 428));
+  }
+
+  .review_title:nth-child(4) {
+    width: 100%;
+  }
+
+  .review_list_wrap {
+    border-top: 1px solid #222;
+    margin-top: calc(100vw * (18 / 428));
+  }
+
+  .review_list_wrap .review_list {
+    flex-wrap: wrap;
+    padding: calc(100vw * (18 / 428)) calc(100vw * (15 / 428));
+  }
+
+  .review_list_wrap .inner_list {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .review_list_wrap .review_title {
+    position: relative;
+    width: auto;
+  }
+
+  .review_list_wrap .inner_list:first-child .review_title:not(:first-child) {
+    margin-left: calc(100vw * (10 / 428));
+  }
+
+  .review_list_wrap .inner_list:first-child .review_title:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #444;
+    right: calc(100vw * (-7 / 428));
+  }
+
+  .review_list_wrap .inner_list:last-child {
+    margin: calc(100vw * (15 / 428)) 0 calc(100vw* (5/428));
+  }
+
+  .review_list_wrap .inner_list:last-child .review_title:last-child {
+    margin-left: calc(100vw * (10 / 428));
+    color: #555;
+  }
+
+  .review_list_wrap .inner_list:last-child .review_title:first-child{
+    color: #555;
+  }
+
+  .review_list_wrap .review_title.head {
+    width: auto;
+    order: 2;
+    padding-left: 0;
+    color: #222;
+    font-size: calc(100vw* (15/428));
+  }
+
+  .review_list_wrap .review_title {
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  /* ------------------------------ 여행 후기 상세페이지-------------------------- */
+  .mb_none {
+    display: none;
+  }
+
+  .review_detail_content {
+    margin-top: calc(100vw * (55 / 428));
+    margin-bottom: calc(100vw * (90 / 428));
+  }
+
+  .review_detail_content .review_title_wrap {
+    position: relative;
+    align-items: flex-start;
+    padding: calc(100vw * (20 / 428));
+  }
+
+  .review_detail_content .left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review_detail_content .right {
+    position: absolute;
+    top: calc(100vw* (16/428));
+    right: calc(100vw * (15 / 428));
+  }
+
+  .review_detail_content .sub_text {
+    order: 2;
+    margin-top: calc(100vw * (17 / 428));
+    margin-bottom: calc(100vw * (5 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .review_detail_content .star {
+    order: 1;
+    width: calc(100vw * (80 / 428));
+    height: calc(100vw * (16 / 428));
+  }
+
+  .review_detail_content .head {
+    order: 3;
+    width: calc(100vw * (300 / 428));
+    margin-left: 0;
+    font-size: calc(100vw * (15 / 428));
+  }
+
+  .review_detail_content .right .info,
+  .review_detail_content .right .info span {
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .review_detail_content .right .info:first-child {
+    margin-right: calc(100vw * (10 / 428));
+  }
+
+  .review_detail_content .content {
+    width: 100%;
+    padding: calc(100vw * (25 / 428)) calc(100vw * (10 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .review_detail_content .button_wrap {
+    margin-top: calc(100vw * (70 / 428));
+  }
+
+  .review_detail_content .del_btn {
+    width: calc(100vw * (158 / 428));
+    height: calc(100vw * (45 / 428));
+    margin-right: calc(100vw * (10 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  .review_detail_content .edit_btn {
+    width: calc(100vw * (158 / 428));
+    height: calc(100vw * (45 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+  /* search_section */
+  .search_section {
+    padding-bottom: 0;
+    margin: calc(100vw* (55/428)) 0 calc(100vw* (18/428));
+  }
+
+  .product_list_form .search_tit {
+    margin-bottom: calc(100vw * (8 / 428));
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .product_list_form .search_box {
+    width: 48%;
+    margin-bottom: calc(100vw * (12 / 428));
+  }
+  .product_list_form .search_box:nth-child(odd) {
+    margin-right: calc(100vw * (10 / 428));
+  }
+  .product_list_form button {
+    width: 100%;
+    height: calc(100vw * (45 / 428));
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  /* 셀렉트 */
+  .product_list_form fieldset {
+    flex-wrap: wrap;
+    justify-content: unset;
+  }
+  .search_select_wrap {
+    height: calc(100vw * (45 / 428));
+  }
+
+  .product_list_form .select_title,
+  .product_list_form .search_select_list {
+    height: calc(100vw * (45 / 428));
+  }
+
+  .product_list_form .select_title {
+    font-size: calc(100vw * (16 / 428));
+  }
+
+  .product_list_form .search_select_list {
+    height: calc(100vw * (240 / 428));
+    top: calc(100vw * (55 / 428));
+    padding: calc(100vw * (6 / 428)) 0;
+  }
+
+  .product_list_form .list {
+    padding: calc(100vw * (6 / 428)) calc(100vw * (20 / 428));
+  }
+
+  .product_list_form .list .chk {
+    margin-right: calc(100vw * (8 / 428));
+  }
+
+  .product_list_form .list label {
+    font-size: calc(100vw * (14 / 428));
+  }
+
+  .search_select_list::-webkit-scrollbar {
+    width: calc(100vw * (6 / 428));
+    height: calc(100vw * (6 / 428));
+  }
+}

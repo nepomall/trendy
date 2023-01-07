@@ -1,0 +1,821 @@
+/* ---login_page all using */
+.login_inner{
+    width: 426px;
+    margin: 0 auto;
+}
+
+.login_inner h2,
+.login_inner legend{
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.login_inner .login_btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background-color: #7DC3F6;
+    border-radius: 5px;
+}
+
+
+.login_box label{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.login_box input{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 15px;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+}
+
+.login_box input::placeholder{
+    color: #888;
+}
+.login_box > ul > li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
+/* 각 페이지 위 아래 패딩 */
+.login{
+    padding: 110px 0;
+}
+.signup{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.find_id,
+.find_id_end,
+.find_pw_change{
+    padding: 180px 0;
+}
+.find_pw{
+    padding: 140px 0;
+}
+
+/* ---로그인 페이지 */
+.login .login_btn{
+    margin-bottom: 12px;
+}
+.login .login_btn_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.login .login_btn_box div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.login .login_btn_box div > *{
+    display: block;
+}
+.login .login_btn_box span{
+    font-size: 14px;
+    font-weight: 300;
+    color: #444;
+    margin: 0 5px;
+}
+.login .login_btn_box a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #444;
+}
+.login .sub_login button{
+    width: 100%;
+    height: 50px;
+    padding: 0 66px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+}
+
+.login .sub_login button:first-of-type{
+    background: url('../img/icon/naver_ico.svg') 25px center / 21px no-repeat;
+    margin-bottom: 10px;
+}
+.login .sub_login button:last-of-type{
+    background: url('../img/icon/kakao_ico.svg') 23px center / 25px no-repeat;
+}
+
+/* ---아이디 찾기 완료 */
+.find_id_end h2{
+    margin-bottom: 60px;
+}
+.find_id_end .find_id_box{
+    margin-bottom: 50px;
+}
+.find_id_end .find_id_box span{
+    display: block;
+    padding: 16px 0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.find_id_end .find_id_box p{
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+}
+.find_id_end .id_btn_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.find_id_end .id_btn_box a{
+    display: block;
+    width: 208px;
+    padding: 15px 0;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #7DC3F6;
+    border-radius: 5px;
+}
+.find_id_end .id_btn_box a:first-of-type{
+    color: #7DC3F6;
+    font-weight: 400;
+}
+.find_id_end .id_btn_box a:last-of-type{
+    color: #fff;
+    background-color: #7DC3F6;
+    font-weight: 500;
+}
+/* ----회원가입 */
+.signup .login_box{
+    margin-bottom: 50px;
+}
+.signup .gender_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup .gender_box input{
+    display: none;
+}
+.signup .gender_box input[type='radio'] + label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 50px;
+    margin-bottom: 0;
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+.signup .gender_box input[type='radio']:checked + label{
+    background-color: #E5F3FD;
+    color: #45AAF2;
+    border: 1px solid #45AAF2;
+}
+.signup .date_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup .date_box input{
+    width: 135px;
+}
+.signup .phone_box,
+.signup .certify_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup .phone_box{
+    margin-bottom: 10px;
+}
+
+.signup.my_info .phone_box{
+    margin-bottom: 0;
+}
+
+.signup .phone_box input,
+.signup .certify_box input{
+    width: 296px;
+}
+.signup .phone_box button,
+.signup .certify_box button{
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #45AAF2;
+    border: 1px solid #45AAF2;
+    border-radius: 5px;
+}
+.signup .certify_btn.off,
+.signup .end_btn.off{
+    color: #acacac;
+    background-color: #F8F9FA;
+    border: 1px solid #acacac;
+}
+.signup .end_btn.on{
+    color: #45AAF2;
+    background-color: #E5F3FD;
+    border: 1px solid #45AAF2;
+}
+.signup .term_box legend{
+    display: none;
+}
+.signup .term_box ul li{
+    position: relative;
+}
+.signup .term_box ul li:not(:last-of-type){
+    margin-bottom: 15px;
+}
+.signup .term_box .all_click{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 14px;
+    margin-bottom: 13px;
+}
+.signup .term_box input{
+    display: none;
+}
+.signup .term_box input[type='checkbox'] + label{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px 29px;
+    background: url('../img/icon/term_off.svg') 4px center / 17px no-repeat;
+    cursor: pointer;
+}
+.signup .term_box input[type='checkbox']:checked + label{
+    background: url('../img/icon/term_on.svg') 4px center / 17px no-repeat;
+}
+.signup .term_box .term_arrow{
+    position: absolute;
+    top: 0;
+    right: 4px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/icon/term_arrow.svg') center center / 24px no-repeat;
+    transition: transform 0.3s;
+}
+.signup .term_box .term_arrow.active{
+    transform: rotate(-180deg);
+}
+.signup .term_box .term_depth{
+    display: none;
+    width: 100%;
+    height: 114px;
+    padding: 13px 5px 13px 15px;
+    margin-top: 12px;
+    background-color: #f7f7f7;
+}
+.signup .term_box .term_depth.active{
+    display: block;
+}
+.signup .term_box .term_depth pre{
+    height: 88px;
+    font-size: 14px;
+    color: #555;
+    line-height: 140%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+.signup .term_box .term_depth pre::-webkit-scrollbar{
+    width: 2px;
+    background-color: transparent;
+}
+.signup .term_box .term_depth pre::-webkit-scrollbar-thumb{
+    background-color: #888;
+}
+.signup .term_box .term_depth pre::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.signup .login_btn{
+    margin-top: 53px;
+}
+
+/* --개인정보수정 */
+.my_info #user_name,
+.my_info #ID{
+    color: #888;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+.my_info .flex_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.my_info .change_btn{
+    width: 120px;
+    height: 50px;
+    color: #45AAF2;
+    border: 1px solid #45AAF2;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 400;
+}
+.my_info .pw_box input{
+    width: 296px;
+}
+
+.my_info .pw_box.active #PW{
+    width: 100%;
+}
+.my_info .pw_box.active .change_btn{
+    display: none;
+}
+.my_info .pw_check{
+    display: none;
+}
+.my_info .certify_box{
+    display: none;
+}
+.my_info .certify_box.active{
+    display: flex;
+}
+.my_info .pw_check.active{
+    display: block;
+}
+.my_info .login_box{
+    margin-bottom: 45px;
+}
+.my_info .info_bottom{
+    padding-top: 40px;
+    border-top: 1px solid #E5F3FD;
+    margin-bottom: 70px;
+}
+.my_info .info_bottom legend{
+    display: none;
+}
+.my_info .info_bottom .flex_box input{
+    width: 208px;
+}
+.my_info .btn_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_info .btn_box button{
+    width: 208px;
+}
+.my_info .btn_box .login_btn{
+    margin-top: 0;
+}
+
+@media screen and (max-width:1400px){
+    /* ---login_page all using */
+    .login_inner{
+        width: calc(100vw*(426/1400));
+    }
+    
+    .login_inner h2,
+    .login_inner legend{
+        margin-bottom: calc(100vw*(50/1400));
+        font-size: calc(100vw*(20/1400));
+    }
+    
+    .login_inner .login_btn{
+        height: calc(100vw*(50/1400));
+        margin-top: calc(100vw*(15/1400));
+        font-size: calc(100vw*(16/1400));
+        border-radius: calc(100vw*(5/1400));
+    }
+    
+    
+    .login_box label{
+        margin-bottom: calc(100vw*(7/1400));
+        font-size: calc(100vw*(15/1400));
+    }
+    
+    .login_box input{
+        height: calc(100vw*(50/1400));
+        font-size: calc(100vw*(14/1400));
+        padding: 0 calc(100vw*(15/1400));
+        border-radius: calc(100vw*(5/1400));
+    }
+    .login_box > ul > li:not(:last-of-type){
+        margin-bottom: calc(100vw*(20/1400));
+    }
+    
+    /* 각 페이지 위 아래 패딩 */
+    .login{
+        padding: calc(100vw*(110/1400)) 0;
+    }
+    .signup{
+        padding-top: calc(100vw*(100/1400));
+        padding-bottom: calc(100vw*(150/1400));
+    }
+    .find_id,
+    .find_id_end,
+    .find_pw_change{
+        padding: calc(100vw*(180/1400)) 0;
+    }
+    .find_pw{
+        padding: calc(100vw*(140/1400)) 0;
+    }
+    
+    /* ---로그인 페이지 */
+    .login .login_btn{
+        margin-bottom: calc(100vw*(12/1400));
+    }
+    .login .login_btn_box{
+        margin-bottom: calc(100vw*(55/1400));
+    }
+    .login .login_btn_box span{
+        font-size: calc(100vw*(14/1400));
+        margin: 0 calc(100vw*(5/1400));
+    }
+    .login .login_btn_box a{
+        font-size: calc(100vw*(14/1400));
+    }
+    .login .sub_login button{
+        height: calc(100vw*(50/1400));
+        padding: 0 calc(100vw*(66/1400));
+        font-size: calc(100vw*(14/1400));
+        border-radius: calc(100vw*(5/1400));
+    }
+    
+    .login .sub_login button:first-of-type{
+        background: url('../img/icon/naver_ico.svg') calc(100vw*(25/1400)) center / calc(100vw*(21/1400)) no-repeat;
+        margin-bottom: calc(100vw*(10/1400));
+    }
+    .login .sub_login button:last-of-type{
+        background: url('../img/icon/kakao_ico.svg') calc(100vw*(23/1400)) center / calc(100vw*(25/1400)) no-repeat;
+    }
+    
+    /* ---아이디 찾기 완료 */
+    .find_id_end h2{
+        margin-bottom: calc(100vw*(60/1400));
+    }
+    .find_id_end .find_id_box{
+        margin-bottom: calc(100vw*(50/1400));
+    }
+    .find_id_end .find_id_box span{
+        padding: calc(100vw*(16/1400)) 0;
+        margin-bottom: calc(100vw*(20/1400));
+        font-size: calc(100vw*(18/1400));
+        border-radius: calc(100vw* (5/1400));
+    }
+    .find_id_end .find_id_box p{
+        font-size: calc(100vw*(15/1400));
+    }
+    .find_id_end .id_btn_box a{
+        width: calc(100vw*(208/1400));
+        padding: calc(100vw*(15/1400)) 0;
+        font-size: calc(100vw*(16/1400));
+        border-radius: calc(100vw*(5/1400));
+    }
+    /* ----회원가입 */
+    .signup .login_box{
+        margin-bottom: calc(100vw*(50/1400));
+    }
+    .signup .gender_box input[type='radio'] + label{
+        width: calc(100vw*(208/1400));
+        height: calc(100vw*(50/1400));
+        margin-bottom: 0;
+        border-radius: calc(100vw*(5/1400));
+        font-size: calc(100vw*(14/1400));
+    }
+    .signup .date_box input{
+        width: calc(100vw*(135/1400));
+    }
+    .signup .phone_box{
+        margin-bottom: calc(100vw*(10/1400));
+    }
+    .signup .phone_box input,
+    .signup .certify_box input{
+        width: calc(100vw*(296/1400));
+    }
+    .signup .phone_box button,
+    .signup .certify_box button{
+        width: calc(100vw*(120/1400));
+        height: calc(100vw*(50/1400));
+        font-size: calc(100vw*(14/1400));
+        border-radius: calc(100vw*(5/1400));
+    }
+    .signup .term_box ul li:not(:last-of-type){
+        margin-bottom: calc(100vw*(15/1400));
+    }
+    .signup .term_box .all_click{
+        padding-bottom: calc(100vw*(14/1400));
+        margin-bottom: calc(100vw*(13/1400));
+    }
+    .signup .term_box input[type='checkbox'] + label{
+        font-size: calc(100vw*(14/1400));
+        padding: calc(100vw*(3/1400)) calc(100vw*(29/1400));
+        background: url('../img/icon/term_off.svg') calc(100vw*(4/1400)) center / calc(100vw*(17/1400)) no-repeat;
+    }
+    .signup .term_box input[type='checkbox']:checked + label{
+        background: url('../img/icon/term_on.svg') calc(100vw*(4/1400)) center / calc(100vw*(17/1400)) no-repeat;
+    }
+    .signup .term_box .term_arrow{
+        top: 0;
+        right: calc(100vw*(4/1400));
+        width: calc(100vw*(24/1400));
+        height: calc(100vw*(24/1400));
+        background: url('../img/icon/term_arrow.svg') center center / calc(100vw*(24/1400)) no-repeat;
+    }
+    .signup .term_box .term_depth{
+        height: calc(100vw*(114/1400));
+        padding: calc(100vw*(13/1400)) calc(100vw*(5/1400)) calc(100vw*(13/1400)) calc(100vw*(15/1400));
+        margin-top: calc(100vw*(12/1400));
+    }
+    .signup .term_box .term_depth pre{
+        height: calc(100vw*(88/1400));
+        font-size: calc(100vw*(14/1400));
+    }
+    .signup .term_box .term_depth pre::-webkit-scrollbar{
+        width: calc(100vw*(2/1400));
+    }
+    .signup .login_btn{
+        margin-top: calc(100vw*(53/1400));
+    }
+    
+    /* --개인정보수정 */
+    .my_info .change_btn{
+        width: calc(100vw*(120/1400));
+        height: calc(100vw*(50/1400));
+        border-radius: calc(100vw*(5/1400));
+    
+        font-size: calc(100vw*(14/1400));
+    }
+    .my_info .pw_box input{
+        width: calc(100vw*(296/1400));
+    }
+    .my_info .login_box{
+        margin-bottom: calc(100vw*(45/1400));
+    }
+    .my_info .info_bottom{
+        padding-top: calc(100vw*(40/1400));
+        margin-bottom: calc(100vw*(70/1400));
+    }
+    .my_info .info_bottom .flex_box input{
+        width: calc(100vw*(208/1400));
+    }
+    
+    .my_info .btn_box button{
+        width: calc(100vw*(208/1400));
+    }
+    .my_info .btn_box .login_btn{
+        margin-top: 0;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px){
+    /* ---login_page all using */
+    .login_inner{
+        width: calc(100vw*(358/428));
+        margin: 0 auto;
+    }
+    
+    .login_inner h2,
+    .login_inner legend{
+        margin-bottom: calc(100vw*(45/428));
+        font-size: calc(100vw*(20/428));
+    }
+    
+    .login_inner .login_btn{
+        height: calc(100vw*(50/428));
+        margin-top: calc(100vw*(10/428));
+        font-size: calc(100vw*(16/428));
+        border-radius: calc(100vw*(5/428));
+    }
+    .login_box label{
+        margin-bottom: calc(100vw*(7/428));
+        font-size: calc(100vw*(15/428));
+    }
+    
+    .login_box input{
+        height: calc(100vw*(50/428));
+        font-size: calc(100vw*(14/428));
+        padding: 0 calc(100vw*(15/428));
+        border-radius: calc(100vw*(5/428));
+    }
+    .login_box > ul > li:not(:last-of-type){
+        margin-bottom: calc(100vw*(15/428));
+    }
+    
+    /* 각 페이지 위 아래 패딩 */
+    .login{
+        padding: calc(100vw*(120/428)) 0;
+    }
+    .signup{
+        padding-top: calc(100vw*(0/428));
+        padding-bottom: calc(100vw*(100/428));
+    }
+    .find_id,
+    .find_id_end,
+    .find_pw_change{
+        padding: calc(100vw*(180/428)) 0;
+    }
+    .find_pw{
+        padding: calc(100vw*(140/428)) 0;
+    }
+    
+    /* ---로그인 페이지 */
+    .login .login_btn{
+        margin-bottom: calc(100vw*(10/428));
+    }
+    .login .login_btn_box{
+        margin-bottom: calc(100vw*(55/428));
+    }
+    .login .login_btn_box span{
+        font-size: calc(100vw*(14/428));
+        margin: 0 calc(100vw*(5/428));
+    }
+    .login .login_btn_box a{
+        font-size: calc(100vw*(14/428));
+    }
+    .login .sub_login button{
+        height: calc(100vw*(50/428));
+        padding: 0 calc(100vw*(66/428));
+        font-size: calc(100vw*(14/428));
+        border-radius: calc(100vw*(5/428));
+    }
+    
+    .login .sub_login button:first-of-type{
+        background: url('../img/icon/naver_ico.svg') calc(100vw*(21/428)) center / calc(100vw*(21/428)) no-repeat;
+        margin-bottom: calc(100vw*(10/428));
+    }
+    .login .sub_login button:last-of-type{
+        background: url('../img/icon/kakao_ico.svg') calc(100vw*(25/428)) center / calc(100vw*(25/428)) no-repeat;
+    }
+    
+    /* ---아이디 찾기 완료 */
+    .find_id_end h2{
+        margin-bottom: calc(100vw*(60/428));
+    }
+    .find_id_end .find_id_box{
+        margin-bottom: calc(100vw*(50/428));
+    }
+    .find_id_end .find_id_box span{
+        padding: calc(100vw*(16/428)) 0;
+        margin-bottom: calc(100vw*(30/428));
+        font-size: calc(100vw*(14/428));
+        border-radius: calc(100vw* (5/428));
+    }
+    .find_id_end .find_id_box p{
+        font-size: calc(100vw*(15/428));
+    }
+    .find_id_end .id_btn_box a{
+        display: block;
+        width: calc(100vw*(174/428));
+        padding: calc(100vw*(15/428)) 0;
+        font-size: calc(100vw*(16/428));
+        border-radius: calc(100vw*(5/428));
+    }
+    /* ----회원가입 */
+    .signup .login_box{
+        margin-bottom: calc(100vw*(60/428));
+    }
+    .signup .gender_box input[type='radio'] + label{
+        width: calc(100vw*(174/428));
+        height: calc(100vw*(50/428));
+        margin-bottom: 0;
+        border-radius: calc(100vw*(5/428));
+        font-size: calc(100vw*(14/428));
+    }
+    .signup .date_box input{
+        width: calc(100vw*(113/428));
+    }
+    .signup .date_box input:not(:first-of-type){
+        margin-left: calc(100vw*(11/428));
+    }
+    .signup .phone_box{
+        margin-bottom: calc(100vw*(7/428));
+    }
+    .signup .phone_box input,
+    .signup .certify_box input{
+        width: calc(100vw*(228/428));
+    }
+    .signup .phone_box button,
+    .signup .certify_box button{
+        width: calc(100vw*(120/428));
+        height: calc(100vw*(50/428));
+        font-size: calc(100vw*(14/428));
+        border-radius: calc(100vw*(5/428));
+    }
+    .signup .term_box ul li:not(:last-of-type){
+        margin-bottom: calc(100vw*(15/428));
+    }
+    .signup .term_box .all_click{
+        padding-bottom: calc(100vw*(14/428));
+        margin-bottom: calc(100vw*(13/428));
+    }
+    .signup .term_box input[type='checkbox'] + label{
+        font-size: calc(100vw*(16/428));
+        padding: calc(100vw*(3/428)) calc(100vw*(38/428));
+        background: url('../img/icon/term_off.svg') calc(100vw*(10/428)) center / calc(100vw*(18/428)) no-repeat;
+        cursor: pointer;
+    }
+    .signup .term_box input[type='checkbox']:checked + label{
+        background: url('../img/icon/term_on.svg') calc(100vw*(10/428)) center / calc(100vw*(18/428)) no-repeat;
+    }
+    .signup .term_box .term_arrow{
+        right: 0;
+        display: block;
+        width: calc(100vw*(24/428));
+        height: calc(100vw*(24/428));
+        background: url('../img/icon/term_arrow.svg') center center / calc(100vw*(24/428)) no-repeat;
+        transition: transform 0.3s;
+    }
+    .signup .term_box .term_depth{
+        height: calc(100vw*(114/428));
+        padding: calc(100vw*(13/428)) calc(100vw*(5/428)) calc(100vw*(13/428)) calc(100vw*(13/428));
+        margin-top: calc(100vw*(12/428));
+    }
+    .signup .term_box .term_depth pre{
+        height: calc(100vw*(88/428));
+        font-size: calc(100vw*(14/428));
+        line-height: 160%;
+    }
+    .signup .term_box .term_depth pre::-webkit-scrollbar{
+        width: calc(100vw*(2/428));
+    }
+    
+    .signup .login_btn{
+        margin-top: calc(100vw*(68/428));
+    }
+    
+    /* --개인정보수정 */
+    .my_info .change_btn{
+        width: calc(100vw*(120/428));
+        height: calc(100vw*(50/428));
+        margin-left: calc(100vw*(10/428));
+        flex-shrink: 0;
+        border-radius: calc(100vw*(5/428));
+        font-size: calc(100vw*(14/428));
+    }
+    .my_info .pw_box input{
+        width: calc(100vw*(296/428));
+    }
+    .my_info .login_box input{
+        width: 100%;
+    }
+    .my_info .login_box ul li:last-of-type button{
+        flex-shrink: 0;
+        margin-left: calc(100vw*(10/428));
+    }
+    .my_info .login_box{
+        margin-bottom: calc(100vw*(45/428));
+    }
+    .my_info .info_bottom{
+        padding-top: calc(100vw*(40/428));
+        margin-bottom: calc(100vw*(60/428));
+    }
+    .my_info .info_bottom legend{
+        display: none;
+    }
+    .my_info .info_bottom .flex_box{
+        display: block;
+    }
+    .my_info .info_bottom .flex_box div:first-of-type{
+        margin-bottom: calc(100vw*(15/428));
+    }
+    .my_info .info_bottom .flex_box input{
+        width: 100%;
+    }
+    .my_info .btn_box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .my_info .btn_box button{
+        width: calc(100vw*(174/428));
+    }
+    .my_info .btn_box button:first-of-type{
+        margin-left: 0;
+    }
+    /* .my_info .btn_box button:last-of-type{
+        margin-left: calc(100vw*(10/428));
+    } */
+    .my_info .btn_box .login_btn{
+        margin-top: 0;
+    }
+}

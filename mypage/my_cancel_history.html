@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Trendy europe</title>
+
+    <link rel="icon" href="../img/common/favicon.ico" />
+    <!--Import-->
+    <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+    <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+    <script type="text/javascript" src="../js/header.js "></script>
+    <script type="text/javascript" src="../js/common.js "></script>
+    <script type="text/javascript" src="../js/mypage.js "></script>
+    <script type="text/javascript" src="../js/air-datepicker.js"></script>
+    <script type="text/javascript" src="../js/myTrip_modal.js"></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/head.css" />
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../css/air-datepicker.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/mypage.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 모바일 고정 하단바 -->
+        <div class="m_bottom_btn">
+            <div class="m_btn_group m_btn_flex">
+                <button class="btn history_btn">결제 내역</button>
+                <span>
+                    *환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료
+                    관련 내용
+                </span>
+            </div>
+        </div>
+        <!-- 헤더 -->
+        <trendy-headpc></trendy-headpc>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content" class="mypage fixed_padding">
+            <div class="inner">
+                <section class="c_payment_wrap">
+                    <div class="c_container">
+                        <!-- 여행 상품 정보 -->
+                        <div class="c_information_wrap">
+                            <h2 class="list_title">여행 상품 정보</h2>
+                            <div class="c_information_box">
+                                <div class="c_information_img">
+                                    <img src="../img/mypage/big_somenail.png" alt="" />
+                                </div>
+                                <div class="c_information_text">
+                                    <h2>[세미패키지] 이탈리아 핵심 8일</h2>
+                                    <span>이탈리아 인기 도시와 주변 근교를 전문 가이드와 함께 !</span>
+                                    <div class="c_info_text">
+                                        <div class="c_info_head">
+                                            <p>여행 기간</p>
+                                            <p>항공</p>
+                                            <p>여행 지역</p>
+                                        </div>
+                                        <div class="c_info_body">
+                                            <p>2022년 5월 16일 (월) 00:00</p>
+                                            <p>2022년 5월 24일 (화) 00:00</p>
+                                            <p>로마(3) · 피렌체(1) · 베네치아(2)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c_price">
+                                    <p>상품 금액:</p>
+                                    <span>0,000,000</span>
+                                    <strong>원</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 모바일 여행 상품정보 -->
+                        <div class="m_pay_container">
+                            <h2 class="list_title">여행 상품 정보</h2>
+                            <div class="m_pay_imgbox">
+                                <div class="m_information_img">
+                                    <img src="../img/mypage/big_somenail.png" alt="" />
+                                </div>
+                                <div class="m_information_text">
+                                    <h2>[세미패키지] 이탈리아 핵심 8일</h2>
+                                    <span>이탈리아 인기 도시와 주변 근교를 전문 가이드와 함께 !</span>
+                                </div>
+                            </div>
+                            <div class="m_pay_textbox">
+                                <div class="c_info_head">
+                                    <p>어행 기간</p>
+                                    <p>항공</p>
+                                    <p>인원</p>
+                                </div>
+                                <div class="c_info_body">
+                                    <p>2022년 5월 16일 (월) 00:00</p>
+                                    <p>2022년 5월 24일 (화) 00:00</p>
+                                    <p>로마(3) · 피렌체(1) · 베네치아(2)</p>
+                                </div>
+                            </div>
+                            <div class="m_pay_price">
+                                <p>상품 금액</p>
+                                <div class="m_price_box">
+                                    <span>1,000,000</span>
+                                    <p>원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 여행 상품 정보 -->
+                        <div class="c_booker_wrap">
+                            <h2 class="list_title">예약자 정보</h2>
+                            <div class="c_booker_box">
+                                <ul>
+                                    <li class="c_b_title">이름</li>
+                                    <li class="c_b_text">포차코</li>
+                                    <li class="c_b_title">성별</li>
+                                    <li class="c_b_text">여성</li>
+                                </ul>
+                                <ul>
+                                    <li class="c_b_title">휴대폰 번호</li>
+                                    <li class="c_b_text">0100000000</li>
+                                    <li class="c_b_title">생년월일</li>
+                                    <li class="c_b_text">00000000</li>
+                                </ul>
+                                <ul>
+                                    <li class="c_b_title">이메일</li>
+                                    <li class="c_b_text">adf@naver.com</li>
+                                    <li class="c_b_title">영문명</li>
+                                    <li class="c_b_text">Po chaco</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 여행 상품 정보 -->
+                        <div class="c_product_wrap">
+                            <h2 class="list_title">여행자 상세 정보</h2>
+                            <div class="c_booker_box">
+                                <ul>
+                                    <li class="c_b_title">이름</li>
+                                    <li class="c_b_text">
+                                        <input type="text" value="포차코" disabled />
+                                    </li>
+                                    <li class="c_b_title">성별</li>
+                                    <li class="c_b_text">
+                                        <div class="c_gender">
+                                            <button class="btn" disabled>남성</button>
+                                            <button class="btn" disabled>여성</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="c_b_title">휴대폰 번호</li>
+                                    <li class="c_b_text">
+                                        <input type="text" value="0000000000" disabled />
+                                    </li>
+                                    <li class="c_b_title">생년월일</li>
+                                    <li class="c_b_text">00000000</li>
+                                </ul>
+                                <ul>
+                                    <li class="c_b_title">영문명</li>
+                                    <li class="c_b_text">
+                                        <div class="c_e_name">
+                                            <input type="text" value="Po" class="w_left" disabled />
+                                            <input type="text" value="chaco" class="w_right" disabled />
+                                        </div>
+                                    </li>
+                                    <li class="c_b_title m_list_none"></li>
+                                    <li class="c_b_text m_list_none"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 여행 상품 정보 -->
+                        <div class="c_product_wrap c_list_margin">
+                            <div class="c_booker_box">
+                                <ul>
+                                    <li class="c_b_title">이름</li>
+                                    <li class="c_b_text">
+                                        <input type="text" value="포차코" disabled />
+                                    </li>
+                                    <li class="c_b_title">성별</li>
+                                    <li class="c_b_text">
+                                        <div class="c_gender">
+                                            <button class="btn" disabled>남성</button>
+                                            <button class="btn" disabled>여성</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="c_b_title">휴대폰 번호</li>
+                                    <li class="c_b_text">
+                                        <input type="text" value="0000000000" disabled />
+                                    </li>
+                                    <li class="c_b_title">생년월일</li>
+                                    <li class="c_b_text">00000000</li>
+                                </ul>
+                                <ul>
+                                    <li class="c_b_title">영문명</li>
+                                    <li class="c_b_text">
+                                        <div class="c_e_name">
+                                            <input type="text" value="Po" class="w_left" disabled />
+                                            <input type="text" value="chaco" class="w_right" disabled />
+                                        </div>
+                                    </li>
+                                    <li class="c_b_title m_list_none"></li>
+                                    <li class="c_b_text m_list_none"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 모바일 결제정보 -->
+                        <div class="m_payment_wrap">
+                            <h2 class="list_title">결제 정보</h2>
+                            <div class="c_info_text">
+                                <div class="c_info_head">
+                                    <p>출발일</p>
+                                    <p>귀국일</p>
+                                    <p>여행 지역</p>
+                                </div>
+                                <div class="c_info_body">
+                                    <p>0000.00.00 ~ 0000.00.00</p>
+                                    <p>케이엘엠네덜란드 항공</p>
+                                    <div class="c_personnel">
+                                        <span>성인 0 명</span>
+                                        <span>소아 0 명</span>
+                                        <span>유아 0 명</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m_pay_price">
+                                <p>상품 금액</p>
+                                <div class="m_price_box">
+                                    <span>1,000,000</span>
+                                    <p>원</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 유의 사항 -->
+                        <div class="c_notice_wrap">
+                            <div class="list_title">유의 사항</div>
+                            <div class="c_notice_read">
+                                Lorem <br /><br />
+                                ipsum dolor sit, amet consectetur adipisicing elit. Quod earum culpa tenetur vitae
+                                minima, delectus odit amet deleniti possimus deserunt
+                                doloremque omnis molestias tempora ipsum sunt. Quos corrupti amet alias molestiae eaque
+                                perferendis optio tenetur officia reiciendis
+                                architecto eum nobis iusto dolore ipsum, sit omnis veritatis velit impedit perspiciatis
+                                fugiat rerum. In, soluta nemo? Voluptatum dolores
+                                consequuntur obcaecati, non accusamus harum maiores qui dolorum laudantium quas nulla?
+                                Pariatur beatae quis distinctio reiciendis harum
+                                consequuntur nesciunt sit dolorem, quas eos sapiente accusantium at dolorum laudantium
+                                saepe fuga ab sint sequi hic id animi magnam quasi!
+                                Sed, suscipit autem! Voluptatum ab autem ipsam deserunt atque, libero eius ad dolorem
+                                ullam, dolorum quisquam. Numquam dolorem quae veniam
+                                consequatur quibusdam labore sit fuga facere asperiores vitae. Magni, maiores
+                                reprehenderit natus eaque, quaerat adipisci cumque, ad beatae
+                                totam hic possimus delectus itaque consequatur? Quasi distinctio ducimus dignissimos
+                                architecto earum assumenda nam alias deleniti
+                                necessitatibus porro consectetur veritatis consequatur velit, dolores praesentium
+                                officiis labore nisi saepe, magni omnis? Magni eum deleniti
+                                aspernatur doloremque, iusto nemo voluptatum quam facere hic veniam quia perferendis
+                                necessitatibus molestias eligendi error minima non
+                                voluptates natus adipisci ipsa exercitationem velit animi tempore? Consectetur itaque
+                                sit reprehenderit doloribus repellat aliquid mollitia
+                                nihil molestiae!
+                            </div>
+                        </div>
+                        <!-- 목록 버튼 -->
+                        <div class="c_list_btn">
+                            <button class="btn" type="button" onclick="location.href='my_cancel.html'">목록</button>
+                        </div>
+                    </div>
+                    <!-- 오른쪽 박스 -->
+                    <div class="c_payment_box">
+                        <div class="c_payment_toptext">
+                            <div class="c_info_text">
+                                <div class="c_info_head">
+                                    <p>출발일</p>
+                                    <p>귀국일</p>
+                                    <p>여행 지역</p>
+                                </div>
+                                <div class="c_info_body">
+                                    <p>0000.00.00 ~ 0000.00.00</p>
+                                    <p>케이엘엠네덜란드 항공</p>
+                                    <div class="c_personnel">
+                                        <span>성인 0 명</span>
+                                        <span>소아 0 명</span>
+                                        <span>유아 0 명</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c_pay_price">
+                            <p>환불 예정 금액</p>
+                            <div class="c_price">
+                                <p><strong>0,000,000</strong>&nbsp;원</p>
+                            </div>
+                        </div>
+                        <button class="btn history_btn">결제 내역</button>
+                        <div class="c_notice_text">*환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료 관련 내용 환불 수수료 관련 내용
+                        </div>
+                    </div>
+                </section>
+                <!-- modal -->
+                <section class="pop_section">
+                    <!-- 큰모달 -->
+                    <div class="modal_bg pay_modal_wrap">
+                        <div class="pay_modal">
+                            <div class="modal_backbtn">
+                                <a href="javascript:void(0);">
+                                    <img src="../img/mypage/modal_back.svg" alt="" />
+                                </a>
+                            </div>
+                            <div class="list_title">결제 내역</div>
+                            <div class="modal_tab">
+                                <span class="tab">
+                                    <a href="javascript:void(0);"> 결제 내역 </a>
+                                </span>
+                                <span class="tab">
+                                    <a href="javascript:void(0);"> 취소 내역 </a>
+                                </span>
+                            </div>
+
+                            <!-- 결제내역 탭 -->
+                            <div class="modal_tabcon">
+                                <div class="modal_content">
+                                    <h2 class="list_title">결제 내역&ensp;<span>0</span>&nbsp;건</h2>
+                                    <div class="history_list">
+                                        <ul class="head_list">
+                                            <li>이름</li>
+                                            <li>결제일</li>
+                                            <li>결제 수단</li>
+                                            <li>결제 금액</li>
+                                        </ul>
+                                        <div class="body_list_wrap">
+                                            <ul class="body_list">
+                                                <!-- <p class="none_text">
+                              결제 내역이 없습니다
+                          </p> -->
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 취소내역 탭 -->
+                            <div class="modal_tabcon">
+                                <div class="modal_content">
+                                    <h2 class="list_title">취소 내역&ensp;<span>0</span>&nbsp;건</h2>
+                                    <div class="history_list">
+                                        <ul class="head_list">
+                                            <li>이름</li>
+                                            <li>취소일</li>
+                                            <li>결제 수단</li>
+                                            <li>취소 금액</li>
+                                        </ul>
+                                        <div class="body_list_wrap">
+                                            <ul class="body_list">
+                                                <!-- <p class="none_text">
+                                                    결제 내역이 없습니다
+                                                </p> -->
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                            <ul class="body_list">
+                                                <a href="javascript:void(0);">
+                                                    <li>포차코</li>
+                                                    <li>0000.00.00</li>
+                                                    <li class="subject">신용카드 결제</li>
+                                                    <li>0,000,000</li>
+                                                </a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 모바일 취소내역 탭 -->
+                            <div class="m_mobile_tabcon">
+                                <h2 class="list_title">결제 내역&ensp;<span>0</span>&nbsp;건</h2>
+                                <ul class="m_tabcon_wrap">
+                                    <li>
+                                        <div class="m_tabcon_top">
+                                            <p>포차코</p>
+                                            <span>0000.00.00</span>
+                                        </div>
+                                        <div class="m_tabcon_bottom">
+                                            <p>신용카드 결제</p>
+                                            <span>0,000,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m_tabcon_top">
+                                            <p>포차코</p>
+                                            <span>0000.00.00</span>
+                                        </div>
+                                        <div class="m_tabcon_bottom">
+                                            <p>신용카드 결제</p>
+                                            <span>0,000,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m_tabcon_top">
+                                            <p>포차코</p>
+                                            <span>0000.00.00</span>
+                                        </div>
+                                        <div class="m_tabcon_bottom">
+                                            <p>신용카드 결제</p>
+                                            <span>0,000,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m_tabcon_top">
+                                            <p>포차코</p>
+                                            <span>0000.00.00</span>
+                                        </div>
+                                        <div class="m_tabcon_bottom">
+                                            <p>신용카드 결제</p>
+                                            <span>0,000,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m_tabcon_top">
+                                            <p>포차코</p>
+                                            <span>0000.00.00</span>
+                                        </div>
+                                        <div class="m_tabcon_bottom">
+                                            <p>신용카드 결제</p>
+                                            <span>0,000,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="m_tabcon_top">
+                                            <p>포차코</p>
+                                            <span>0000.00.00</span>
+                                        </div>
+                                        <div class="m_tabcon_bottom">
+                                            <p>신용카드 결제</p>
+                                            <span>0,000,000</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 모바일 취소내역 탭 -->
+                            <div class="m_mobile_tabcon">
+                                <h2 class="list_title">취소 내역&ensp;<span>0</span>&nbsp;건</h2>
+                                <ul class="m_tabcon_wrap">
+                                    <li>
+                                        <div class="m_tabcon_top">
+                                            <p>포차코</p>
+                                            <span>0000.00.00</span>
+                                        </div>
+                                        <div class="m_tabcon_bottom1">
+                                            <p>신용카드 결제</p>
+                                            <span>0,000,000</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal_bg cancel_modal">
+                        <div class="message_modal">
+                            <div class="text_area">
+                                <div class="align_text">
+                                    <h3 class="big_text">결제를 취소 하겠습니까?</h3>
+                                </div>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="cancel_btn close_btn">취소</button>
+                                <button class="apply_btn first_apply">확인</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal_bg cancel_modal1">
+                        <div class="message_modal">
+                            <div class="text_area">
+                                <div class="align_text">
+                                    <h3 class="big_text">결제를 취소 되었습니다.</h3>
+                                </div>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="apply_btn full close_btn"
+                                    onclick="location.href='my_cancel.html'">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="modal_bg reservation_cancel">
+                        <div class="message_modal">
+                            <div class="text_area">
+                                <div class="align_text">
+                                    <h3 class="big_text">예약을 취소하겠습니까?</h3>
+                                </div>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="cancel_btn close_btn">취소</button>
+                                <button class="apply_btn first_apply">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="modal_bg reservation_cancel_clear">
+                        <div class="message_modal">
+                            <div class="text_area">
+                                <div class="align_text">
+                                    <h3 class="big_text">예약이 취소 되었습니다.</h3>
+                                </div>
+                            </div>
+                            <div class="button_wrap">
+                                <button class="apply_btn full close_btn"
+                                    onclick="location.href='my_reservation.html'">확인</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <trendy-mytripmodal></trendy-mytripmodal>
+                </section>
+            </div>
+        </div>
+
+        <div id="footer">
+            <trendy-footerpc></trendy-footerpc>
+        </div>
+    </div>
+</body>
+
+</html>

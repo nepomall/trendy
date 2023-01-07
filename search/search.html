@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy europe</title>
+    <script type='text/javascript' src='../js/jquery-3.6.0.js'></script>
+    <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+    <script type='text/javascript' src="../js/header.js"></script>
+    <script src="../js/search.js"></script>
+    <script type='text/javascript' src="../js/script.js"></script>
+    <script type='text/javascript' src='../js/common.js '></script>
+    <script type='text/javascript' src="../js/air-datepicker.js"></script>
+    <script type='text/javascript' src="../js/myTrip_modal.js"></script>
+
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/jquery.timepicker.css">
+    <link rel="stylesheet" href="../css/air-datepicker.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <trendy-headpc></trendy-headpc>
+
+        <div id="wrap_content">
+            <div class="search">
+                <h2>검색 결과</h2>
+
+                <div class="search_result">
+                    <p><span>이태리</span>검색 결과<span>000</span>개</p>
+                    <div class="search_word">
+                        <span>연관 검색어</span>
+                        <ul>
+                            <li><button type="button">이태리 자유여행</button></li>
+                            <li><button type="button">이태리 패키지 여행</button></li>
+                            <li><button type="button">이태리 여행 후기</button></li>
+                            <li><button type="button">이태리 여행 소식</button></li>
+                            <li><button type="button">이태리 테마 여행</button></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="sub_title">
+                    <li class="active"><button type="button" data-tabNumb="goods" class="goods active">여행 상품</button></li>
+                    <li><button type="button" data-tabNumb="news" class="news">소식</button></li>
+                    <li><button type="button" data-tabNumb="video" class="video">영상</button></li>
+                    <li><button type="button" data-tabNumb="review" class="review">후기</button></li>
+                </ul>
+
+                <!-- 여행 상품 -->
+                <section id="goods" class="active">
+                    <div class="sub_btn">
+                        <button type="button" class="active">낮은 가격순</button>
+                        <span></span>
+                        <button type="button">높은 가격순</button>
+                    </div>
+
+                    <!-- 검색 결과 없을 시 띄워 주세요-->
+                    <!-- <div class="empty_inner">
+                        <p>검색 결과가 존재하지 않습니다.</p>
+                    </div> -->
+
+                    <ul>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                          </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                                <span class="heart"></span>
+                            </div>
+                            <div class="bot_text_box">
+                                <h3>[자유여행] 프라하 ∙ 비엔나 7일</h3>
+                                <span class="top_span">로맨틱한 동유럽 프라하, 예술의 중부도시 비엔나</span>
+                                <span>프라하 3일 + 비엔나 2일</span>
+                                <p>1,300,000 <span>원~</span></p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- 페이지네이션 -->
+                    <div class="pagination">
+                        <ul>
+                            <!-- active 클래스 추가하면 활성화 컬러 -->
+                            <li class="prev_icon">
+                                <a href="#" onclick="return false"></a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false" class="active"> 1 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 2 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 3 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 4 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 5 </a>
+                            </li>
+                            <!-- active 클래스 추가하면 비활성화 컬러 -->
+                            <li class="next_icon">
+                                <a href="#" onclick="return false"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            
+                <!-- 소식 -->
+                <section id="news">
+                    <div class="sub_btn">
+                        <button type="button" class="active">최신순</button>
+                        <span></span>
+                        <button type="button">오래된 순</button>
+                    </div>                    
+                    
+                    <!-- 검색 결과 없을 시 띄워 주세요 -->
+                    <!-- <div class="empty_inner">
+                        <p>검색 결과가 존재하지 않습니다.</p>
+                    </div> -->
+
+                    <div>
+                        <ul class="news_list_title">
+                            <li><span>번호</span></li>
+                            <li><span>제목</span></li>
+                            <li><span>작성일</span></li>
+                        </ul>
+    
+                        <ul class="list_info">
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목</p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                            <li>
+                                <span>100</span>
+                                <p>제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 </p>
+                                <span>0000.00.00</span>
+                            </li>
+                        </ul>
+                        <!-- 페이지네이션 -->
+                        <div class="pagination">
+                            <ul>
+                                <!-- active 클래스 추가하면 활성화 컬러 -->
+                                <li class="prev_icon">
+                                    <a href="#" onclick="return false"></a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false" class="active"> 1 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 2 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 3 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 4 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 5 </a>
+                                </li>
+                                <!-- active 클래스 추가하면 비활성화 컬러 -->
+                                <li class="next_icon">
+                                    <a href="#" onclick="return false"> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+             
+                <!-- 영상 -->
+                <section id="video">                    
+                    
+                    <!-- 검색 결과 없을 시 띄워 주세요 -->
+
+                    <!-- <div class="empty_inner">
+                        <p>검색 결과가 존재하지 않습니다.</p>
+                    </div> -->
+
+                    <ul>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목동영상 제목동영상 제목동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide1.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide3.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="../img/main/sect_slide2.jpg" alt="">
+                            </div>
+                            <div class="info_box">
+                                <span>0000.00.00</span>
+                                <h3>동영상 제목 동영상 제목 동영상 제목</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <!-- 페이지네이션 -->
+                    <div class="pagination">
+                        <ul>
+                            <!-- active 클래스 추가하면 활성화 컬러 -->
+                            <li class="prev_icon">
+                                <a href="#" onclick="return false"></a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false" class="active"> 1 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 2 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 3 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 4 </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="return false"> 5 </a>
+                            </li>
+                            <!-- active 클래스 추가하면 비활성화 컬러 -->
+                            <li class="next_icon">
+                                <a href="#" onclick="return false"> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 후기 -->
+                <section id="review">
+                    <div class="sub_btn">
+                        <button type="button" class="active">최신순</button>
+                        <span></span>
+                        <button type="button">오래된 순</button>
+                    </div>                    
+                    
+                    <!-- 검색 결과 없을 시 띄워 주세요 -->
+                    <!-- <div class="empty_inner">
+                        <p>검색 결과가 존재하지 않습니다.</p>
+                    </div> -->
+
+                    <div>
+                        <div class="table_wrap">
+                            <ul class="table_head">
+                                <li class="list">
+                                    방문 국가
+                                </li>
+                                <li class="list">
+                                    상품 종류
+                                </li>
+                                <li class="list">
+                                    여행 TYPE
+                                </li>
+                                <li class="list">
+                                    제목
+                                </li>
+                                <li class="list">
+                                    작성자
+                                </li>
+                                <li class="list">
+                                    작성일
+                                </li>
+                            </ul>
+                            <div class="table_body">
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="table_list" onclick="location.href='../travelReview/travel_review_detail.html'">
+                                    <li class="list">
+                                        <span>
+                                            이탈리아
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            우리 끼리 단독
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            가족 여행
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목 제목
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            포**
+                                        </span>
+                                    </li>
+                                    <li class="list">
+                                        <span>
+                                            0000.00.00
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 페이지네이션 -->
+                        <div class="pagination">
+                            <ul>
+                                <!-- active 클래스 추가하면 활성화 컬러 -->
+                                <li class="prev_icon">
+                                    <a href="#" onclick="return false"></a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false" class="active"> 1 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 2 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 3 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 4 </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 5 </a>
+                                </li>
+                                <li class="dotdot">
+                                    <a href="#" onclick="return false"> ... </a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="return false"> 30 </a>
+                                </li>
+                                <!-- active 클래스 추가하면 비활성화 컬러 -->
+                                <li class="next_icon">
+                                    <a href="#" onclick="return false"> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <trendy-mytripmodal></trendy-mytripmodal>
+
+        <!-- footer -->
+        <footer id="footer">
+            <trendy-footerpc></trendy-footerpc>
+        </footer>
+                
+        <!-- TOP 버튼 -->
+        <div class="btn_top">
+            <div class="btn_top_wrap">
+                <div class="img_wrap">
+                    <img src="../img/icon/icon_top_arrow.svg" alt="위로가기 버튼">
+                </div>
+                <button type="button">TOP</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

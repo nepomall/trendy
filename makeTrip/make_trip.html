@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Trendy europe</title>
+    <!--Import-->
+    <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/make_trip.js"></script>
+    <!-- link -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/make_trip.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header class="make_header">
+            <h1 class="logo" onclick="location.href='../index.html'"></h1>
+            <button type="button" class="page_close" onclick="location.href='../index.html'"></button>
+        </header>
+
+        <!-- 컨텐츠 -->
+        <div id="wrap_content" class="make_trip_page">
+            <!-- 왼쪽사이드 -->
+            <section class="left_section">
+                <!-- 국가선택 -->
+                <div class="country_wrap left_side">
+                    <div class="title">유럽</div>
+                    <ul class="country_list left_list">
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                        <li>
+                            <span>유럽국가1</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 도시선택 -->
+                <div class="city_wrap left_side">
+                    <div class="title arrow_sky">
+                        <button class="btn_back"></button>
+                        유럽국가1
+                    </div>
+                    <ul class="city_list left_list">
+                        <li>
+                            <span>도시1</span>
+                            <button class="add_btn"></button>
+                        </li>
+                        <li>
+                            <span>도시2</span>
+                            <button class="add_btn"></button>
+                        </li>
+                        <li>
+                            <span>도시3</span>
+                            <button class="add_btn"></button>
+                        </li>
+                        <li>
+                            <span>도시4</span>
+                            <button class="add_btn"></button>
+                        </li>
+                        <li>
+                            <span>도시5</span>
+                            <button class="add_btn"></button>
+                        </li>
+                        <li>
+                            <span>도시6</span>
+                            <button class="add_btn"></button>
+                        </li>
+                        <li>
+                            <span>도시7</span>
+                            <button class="add_btn"></button>
+                        </li>
+                    </ul>
+                    <div class="bottom_btn">
+                        <button type="button" class="save_btn">임시 저장</button>
+                        <button type="button" class="next_btn">다음</button>
+                        <p>
+                            * 작성하신 일정은 검토 후 조정이 필요할 수 있습니다.
+                            <br />
+                            * 선택하신 일정은 투어 가이드 및 전용 차량 포함입니다.
+                            <br />
+                            * 차량 및 가이드 원하지 않을 시 자유 일정으로
+                            <br />
+                            선택 바랍니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 호텔 및 관광지 선택 -->
+                <!-- 여행날짜 및 항공권 미정일 시 hotel_wrap에 class='not_sure' 추가해주세요 -->
+                <div class="hotel_wrap left_side">
+                    <!-- 상단 타이틀 -->
+                    <div class="title_wrap">
+                        <div class="title">
+                            <button type="button" class="prev_btn"></button>
+                            <span>0000.00.00</span>
+                            <button type="button" class="next_btn"></button>
+                        </div>
+                        <div class="trip_info">
+                            <div class="city_name">
+                                <span>
+                                    도시 이름 1
+                                    <button type="button" class="reset_btn"></button>
+                                </span>
+                            </div>
+                            <p class="day_num">DAY 1</p>
+                            <div class="flight">
+                                <div class="location_box depart">
+                                    <p class="location">ICN</p>
+                                    <span class="flight_code"> A00000 </span>
+                                    <span class="date"> 00.00.00 (월) </span>
+                                    <span class="time"> 00:00 </span>
+                                </div>
+                                <div class="location_box arrive">
+                                    <p class="location">ITA</p>
+                                    <span class="flight_code"> A00000 </span>
+                                    <span class="date"> 00.00.00 (월) </span>
+                                    <span class="time"> 00:00 </span>
+                                </div>
+                                <div class="airplain_icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 텝구간 -->
+                    <!-- 여행 첫날만 클래스 day_one 넣어주세요-->
+                    <!-- 여행 마지막 전날 클래스 before_return 넣어주세요 -->
+                    <div class="tab_wrap day_one">
+                        <div class="tabs">
+                            <div class="tab active">호텔</div>
+                            <div class="tab">관광지</div>
+                        </div>
+                        <div class="content_wrap">
+                            <!-- 호텔 리스트 -->
+                            <div class="hotel_list content">
+                                <!-- 일정 없을 시 -->
+                                <div class="empty_box sch_none">
+                                    <span> 등록된 일정이 없습니다. </span>
+                                </div>
+                                <!-- 여행날짜 및 항공권 미정일 시 -->
+                                <div class="empty_box cannot_choice_1">
+                                    <span>
+                                        항공 스케줄 미정으로
+                                        <br>
+                                        세부 일정 선택이 불가합니다.
+                                    </span>
+                                </div>
+                                <!-- 마지막 전날 일 시 -->
+                                <div class="empty_box cannot_choice_2">
+                                    <span>
+                                        항공 스케줄로 인해
+                                        <br>
+                                        세부 일정 선택이 불가합니다.
+                                    </span>
+                                </div>
+                                <ul class="depth">
+                                    <li class="list">
+                                        <div class="img_box">
+                                            <img src="../img/make_trip/somenail.jpg" alt="" />
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">호텔 이름</p>
+                                            <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                                        </div>
+                                        <button type="button" class="delete_btn"></button>
+                                    </li>
+                                    <li class="list">
+                                        <div class="img_box">
+                                            <img src="../img/make_trip/somenail.jpg" alt="" />
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">호텔 이름</p>
+                                            <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                                        </div>
+                                        <button type="button" class="delete_btn"></button>
+                                    </li>
+                                    <li class="list">
+                                        <div class="img_box">
+                                            <img src="../img/make_trip/somenail.jpg" alt="" />
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">호텔 이름</p>
+                                            <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                                        </div>
+                                        <button type="button" class="delete_btn"></button>
+                                    </li>
+                                    <li class="list">
+                                        <div class="img_box">
+                                            <img src="../img/make_trip/somenail.jpg" alt="" />
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">호텔 이름</p>
+                                            <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                                        </div>
+                                        <button type="button" class="delete_btn"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 관광지 리스트 -->
+                            <div class="tour_list content">
+                                <div class="empty_box">
+                                    <span> 등록된 일정이 없습니다. </span>
+                                    <!-- 여행날짜 및 항공권 미정일 시 -->
+                                    <span>
+                                        항공 스케줄 미정으로
+                                        <br />
+                                        세부 일정 선택이 불가합니다.
+                                    </span>
+                                </div>
+                                <ul class="depth">
+                                    <li class="list">
+                                        <div class="img_box">
+                                            <img src="../img/make_trip/somenail.jpg" alt="" />
+                                        </div>
+                                        <div class="text_box">
+                                            <p class="name">관광지 명</p>
+                                            <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                                        </div>
+                                        <button type="button" class="delete_btn"></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 하단버튼 -->
+                    <div class="bottom_btn">
+                        <button type="button" class="save_btn">임시 저장</button>
+                        <button type="button" class="next_btn"
+                            onclick="location.href='../makeTrip/make_trip_rez.html'">다음</button>
+                        <p>
+                            * 작성하신 일정은 검토 후 조정이 필요할 수 있습니다.
+                            <br />
+                            * 선택하신 일정은 투어 가이드 및 전용 차량 포함입니다.
+                            <br />
+                            * 차량 및 가이드 원하지 않을 시 자유 일정으로
+                            <br />
+                            선택 바랍니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 지도 -->
+            <section class="map_section"></section>
+
+            <!-- 오른쪽사이드 -->
+            <section class="right_section show_option">
+                <div class="choice_list hotal_choice">
+                    <div class="title_wrap">
+                        <h3 class="title">호텔</h3>
+                        <div class="input_wrap">
+                            <input type="text" placeholder="상품검색" />
+                            <button type="button" class="search_btn"></button>
+                        </div>
+                    </div>
+                    <ul class="depth">
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">호텔 이름</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">호텔 이름</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">호텔 이름</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">호텔 이름</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">호텔 이름</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">호텔 이름</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="choice_list tour_choice">
+                    <div class="title_wrap">
+                        <h3 class="title">관광지</h3>
+                        <div class="input_wrap">
+                            <input type="text" placeholder="상품검색" />
+                            <button type="button" class="search_btn"></button>
+                        </div>
+                    </div>
+                    <ul class="depth">
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">관광지 명</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">관광지 명</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">관광지 명</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">관광지 명</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">관광지 명</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                        <li class="list">
+                            <div class="img_box">
+                                <img src="../img/make_trip/somenail.jpg" alt="" />
+                            </div>
+                            <div class="text_box">
+                                <p class="name">관광지 명</p>
+                                <p class="comment">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명</p>
+                            </div>
+                            <button type="button" class="choice_btn"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="city_schedule">
+                    <div class="title">
+                        여행 일정
+                    </div>
+                    <ul class="added_list">
+                        <!-- <li>
+                            <div class="button_box">
+                                <button class="delete_btn"></button>
+                                <span>도시1</span>
+                            </div>
+                            <div class="num_wrap">
+                                <button type="button" class="minus"></button>
+                                <button type="button" class="plus"></button>
+                                <input type="text" value="0" maxlength="2" numberOnly readonly />
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 팝업 -->
+            <section class="pop_section">
+                <!-- 일정 순서 변경 모달 -->
+                <div class="modal_bg schedule_modal">
+                    <div class="modal_box">
+                        <button class="x_btn close_btn"></button>
+                        <div class="text_area">
+                            <span> 일정 순서 변경 </span>
+                        </div>
+                        <ul class="schedule_list">
+                            <li>
+                                <div class="info">
+                                    <span class="date"> 0000.00.00 </span>
+                                    <p>
+                                        <span class="day"> DAY 1 </span>
+                                        <span class="city"> 도시 이름1 </span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <span class="date"> 0000.00.00 </span>
+                                    <p>
+                                        <span class="day"> DAY 2 </span>
+                                        <span class="city"> 도시 이름1 </span>
+                                    </p>
+                                </div>
+                                <div class="move_wrap">
+                                    <button type="button" class="up"></button>
+                                    <button type="button" class="down"></button>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" class="chk" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <span class="date"> 0000.00.00 </span>
+                                    <p>
+                                        <span class="day"> DAY 3 </span>
+                                        <span class="city"> 도시 이름1 </span>
+                                    </p>
+                                </div>
+                                <div class="move_wrap">
+                                    <button type="button" class="up"></button>
+                                    <button type="button" class="down"></button>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" class="chk" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <span class="date"> 0000.00.00 </span>
+                                    <p>
+                                        <span class="day"> DAY 4 </span>
+                                        <span class="city"> 도시 이름1 </span>
+                                    </p>
+                                </div>
+                                <div class="move_wrap">
+                                    <button type="button" class="up"></button>
+                                    <button type="button" class="down"></button>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" class="chk" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <span class="date"> 0000.00.00 </span>
+                                    <p>
+                                        <span class="day"> DAY 5 </span>
+                                        <span class="city"> 도시 이름1 </span>
+                                    </p>
+                                </div>
+                                <div class="move_wrap">
+                                    <button type="button" class="up"></button>
+                                    <button type="button" class="down"></button>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" class="chk" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <span class="date"> 0000.00.00 </span>
+                                    <p>
+                                        <span class="day"> DAY 6 </span>
+                                        <span class="city"> 도시 이름1 </span>
+                                    </p>
+                                </div>
+                                <div class="move_wrap">
+                                    <button type="button" class="up"></button>
+                                    <button type="button" class="down"></button>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" class="chk" />
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info">
+                                    <span class="date"> 0000.00.00 </span>
+                                    <p>
+                                        <span class="day"> DAY 7 </span>
+                                        <span class="city"> 도시 이름1 </span>
+                                    </p>
+                                </div>
+                                <div class="move_wrap">
+                                    <button type="button" class="up"></button>
+                                    <button type="button" class="down"></button>
+                                </div>
+                                <div class="chk_wrap">
+                                    <input type="checkbox" class="chk" />
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="button_wrap">
+                            <button class="cancel_btn delete_btn">일정 삭제</button>
+                            <button class="apply_btn add_btn">일정 추가</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 일정 순서 추가 모달 -->
+                <div class="modal_bg scheduleAdd_modal">
+                    <div class="modal_box">
+                        <button class="x_btn close_btn"></button>
+                        <div class="text_area">
+                            <span> 일정 추가 </span>
+                        </div>
+                        <ul class="depth">
+                            <li>
+                                <h3 class="title">
+                                    방문 국가
+                                </h3>
+                                <div class="select_wrap">
+                                    <div class="select_title">
+                                        방문 국가 선택
+                                    </div>
+                                    <ul class="select_list">
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <h3 class="title">
+                                    방문 국가
+                                </h3>
+                                <div class="select_wrap">
+                                    <div class="select_title">
+                                        방문 국가 선택
+                                    </div>
+                                    <ul class="select_list">
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                        <li class="list">
+                                            option1
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="button_wrap">
+                            <button class="cancel_btn close_btn">이전</button>
+                            <button class="apply_btn close_btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 일정 삭제 안내 모달 -->
+                <div class="modal_bg delete_modal">
+                    <div class="message_modal">
+                        <div class="text_area">
+                            <span>선택 일정을 삭제하겠습니까?</span>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="cancel_btn close_btn">취소</button>
+                            <button class="apply_btn close_btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 여행 일정 확인 안내 모달 -->
+                <div class="modal_bg schChkPlz_modal">
+                    <div class="message_modal">
+                        <div class="text_area">
+                            <span>
+                                남은 여행 일수가 없습니다.
+                                <br />
+                                여행 일정을 확인해주세요.
+                            </span>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="apply_btn full close_btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 임시 저장 완료 모달 -->
+                <div class="modal_bg saveC_modal">
+                    <div class="message_modal">
+                        <div class="text_area">
+                            <span>임시 저장이 완료되었습니다.</span>
+                        </div>
+                        <div class="button_wrap">
+                            <button class="apply_btn ful close_btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

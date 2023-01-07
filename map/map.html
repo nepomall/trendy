@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="format-detection" content="telephone=no" />
+  <title>Trendy europe</title>
+
+  <link rel="icon" href="../img/common/favicon.ico" />
+  <!--Import-->
+  <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+  <script type='text/javascript' src="../js/jquery.timepicker.min.js"></script>
+  <script type="text/javascript" src="../js/header.js "></script>
+  <script type="text/javascript" src="../js/common.js "></script>
+  <script type='text/javascript' src="../js/air-datepicker.js"></script>
+  <script type='text/javascript' src="../js/myTrip_modal.js"></script>
+  <!-- link -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/head.css" />
+  <link rel="stylesheet" href="../css/jquery.timepicker.css">
+  <link rel="stylesheet" href="../css/air-datepicker.css">
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="../css/map.css" />
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- 헤더 -->
+    <trendy-headpc></trendy-headpc>
+
+    <!-- 컨텐츠 -->
+    <div id="wrap_content" class="map_wrap">
+      <div class="inner">
+        <section class="map_section sub_section">
+          <h3 class="title">찾아오시는 길</h3>
+
+          <div class="map_img">
+            <img src="../img/sub/map.jpg" alt="지도" />
+          </div>
+
+          <p class="location">
+            <span class="map_icon">
+              <img src="../img/icon/map.svg" alt="지도 아이콘" />
+            </span>
+            서울특별시 서초구 강남대로 000 0층
+          </p>
+
+          <ul class="traffic_list_wrap">
+            <li class="traffic_list">
+              <p class="traffic_text">
+                <span class="traffic_icon">
+                  <img src="../img/icon/bus.svg" alt="버스" />
+                </span>
+                버스 이용시
+              </p>
+              <div class="right_wrap">
+                <p class="right">
+                  <span class="bus_box green">지선</span>
+                  <span class="bus_number">버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, </span>
+                </p>
+                <p class="right">
+                  <span class="bus_box red">광역</span>
+                  <span class="bus_number">버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, </span>
+                </p>
+                <p class="right">
+                  <span class="bus_box blue">간선</span>
+                  <span class="bus_number">버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, </span>
+                </p>
+                <p class="right">
+                  <span class="bus_box brown">공항</span>
+                  <span class="bus_number">버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, 버스 번호, </span>
+                </p>
+              </div>
+            </li>
+
+            <li class="traffic_list">
+              <p class="traffic_text">
+                <span class="traffic_icon">
+                  <img src="../img/icon/train.svg" alt="지하철" />
+                </span>
+                지하철 이용시
+              </p>
+              <div class="right_wrap">
+                <p class="right">
+                  <span class="train_box green">2</span>
+                  <span class="bus_number">지하철 이용시 찾아 오는 길 설명 지하철 이용시 찾아 오는 길 설명 지하철 이용시 찾아 오는 길 설명</span>
+                </p>
+                <p class="right">
+                  <span class="train_box brown">9</span>
+                  <span class="bus_number">지하철 이용시 찾아 오는 길 설명 지하철 이용시 찾아 오는 길 설명 지하철 이용시 찾아 오는 길 설명</span>
+                </p>
+              </div>
+            </li>
+
+            <li class="traffic_list">
+              <p class="traffic_text">
+                <span class="traffic_icon">
+                  <img src="../img/icon/car.svg" alt="자차" />
+                </span>
+                자차 이용시
+              </p>
+              <span class="right">자차 이용시 찾아 오는 길 설명 자차 이용시 찾아 오는 길 설명 자차 이용시 찾아 오는 길 설명 자차 이용시 찾아 오는 길 설명</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <trendy-mytripmodal></trendy-mytripmodal>
+    <footer id="footer">
+      <trendy-footerpc></trendy-footerpc>
+    </footer>
+  </div>
+</body>
+
+</html>
